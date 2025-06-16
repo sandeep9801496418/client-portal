@@ -28,7 +28,7 @@
             class="border border-[#0000004D] dark:border-[rgba(0,190,236,0.30)] flex gap-2 items-center w-full md:max-w-[425px] pl-3 rounded-[8px] search-box">
             <span><img src="../images/client-portal/search-icon.svg" alt="search-icon" ></span>
             <input id="search" type="text" placeholder="Search"
-              class="outline-0 outline-none text-white/60 py-1.75 w-full pr-3 bg-transparent ">
+              class="outline-0 outline-none text-white/60 p-2 sm:py-1.75 w-full pr-3 bg-transparent ">
           </div>
           <button type="button" @click="showPopup = true"
             class="flex gap-3 items-center bg-[rgba(0,190,236,0.10)] dark:bg-gradient-to-l dark:from-[#33EFB7] dark:to-[#00A3BE] py-2 px-4 rounded-[8px] cursor-pointer button-light">

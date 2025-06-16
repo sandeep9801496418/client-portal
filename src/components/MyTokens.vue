@@ -26,7 +26,7 @@
                         class="border border-[#0000004D] dark:border-[rgba(0,190,236,0.30)] flex gap-2 items-center w-full lg:max-w-[425px] pl-3 rounded-[8px] search-box">
                         <span><img src="../images/client-portal/search-icon.svg" alt="search"></span>
                         <input id="search" type="text" placeholder="Search"
-                            class="outline-0 outline-none text-black dark:text-white/60 py-1.75 w-full pr-3 bg-transparent">
+                            class="outline-0 outline-none text-black dark:text-white/60 p-2 sm:py-1.75 w-full pr-3 bg-transparent">
                     </div>
 
 
