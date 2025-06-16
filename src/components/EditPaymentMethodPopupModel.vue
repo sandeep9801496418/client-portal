@@ -1,16 +1,16 @@
 <template>
   <!-- Fullscreen modal wrapper -->
-  <div class="fixed inset-0 z-50 bg-black/40 backdrop-blur-[6px] flex justify-center items-center p-4">
+  <div class="fixed inset-0 z-50 bg-black/40 backdrop-blur-[6px] flex justify-center items-center p-4 modal">
     <!-- Modal Container -->
     <div
-      class="w-full max-w-[525px] mx-auto text-black dark:text-white rounded-xl border dark:border-cyan-500/20 bg-white dark:bg-[rgba(8,8,8,0.75)] backdrop-blur-xl shadow-lg"
+      class="w-full max-w-[525px] mx-auto text-black dark:text-white rounded-xl border dark:border-cyan-500/20 bg-white dark:bg-[rgba(8,8,8,0.95)] backdrop-blur-xl shadow-lg"
     >
       <!-- Modal Header -->
       <div class="flex justify-between items-center mb-0 py-3 px-6 border-b dark:border-cyan-500/20">
         <h2 class="text-[24px] font-medium text-black dark:text-[#00BEEC]">Edit Payment Method</h2>
         <button
           @click="closePopup"
-          class="text-black dark:text-white text-xl hover:text-red-500 cursor-pointer w-7 h-7 flex justify-center items-center p-2 border border-white rounded-full"
+          class="text-black dark:text-white text-xl hover:text-red-500 cursor-pointer w-7 h-7 flex justify-center items-center p-2 border border-white rounded-full close"
         >
           <img src="../images/client-portal/close-icon.svg" alt="close icon" />
         </button>

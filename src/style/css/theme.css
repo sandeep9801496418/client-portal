@@ -88,6 +88,14 @@
 	filter: invert(40%) sepia(110%) saturate(1000%) hue-rotate(-213deg);
 }
 
+.light .modal .close {
+	filter: invert(1) !important;
+}
+.light .modal .close img {
+	filter: invert(0);
+}
+
+
 .light .my-token .button-group img {
 filter: invert(40%) sepia(110%) saturate(1000%) hue-rotate(-213deg);
 }

@@ -1,13 +1,13 @@
 <template>
   <!-- Fullscreen modal wrapper with dark glass effect -->
-  <div class="fixed inset-0 z-50 bg-black/40 backdrop-blur-[6px] flex justify-center items-center p-4">
+  <div class="fixed inset-0 z-50 bg-black/40 backdrop-blur-[6px] flex justify-center items-center p-4 modal">
     <div
-      class="w-full max-w-[430px] mx-auto text-black dark:text-white rounded-xl border dark:border-cyan-500/20 p-6 pt-10 relative bg-white dark:bg-[rgba(8,8,8,0.75)] backdrop-blur-xl shadow-lg"
+      class="w-full max-w-[430px] mx-auto text-black dark:text-white rounded-xl border dark:border-cyan-500/20 p-6 pt-10 relative bg-white dark:bg-[rgba(8,8,8,0.95)] backdrop-blur-xl shadow-lg"
     >
       <!-- Close button -->
       <button
         @click="closePopup"
-        class="text-black dark:text-white text-xl hover:text-red-500 cursor-pointer w-7 h-7 flex justify-center items-center p-2 border border-black dark:border-white rounded-full absolute top-5 right-5"
+        class="text-black dark:text-white text-xl hover:text-red-500 cursor-pointer w-7 h-7 flex justify-center items-center p-2 border border-black dark:border-white rounded-full absolute top-5 right-5 close"
       >
         <img src="../images/client-portal/close-icon.svg" alt="close icon" />
       </button>

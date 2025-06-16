@@ -1,14 +1,14 @@
 <template>
   <!-- Fullscreen modal wrapper -->
-  <div class="fixed inset-0 z-50 bg-black/40 backdrop-blur-[6px] flex justify-center items-center p-4">
+  <div class="fixed inset-0 z-50 bg-black/40 backdrop-blur-[6px] flex justify-center items-center p-4 modal">
     <!-- Modal box -->
     <div
-      class="w-full max-w-[525px] text-black dark:text-white rounded-xl border dark:border-cyan-500/20 shadow-lg backdrop-blur-xl bg-white dark:bg-[rgba(8,8,8,0.75)]"
+      class="w-full max-w-[525px] text-black dark:text-white rounded-xl border dark:border-cyan-500/20 shadow-lg backdrop-blur-xl bg-white dark:bg-[rgba(8,8,8,0.95)]"
     >
       <!-- Modal Header -->
       <div class="flex justify-between items-center mb-6 border-b dark:border-cyan-500/20 py-3 px-6">
         <h2 class="text-[24px] font-medium text-black dark:text-white">Edit Token</h2>
-        <button @click="closePopup" class="text-black dark:text-white text-xl hover:text-red-500 cursor-pointer">
+        <button @click="closePopup" class="text-black dark:text-white text-xl hover:text-red-500 cursor-pointer close">
           <img src="../images/client-portal/close-icon.svg" alt="close icon" />
         </button>
       </div>
