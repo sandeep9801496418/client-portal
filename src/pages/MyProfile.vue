@@ -178,19 +178,19 @@
                     <th class="p-0">
                       <div
                         class="text-[#00BEEC] px-2 sm:px-4 text-[14px] sm:text-[16px] md:text-[18px] leading-normal font-normal text-center p-2 text-nowrap bg-[rgba(0,190,236,0.10)] border-y border-r-0 border-[rgba(0,190,236,0.40)]">
-                        Date & Time
+                       IP Address
                       </div>
                     </th>
                     <th class="p-0">
                       <div
                         class="text-[#00BEEC] px-2 sm:px-4 text-[14px] sm:text-[16px] md:text-[18px] leading-normal font-normal text-center p-2 text-nowrap bg-[rgba(0,190,236,0.10)] border-y border-r-0 border-[rgba(0,190,236,0.40)]">
-                        Date & Time
+                        Device/Browser
                       </div>
                     </th>
                     <th class="p-0">
                       <div
                         class="text-[#00BEEC] px-2 sm:px-4 text-[14px] sm:text-[16px] md:text-[18px] leading-normal font-normal text-center p-2 text-nowrap bg-[rgba(0,190,236,0.10)] border border-l-0 border-[rgba(0,190,236,0.40)] rounded-r-[10px]">
-                        Date & Time
+                        Location
                       </div>
                     </th>
                   </tr>
