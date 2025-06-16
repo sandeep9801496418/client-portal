@@ -1,9 +1,9 @@
 // src/router/index.js
 import { createRouter, createWebHistory } from 'vue-router'
-import ClientDashboard from '../components/ClientDashboard.vue';
-import MyTokens from '../components/MyTokens.vue';
-import MyProfile from '../components/MyProfile.vue';
-import BillingSubscription from '../components/BillingSubscription.vue';
+import ClientDashboard from '../pages/ClientDashboard.vue';
+import MyTokens from '../pages/MyTokens.vue';
+import MyProfile from '../pages/MyProfile.vue';
+import BillingSubscription from '../pages/BillingSubscription.vue';
 
 const routes = [
   { path: '/', name: 'Dashboard', component: ClientDashboard },

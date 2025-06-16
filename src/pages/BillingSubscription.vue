@@ -15,7 +15,7 @@
   <img src="../images/client-portal/bell-light1.svg" alt="Bell Icon" class="w-6 h-6" />
 
   <!-- Notification dot (visible in both themes, adjusts background color) -->
-  <div class="absolute top-2 right-3 w-3 h-3  bg-black rounded-full flex justify-center items-center">
+  <div class="absolute top-1 sm:top-2 right-2 sm:right-3 w-3 h-3  bg-black rounded-full flex justify-center items-center">
     <span class="w-2 h-2 bg-[#FF0000] rounded-full"></span>
   </div>
 </div>
@@ -423,9 +423,9 @@
 
 <script setup>
 import { ref } from 'vue'
-import AddPaymentMethodPopupModel from './AddPaymentMethodPopupModel.vue'
-import EditPaymentMethodPopupModel from './EditPaymentMethodPopupModel.vue'
-import DeletePaymentMethodPopupModel from './DeletePaymentMethodPopupModel.vue'
+import AddPaymentMethodPopupModel from './../components/AddPaymentMethodPopupModel.vue'
+import EditPaymentMethodPopupModel from './../components/EditPaymentMethodPopupModel.vue'
+import DeletePaymentMethodPopupModel from './../components/DeletePaymentMethodPopupModel.vue'
 
 const showPopup = ref(false)
 const showEditPopup = ref(false)

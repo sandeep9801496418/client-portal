@@ -14,7 +14,7 @@
   <img src="../images/client-portal/bell-light1.svg" alt="Bell Icon" class="w-6 h-6" />
 
   <!-- Notification dot (visible in both themes, adjusts background color) -->
-  <div class="absolute top-2 right-3 w-3 h-3  bg-black rounded-full flex justify-center items-center">
+  <div class="absolute top-1 sm:top-2 right-2 sm:right-3 w-3 h-3  bg-black rounded-full flex justify-center items-center">
     <span class="w-2 h-2 bg-[#FF0000] rounded-full"></span>
   </div>
 </div>
@@ -40,7 +40,7 @@
 
         <div class="min-h-screen text-white space-y-6">
           <!-- Stats Grid -->
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+          <div class="grid grid-cols-1  lg:grid-cols-2 xl:grid-cols-4 gap-4">
             <!-- Card 1 -->
             <div class="bg-white dark:bg-transparent card-bg-type-1 dark:border dark:border-[#18414E] p-5 rounded-[17px] shadow-md relative">
               <div class="text-black dark:text-white/60 text-[16px] font-medium">API Requests Today</div>
@@ -268,33 +268,8 @@
 
 <script setup>
 import { ref } from 'vue'
-import CreateNewTokenPopupModal from '../components/CreateNewTokenPopupModel.vue'
+import CreateNewTokenPopupModal from './../components/CreateNewTokenPopupModel.vue'
 
 const selected = ref('day')
 const showPopup = ref(false)
 </script>
-
-<style>
-.dark .card-bg-type-1 {
-  background: url("../images/client-portal/card-bg-type-1.svg") no-repeat scroll right -2px bottom/ cover;
-
-}
-
-.dark .card-bg-type-2 {
-  background: url("../images/client-portal/card-bg-type-2.svg") no-repeat scroll center bottom/ cover;
-
-}
-
-.dark .bg-popup-type-1 {
-  background: url("../images/client-portal/bg-popup-type-1.svg") no-repeat scroll center bottom/ cover;
-
-}
-
-.dark .bg-popup-type-2 {
-  background: url("../images/client-portal/bg-popup-type-2.svg") no-repeat scroll center bottom/ cover;
-}
-
-.dark .delete-shaddow {
-  background: url("../images/client-portal/delete-shaddow.svg") no-repeat scroll center bottom/ cover;
-}
-</style>

@@ -3,7 +3,7 @@
   <div class="fixed inset-0 z-50 bg-black/40 backdrop-blur-[6px] flex justify-center items-center p-4 modal">
     <!-- Modal -->
     <div
-      class="w-full max-w-[525px] bg-white dark:bg-[rgba(8,8,8,0.75)] backdrop-blur-xl mx-auto text-black dark:text-white rounded-xl border border-cyan-500/20 shadow-lg"
+      class="w-full max-w-[525px] bg-white dark:bg-[rgba(8,8,8,0.90)] backdrop-blur-xl mx-auto text-black dark:text-white rounded-xl border border-cyan-500/20 shadow-lg"
     >
       <!-- Modal Header -->
       <div class="flex justify-between items-center mb-0 py-3 px-6 border-b dark:border-cyan-500/20">
@@ -28,6 +28,7 @@
               class="placeholder:dark:text-white/80 text-black dark:text-white/80 w-full px-4 py-2 bg-transparent border dark:border-[#00BEEC] rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-400"
             />
           </div>
+
 
           <!-- Card Number -->
           <div>

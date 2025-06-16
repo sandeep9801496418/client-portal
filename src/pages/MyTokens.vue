@@ -5,19 +5,22 @@
             <header class="pl-6 pr-7 py-6  border-b border border-[rgba(0,190,236,0.30)]">
                 <div class="flex justify-between flex-wrap">
                     <div class="text-left flex items-center gap-3 lg:gap-6 flex-wrap flex-col md:flex-row">
-                        <h1 class="text-[18px] sm:text-[30px] text-black dark:text-white font-medium leading-normal sm:w-auto w-full">My Tokens</h1>
+                        <h1
+                            class="text-[18px] sm:text-[30px] text-black dark:text-white font-medium leading-normal sm:w-auto w-full">
+                            My Tokens</h1>
                         <p class="text-[14px] font-normal text-[rgba(0,190,236,0.60)] m-0 w-full md:w-auto">May 17, 2025
                             | Saturday</p>
                     </div>
-<div class="flex justify-center items-center w-10 sm:w-12 h-10 sm:h-12 border border-[#0000004D] dark:border-[rgba(0,190,236,0.30)] rounded-full relative">
-  <!-- Bell icon shown in all themes -->
-  <img src="../images/client-portal/bell-light1.svg" alt="Bell Icon" class="w-6 h-6" />
+                    <div
+                        class="flex justify-center items-center w-10 sm:w-12 h-10 sm:h-12 border border-[#0000004D] dark:border-[rgba(0,190,236,0.30)] rounded-full relative">
+                        <!-- Bell icon shown in all themes -->
+                        <img src="../images/client-portal/bell-light1.svg" alt="Bell Icon" class="w-6 h-6" />
 
-  <!-- Notification dot (visible in both themes, adjusts background color) -->
-  <div class="absolute top-2 right-3 w-3 h-3  bg-black rounded-full flex justify-center items-center">
+                        <!-- Notification dot (visible in both themes, adjusts background color) -->
+                        <div class="absolute top-1 sm:top-2 right-2 sm:right-3 w-3 h-3  bg-black rounded-full flex justify-center items-center">
     <span class="w-2 h-2 bg-[#FF0000] rounded-full"></span>
   </div>
-</div>
+                    </div>
                 </div>
             </header>
             <div class="bg-gray-100 dark:bg-transparent p-4 sm:p-6">
@@ -62,7 +65,7 @@
 
                         <button type="button" @click="showPopup = true"
                             class="flex gap-3 items-center bg-[rgba(0,190,236,0.10)] dark:bg-gradient-to-l dark:from-[#33EFB7] dark:to-[#00A3BE] py-2 px-4 rounded-[8px] cursor-pointer">
-             <span><img src="../images/client-portal/plus.svg" alt="plus"></span> <span
+                            <span><img src="../images/client-portal/plus.svg" alt="plus"></span> <span
                                 class="text-[14px] capitalize text-[#00BEEC] dark:text-white font-medium">Create New
                                 Token</span>
                         </button>
@@ -375,9 +378,9 @@
 
 <script setup>
 import { ref } from 'vue'
-import CreateNewTokenPopupModal from '../components/CreateNewTokenPopupModel.vue'
-import EditTokenPopupModel from './EditTokenPopupModel.vue'
-import DeleteTokenPopupModel from './DeleteTokenPopupModel.vue'
+import CreateNewTokenPopupModal from './../components/CreateNewTokenPopupModel.vue'
+import EditTokenPopupModel from './../components/EditTokenPopupModel.vue'
+import DeleteTokenPopupModel from './../components/DeleteTokenPopupModel.vue'
 
 const selected = ref('all')
 const showPopup = ref(false)

@@ -73,57 +73,85 @@
 
 
 .light .nav-link img {
-    filter: invert(100%) sepia(0%) saturate(1000%) hue-rotate(-213deg);
+  filter: invert(100%) sepia(0%) saturate(1000%) hue-rotate(-213deg);
 }
+
 .light .profile-background li a img {
-    filter: invert(50%) sepia(0%) saturate(900%) hue-rotate(-943deg);
+  filter: invert(50%) sepia(0%) saturate(900%) hue-rotate(-943deg);
 }
 
 
 .light .client-dashboard img, .light .my-token .search-box img, .light .my-token .button-group img, .light header img {
-	filter: invert(1);
+  filter: invert(1);
 }
 
-.light .client-dashboard .button-light img{
-	filter: invert(40%) sepia(110%) saturate(1000%) hue-rotate(-213deg);
+.light .client-dashboard .button-light img {
+  filter: invert(40%) sepia(110%) saturate(1000%) hue-rotate(-213deg);
 }
 
 .light .modal .close {
-	filter: invert(1) !important;
+  filter: invert(1) !important;
 }
+
 .light .modal .close img {
-	filter: invert(0);
+  filter: invert(0);
 }
 
 
 .light .my-token .button-group img {
-filter: invert(40%) sepia(110%) saturate(1000%) hue-rotate(-213deg);
+  filter: invert(40%) sepia(110%) saturate(1000%) hue-rotate(-213deg);
 }
 
 .light .new-pass ul .bg-white\/40 {
-	background: ;
-	background-color: #c4c4c4;
+  background-color: #c4c4c4;
 }
 
 .light .billing-subscription .visa-card {
-	border: 1px solid rgb(31, 197, 238);
+  border: 1px solid rgb(31, 197, 238);
 }
+
 .light .billing-subscription .visa-card img {
-	filter: invert(1);
+  filter: invert(1);
 }
+
 .light .billing-subscription .master-card {
-	border: 1px solid rgb(31, 197, 238);
+  border: 1px solid rgb(31, 197, 238);
 }
+
 .light .billing-subscription .edit {
-	filter: invert(1);
+  filter: invert(1);
 }
 
 
 .light .darkmode {
-	display: none;
+  display: none;
 }
+
 .light .lightmode {
-	display: block;
+  display: block;
+}
+
+.dark .card-bg-type-1 {
+  background: url("../../images/client-portal/card-bg-type-1.svg") no-repeat scroll right -2px bottom/ cover;
+
+}
+
+.dark .card-bg-type-2 {
+  background: url("../../images/client-portal/card-bg-type-2.svg") no-repeat scroll center bottom/ cover;
+
+}
+
+.dark .bg-popup-type-1 {
+  background: url("../../images/client-portal/bg-popup-type-1.svg") no-repeat scroll center bottom/ cover;
+
+}
+
+.dark .bg-popup-type-2 {
+  background: url("../../images/client-portal/bg-popup-type-2.svg") no-repeat scroll center bottom/ cover;
+}
+
+.dark .delete-shaddow {
+  background: url("../../images/client-portal/delete-shaddow.svg") no-repeat scroll center bottom/ cover;
 }
 
 
@@ -145,17 +173,20 @@ filter: invert(40%) sepia(110%) saturate(1000%) hue-rotate(-213deg);
 }
 
 @media screen and (max-width: 450px) {
-.payment-information > div {
-	white-space: nowrap;
-}
-.payment-information > div .visa-card, .payment-information > div .master-card {
-	padding: 5px;
-}
-.payment-information > div .visa-card img, .payment-information > div .master-card img {
-	width: 34px;
-}
-.payment-information .flex.shadow-md {
-	flex-wrap: wrap;
-}
+  .payment-information>div {
+    white-space: nowrap;
+  }
+
+  .payment-information>div .visa-card, .payment-information>div .master-card {
+    padding: 5px;
+  }
+
+  .payment-information>div .visa-card img, .payment-information>div .master-card img {
+    width: 34px;
+  }
+
+  .payment-information .flex.shadow-md {
+    flex-wrap: wrap;
+  }
 
 }

@@ -3,7 +3,7 @@
   <div class="fixed inset-0 z-50 bg-black/40 backdrop-blur-[6px] flex justify-center items-center p-4 modal">
     <!-- Modal -->
     <div
-      class="w-full max-w-[430px] mx-auto text-black dark:text-white rounded-xl border dark:border-cyan-500/20 p-6 pt-10 relative bg-white dark:bg-[rgba(8,8,8,0.95)] backdrop-blur-xl shadow-lg"
+      class="w-full  max-w-[430px] mx-auto text-black dark:text-white rounded-xl border dark:border-cyan-500/20 p-6 pt-10 relative bg-white dark:bg-[rgba(8,8,8,0.95)] backdrop-blur-xl shadow-lg"
     >
       <!-- Close Button -->
       <button
@@ -29,8 +29,8 @@
       <!-- Content -->
       <div class="text-center">
         <h2 class="text-black dark:text-[#00BEEC] text-[18px] font-medium mb-2">Delete Payment Method</h2>
-        <p class="text-[14px] text-black dark:text-white/50 font-medium mb-6">
-          Are you sure you want to Delete this payment <br class="hidden sm:block" />
+        <p class="text-[14px] text-black dark:text-white/50 font-medium mb-6 text-wrap ">
+          Are you sure you want to Delete this payment <br class=" hidden md:block">
           option? This action cannot be undone.
         </p>
       </div>
