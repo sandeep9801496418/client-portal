@@ -39,34 +39,6 @@ onMounted(() => {
     html.classList.remove('light')
   }
 })
-
-
-
-
-
-
-
-
-
-
-
-const isRTL = ref(false)
-
-function toggleDirection() {
-  isRTL.value = !isRTL.value
-  const html = document.documentElement
-  html.setAttribute('dir', isRTL.value ? 'rtl' : 'ltr')
-  localStorage.setItem('dir', isRTL.value ? 'rtl' : 'ltr')
-}
-
-onMounted(() => {
-  const savedDir = localStorage.getItem('dir')
-  if (savedDir) {
-    isRTL.value = savedDir === 'rtl'
-    document.documentElement.setAttribute('dir', savedDir)
-  }
-})
-
 </script>
 
 <template>
@@ -152,14 +124,12 @@ onMounted(() => {
               </a>
             </li>
             <li>
-              <a href="#" @click.prevent="toggleDirection"
-    class="flex justify-center lg:justify-start gap-2 p-2 lg:p-4 hover:bg-[rgba(0,190,236,0.10)]">
-    <img src="../images/client-portal/language.svg" alt="Language" />
-    <span class="text-black dark:text-[#00BEEC] text-[12px] font-medium hidden lg:block">
-      Language ({{ isRTL ? 'RTL' : 'LTR' }})
-    </span>
-  </a>
-   </li>
+              <a href="#"
+                class="flex justify-center lg:justify-start gap-2 p-2 lg:p-4 hover:bg-[rgba(0,190,236,0.10)]">
+                <img src="../images/client-portal/language.svg" alt="Language" />
+                <span class="text-black dark:text-[#00BEEC] text-[12px] font-medium hidden lg:block">Language</span>
+              </a>
+            </li>
             <li class="px-2 my-2 border-t dark:border-[#00BEEC]"></li>
             <li>
               <a @click.prevent="toggleTheme" href="#"

@@ -43,57 +43,65 @@
           <div class="grid grid-cols-1  lg:grid-cols-2 xl:grid-cols-4 gap-4">
             <!-- Card 1 -->
             <div class="bg-white dark:bg-transparent card-bg-type-1 dark:border dark:border-[#18414E] p-5 rounded-[17px] shadow-md relative">
-              <div class="text-black dark:text-white/60 text-[16px] font-medium">API Requests Today</div>
+             <div class="flex justify-between flex-wrap">
+             <div class="text-black dark:text-white/60 text-[16px] font-medium">API Requests Today</div>
+              <div
+                class="bg-[rgba(0,190,236,0.10)] w-8.5 h-8.5 flex justify-center items-center rounded-[5px]">
+                <img src="../images/client-portal/uil_arrow-growth.svg" alt="API Requests Today" class="dark">
+              </div>
+             </div>
               <div class="text-[18px] sm:text-[28px] font-medium text-black dark:text-white">5,842</div>
               <div class="text-black dark:text-white/60 text-[16px] font-medium flex gap-2 items-center"><span><img
                     src="../images/client-portal/arrow-up.svg" alt="arrow up"></span> 15% from Yesterday</div>
 
-              <div
-                class="absolute top-4 right-5 bg-[rgba(0,190,236,0.10)] w-8.5 h-8.5 flex justify-center items-center rounded-[5px]">
-                <img src="../images/client-portal/uil_arrow-growth.svg" alt="API Requests Today" class="dark">
- 
-              </div>
+              
 
             </div>
             <!-- Card 2 -->
             <div class="bg-white dark:bg-transparent card-bg-type-1 dark:border dark:border-[#18414E] p-5 rounded-[17px] shadow-md relative">
+              <div class="flex justify-between flex-wrap">
               <div class="text-black dark:text-white/60 text-[16px] font-medium">API Requests This Month</div>
-              <div class="text-[18px] sm:text-[28px] font-medium text-black dark:text-white">145,769</div>
-              <div class="text-black dark:text-white/60 text-[16px] font-medium flex gap-2 items-center"><span><img
-                    src="../images/client-portal/arrow-up.svg" alt="arrow up"></span> 9% from Last Month</div>
-
-              <div
-                class="absolute top-4 right-5 bg-[rgba(0,190,236,0.10)] w-8.5 h-8.5 flex justify-center items-center rounded-[5px]">
+              <div class="bg-[rgba(0,190,236,0.10)] w-8.5 h-8.5 flex justify-center items-center rounded-[5px]">
                 <img src="../images/client-portal/calender.svg" alt="API Requests This Month">
               </div>
+              </div>
 
+              <div class="text-[18px] sm:text-[28px] font-medium text-black dark:text-white">145,769</div>
+              <div class="text-black dark:text-white/60 text-[16px] font-medium flex gap-2 items-center"><span><img
+                    src="../images/client-portal/arrow-up.svg" alt="arrow up"></span> 9% from Last Month
+                  </div>
             </div>
             <!-- Card 3 -->
             <div class="bg-white dark:bg-transparent card-bg-type-1 dark:border dark:border-[#18414E] p-5 rounded-[17px] shadow-md relative">
+               <div class="flex justify-between flex-wrap">
               <div class="text-black dark:text-white/60 text-[16px] font-medium">Active Tokens</div>
-              <div class="text-[18px] sm:text-[28px] font-medium text-black dark:text-white">4</div>
-              <div class="text-black dark:text-white/60 text-[16px] font-medium">Last Created 7 June 2025</div>
-
-              <div
-                class="absolute top-4 right-5 bg-[rgba(0,190,236,0.10)] w-8.5 h-8.5 flex justify-center items-center rounded-[5px]">
+              <div class="bg-[rgba(0,190,236,0.10)] w-8.5 h-8.5 flex justify-center items-center rounded-[5px]">
                 <img src="../images/client-portal/key-icon.svg" alt="Active Tokens">
               </div>
-
+              </div>
+              <div class="text-[18px] sm:text-[28px] font-medium text-black dark:text-white">4</div>
+              <div class="text-black dark:text-white/60 text-[16px] font-medium">Last Created 7 June 2025
+              </div>
             </div>
             <!-- Card 4 -->
             <div class="bg-white dark:bg-transparent card-bg-type-1 dark:border dark:border-[#18414E] p-5 rounded-[17px] shadow-md relative">
+
+              <div class="flex justify-between flex-wrap">
               <div class="text-black dark:text-white/60 text-[16px] font-medium flex justify-between">
                 Quota Usage
               </div>
+              <div
+                class="bg-[rgba(0,190,236,0.10)] w-8.5 h-8.5 flex justify-center items-center rounded-[5px]">
+                <img src="../images/client-portal/data-usage.svg" alt="Quota Usage">
+              </div>
+              </div>
+
               <div class="text-[18px] sm:text-[28px] font-medium text-black dark:text-white">72%</div>
               <div class="mt-2 h-3 w-full border border-[#00A4BE] rounded-full overflow-hidden">
                 <div class="h-full bg-primary w-[72%] rounded-full"></div>
               </div>
 
-              <div
-                class="absolute top-4 right-5 bg-[rgba(0,190,236,0.10)] w-8.5 h-8.5 flex justify-center items-center rounded-[5px]">
-                <img src="../images/client-portal/data-usage.svg" alt="Quota Usage">
-              </div>
+              
 
             </div>
           </div>
