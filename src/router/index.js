@@ -7,7 +7,6 @@ import BillingSubscription from '../components/BillingSubscription.vue';
 
 const routes = [
   { path: '/', name: 'Dashboard', component: ClientDashboard },
-  { path: '/index.html', name: 'index', component: ClientDashboard },
   { path: '/token', name: 'My Token', component: MyTokens },
   { path: '/profile', name: 'My Profile', component: MyProfile },
   { path: '/billing-subscription', name: 'Billing Subscription', component: BillingSubscription }
