@@ -4,7 +4,7 @@
       <header class="pl-6 pr-7 py-6  border-b  border-[rgba(0,190,236,0.30)]">
         <div class="flex justify-between flex-wrap">
           <div class="text-left flex items-center gap-3 lg:gap-6 flex-wrap flex-col md:flex-row">
-            <h1 class="text-[18px] sm:text-[30px] text-black dark:text-white font-medium leading-normal w-full sm:w-auto">Clients Dashboard</h1>
+            <h1 class="text-[18px] sm:text-[30px] text-black dark:text-white font-medium leading-normal w-full sm:w-auto">Client Dashboard</h1>
             <p class="text-[14px] font-normal text-[rgba(0,190,236,0.60)] m-0 w-full md:w-auto">May 17, 2025 | Saturday
             </p>
           </div>
