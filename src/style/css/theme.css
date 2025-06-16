@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+}
+
+
+
+.nav-link {
+  position: relative;
+  z-index: 1;
+  transition: border-color 0.3s ease;
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(0, 190, 236, 0.4), rgba(0, 190, 236, 0));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+
+.nav-link:hover::before {
+  opacity: 1;
+}
+
+.nav-link:hover {
+  border-color: #00BEEC;
+}
+
+
+.profile-background {
+  position: relative;
+  background: radial-gradient(at bottom right, rgba(0, 190, 236, 0.15) 0%, rgba(0, 0, 0, 0.9) 60%),
+    linear-gradient(to bottom, #000, #060606);
+  border: 1px solid rgba(0, 190, 236, 0.2);
+  border-radius: 12px 12px 12px 12px;
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+}
+
+
+.bg-primary {
+  background: linear-gradient(to left, #33EFB7 0%, #00A3BE 100%);
+}
+
+.card-bg-type-1 {
+  background: url("../../images/client-portal/card-bg-type-1.svg") no-repeat scroll right -2px bottom/ cover;
+
+}
+
+.card-bg-type-2 {
+  background: url("../../images/client-portal/card-bg-type-2.svg") no-repeat scroll center bottom/ cover;
+
+}
+
+.bg-popup-type-1 {
+  background: url("../../images/client-portal/bg-popup-type-1.svg") no-repeat scroll center bottom/ cover;
+
+}
+
+.bg-popup-type-2 {
+  background: url("../../images/client-portal/bg-popup-type-2.svg") no-repeat scroll center bottom/ cover;
+}
+
+.delete-shaddow {
+  background: url("../../images/client-portal/delete-shaddow.svg") no-repeat scroll center bottom/ cover;
+}
+
+
+
+.light .nav-link img {
+    filter: invert(100%) sepia(0%) saturate(1000%) hue-rotate(-213deg);
+}
+.light .profile-background li a img {
+    filter: invert(50%) sepia(0%) saturate(900%) hue-rotate(-943deg);
+}
+
+
+.light .client-dashboard img, .light .my-token .search-box img, .light .my-token .button-group img, .light header img {
+	filter: invert(1);
+}
+
+.light .client-dashboard .button-light img{
+	filter: invert(40%) sepia(110%) saturate(1000%) hue-rotate(-213deg);
+}
+
+.light .my-token .button-group img {
+filter: invert(40%) sepia(110%) saturate(1000%) hue-rotate(-213deg);
+}
+
+.light .new-pass ul .bg-white\/40 {
+	background: ;
+	background-color: #c4c4c4;
+}
+
+.light .billing-subscription .visa-card {
+	border: 1px solid rgb(31, 197, 238);
+}
+.light .billing-subscription .visa-card img {
+	filter: invert(1);
+}
+.light .billing-subscription .master-card {
+	border: 1px solid rgb(31, 197, 238);
+}
+.light .billing-subscription .edit {
+	filter: invert(1);
+}
+
+
+.light .darkmode {
+	display: none;
+}
+.light .lightmode {
+	display: block;
+}
+
+
+
+@media screen and (max-width: 639px) {
+  .profile-background {
+    background: none;
+    border-radius: 0px;
+    backdrop-filter: unset;
+    -webkit-backdrop-filter: unset;
+    border: 0px;
+  }
+
+  .nav-link img:hover,
+  .nav-link img:focus {
+    filter: invert(33%) sepia(50%) saturate(930%) hue-rotate(167deg);
+  }
+
+}
+
+@media screen and (max-width: 450px) {
+.payment-information > div {
+	white-space: nowrap;
+}
+.payment-information > div .visa-card, .payment-information > div .master-card {
+	padding: 5px;
+}
+.payment-information > div .visa-card img, .payment-information > div .master-card img {
+	width: 34px;
+}
+.payment-information .flex.shadow-md {
+	flex-wrap: wrap;
+}
+
+}
