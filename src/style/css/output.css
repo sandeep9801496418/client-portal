@@ -69,6 +69,7 @@
 .card-bg-type-2 {
   background: url("../images/client-portal/card-bg-type-2.svg") no-repeat scroll center bottom/ cover;
 }
+.avatar { filter: none !important; mix-blend-mode: normal !important; }
 @property --tw-rotate-x {
   syntax: "*";
   inherits: false;

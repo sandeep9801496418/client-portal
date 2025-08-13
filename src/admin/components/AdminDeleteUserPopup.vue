@@ -28,15 +28,15 @@
         <div class="mx-auto mb-4 w-[68px] h-[68px] rounded-full grid place-items-center
                  border border-[#00BEEC33] bg-[#00BEEC0D]
                  dark:border-[#00BEECCC] dark:bg-[#00BEEC33]">
-          <img src="../images/client-portal/button.svg" alt="">
+          <img src="../../images/client-portal/user-pop.svg" alt="">
         </div>
 
         <!-- Title & text (unchanged content) -->
         <h2 class="text-[#00BEEC] text-[18px] font-inter font-medium font-[500px] mb-2">
-          Delete Token Permanently
+          Delete User Permanently
         </h2>
         <p class="text-[14px] text-black/60 dark:text-[#FFFFFF80] font-inter font-medium mb-8 leading-6">
-         Are you sure you want to Delete this Token? This<br class="hidden sm:block" />
+          Are you sure you want to Delete this User? This<br class="hidden sm:block" />
           action cannot be undone.
         </p>
 

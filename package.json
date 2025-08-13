@@ -2,7 +2,7 @@
   "name": "compare-life-insurance-vue",
   "version": "1.0.0",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "vite build",
     "preview": "vite preview"
   },
@@ -21,7 +21,9 @@
     "@fortawesome/vue-fontawesome": "^3.0.8",
     "@vueuse/core": "^13.3.0",
     "axios": "^1.9.0",
+    "lucide-vue-next": "^0.539.0",
     "swiper": "^11.2.8",
+    "vue-hot-toast": "^0.0.1-rc.4",
     "vue-router": "^4.5.1",
     "zod": "^3.25.56"
   }
