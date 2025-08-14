@@ -10,9 +10,8 @@
             class="hidden dark:block pointer-events-none select-none absolute right-[100px] top-[250px] w-[630px] h-[702px] max-w-none blur-2xl" />
 
 
-        <!-- Header -->
         <header class="px-6 py-5 border-b border-[rgba(0,190,236,0.30)]">
-            <div class="grid grid-cols-1 md:grid-cols-[auto,1fr,auto] items-center gap-4 md:gap-6">
+            <div class="flex justify-between items-center gap-4 md:gap-6">
                 <div class="flex items-center gap-3 lg:gap-6 flex-wrap">
                     <h1 class="text-[18px] sm:text-[30px] font-medium leading-none text-black dark:text-white">Admin
                         Dashboard</h1>
@@ -20,23 +19,23 @@
                         Saturday</p>
                 </div>
 
-                <label for="search" class="sr-only">Search</label>
-                <div
-                    class="ml-0 md:ml-[150px] flex items-center gap-2 max-w-[550px] rounded-xl border border-[#0000004D] dark:border-[rgba(0,190,236,0.30)] bg-transparent pl-3 pr-3 h-12 md:h-[50px] focus-within:border-[rgba(0,190,236,0.50)]">
-                    <img src="../../images/client-portal/search-icon.svg" alt="" class="w-5 h-5" />
-                    <input id="search" type="text" placeholder="Search"
-                        class="w-full bg-transparent outline-none dark:placeholder-white/40 placeholder-black text-black dark:text-white/80 py-2" />
-                </div>
-
-                <div
-                    class="flex justify-center items-center w-10 sm:w-12 h-10 sm:h-12 border border-[#0000004D] dark:border-[rgba(0,190,236,0.30)] rounded-full relative">
-                    <!-- Bell icon shown in all themes -->
-                    <img src="../../images/client-portal/bell-light1.svg" alt="Bell Icon" class="w-6 h-6" />
-
-                    <!-- Notification dot (visible in both themes, adjusts background color) -->
+                <div class="flex items-center gap-4">
+                    <div>
+                        <label for="search" class="sr-only">Search</label>
+                        <div
+                            class="ml-0  flex items-center gap-2  rounded-xl border border-[#0000004D] min-w-[calc(100vh-100px)] dark:border-[rgba(0,190,236,0.30)] bg-transparent pl-3 pr-3 h-12 md:h-[50px] focus-within:border-[rgba(0,190,236,0.50)]">
+                            <img src="../../images/client-portal/search-icon.svg" alt="" class="w-5 h-5" />
+                            <input id="search" type="text" placeholder="Search"
+                                class="w-full bg-transparent outline-none dark:placeholder-white/40 placeholder-black text-black dark:text-white/80 py-2" />
+                        </div>
+                    </div>
                     <div
-                        class="absolute top-1 sm:top-2 right-2 sm:right-3 w-3 h-3  bg-black rounded-full flex justify-center items-center">
-                        <span class="w-2 h-2 bg-[#FF0000] rounded-full"></span>
+                        class="flex justify-center items-center  w-10 sm:w-12 h-10 sm:h-12 border border-[#0000004D] dark:border-[rgba(0,190,236,0.30)] rounded-full relative">
+                        <img src="../../images/client-portal/bell-light1.svg" alt="Bell Icon" class="w-6 h-6" />
+                        <div
+                            class="absolute top-1 sm:top-2 right-2 sm:right-3 w-3 h-3  bg-black rounded-full flex justify-center items-center">
+                            <span class="w-2 h-2 bg-[#FF0000] rounded-full"></span>
+                        </div>
                     </div>
                 </div>
             </div>
