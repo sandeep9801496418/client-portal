@@ -102,7 +102,7 @@ onMounted(() => {
         <li class="mb-2 lg:mb-3">
           <router-link to="/admin-clients" :class="[
             'nav-link py-3 lg:py-4 px-2 lg:px-6 text-black dark:text-white flex items-center justify-center lg:justify-start gap-2 lg:border-l-4',
-            $route.path === '/admin-clients' ? 'border-[#00BEEC] bg-[linear-gradient(to_right,_rgba(0,190,236,0.5),_rgba(0,190,236,0))]' : 'border-transparent hover:border-[#00BEEC]']">
+            ($route.path === '/admin-clients' || $route.path === '/admin-client-create' || $route.path === '/admin-client-view' || $route.path === '/admin-client-edit') ? 'border-[#00BEEC] bg-[linear-gradient(to_right,_rgba(0,190,236,0.5),_rgba(0,190,236,0))]' : 'border-transparent hover:border-[#00BEEC]']">
             <img src="../../images/client-portal/clients.svg" alt="Clients" />
             <span class="hidden lg:block">Clients</span>
           </router-link>

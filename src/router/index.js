@@ -12,6 +12,11 @@ import AdminUsersScreen from '../admin/screens/AdminUsersScreen.vue';
 import CreateNewUser from '../admin/components/CreateNewUser.vue';
 import AdminUserViewScreen from '../admin/components/AdminUserViewScreen.vue';
 import AdminUserEditScreen from '../admin/components/AdminUserEditScreen.vue';
+import AdminClientsScreen from '../admin/screens/AdminClientsScreen.vue';
+import AdminClientCreateScreen from '../admin/components/AdminClientCreateScreen.vue';
+import AdminClientViewScreen from '../admin/components/AdminClientViewScreen.vue';
+import AdminClientEditScreen from '../admin/components/AdminClientEditScreen.vue';
+import AdminLogsScreen from '../admin/screens/AdminLogsScreen.vue';
 
 const routes = [
   { path: '/', name: 'Dashboard', component: ClientDashboard },
@@ -26,6 +31,11 @@ const routes = [
   { path: '/admin-create-user', name: 'Create User', component: CreateNewUser },
   { path: '/admin-user-view', name: 'View User', component: AdminUserViewScreen },
   { path: '/admin-user-edit', name: 'Edit User', component: AdminUserEditScreen },
+  { path: '/admin-clients', name: 'Clients', component: AdminClientsScreen },
+  { path: '/admin-client-create', name: 'Client Create', component: AdminClientCreateScreen },
+  { path: '/admin-client-view', name: 'View Client', component: AdminClientViewScreen },
+  { path: '/admin-client-edit', name: 'Edit Client', component: AdminClientEditScreen },
+  { path: '/admin-logs', name: 'Logs', component: AdminLogsScreen },
 ]
 
 const router = createRouter({
