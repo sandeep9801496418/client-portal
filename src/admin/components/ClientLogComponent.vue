@@ -1,28 +1,28 @@
 <template>
   <!-- Filters / actions row -->
-  <div ref="filtersRef" class="relative z-40 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-    <div class="mt-2 flex flex-wrap items-center gap-4 justify-between">
+  <div ref="filtersRef" class="relative z-40 w-full mx-auto px-3 sm:px-4 md:px-6 lg:px-8 py-4 sm:py-5 md:py-6">
+    <div class="mt-2 flex flex-col sm:flex-row sm:flex-wrap items-start sm:items-center gap-3 sm:gap-4 justify-between">
       <!-- LEFT: search -->
-      <div class="flex-1 min-w-[260px] max-w-[360px]">
+      <div class="flex-1 min-w-[260px] max-w-[360px] w-full">
         <div class="flex items-center gap-2 rounded-[10px] h-[37px] pl-3 pr-3 border border-[#00beec4d]
                  bg-white dark:bg-transparent text-black dark:text-white/90">
           <img src="../../images/client-portal/search-icon.svg" alt=""
-            class="w-5 h-5 invert dark:invert-0 opacity-80" />
+            class="w-4 h-4 sm:w-5 sm:h-5 invert dark:invert-0 opacity-80" />
           <input v-model="query" type="text" placeholder="Search name or IP Address..."
-            class="w-full bg-transparent outline-none placeholder-black/45 dark:placeholder-[#8ED7E4]/60 text-[14px]" />
+            class="w-full bg-transparent outline-none placeholder-black/45 dark:placeholder-[#8ED7E4]/60 text-sm sm:text-[14px]" />
         </div>
       </div>
 
       <!-- RIGHT: filters + buttons -->
-      <div class="flex flex-wrap items-center gap-3">
+      <div class="flex flex-wrap items-center gap-2 sm:gap-3 w-full sm:w-auto">
         <!-- Actions dropdown -->
         <div class="relative">
-          <button @click="toggle('action')" class="h-[37px] md:w-[165px] px-5 rounded-[6px] flex items-center justify-between gap-2
+          <button @click="toggle('action')" class="h-[37px] w-full sm:w-auto md:w-[165px] px-3 sm:px-4 md:px-5 rounded-[6px] flex items-center justify-between gap-2
            bg-white/80 dark:bg-[#0A2327]
-           text-[14px] text-black/80 dark:text-[#00BEEC] border dark:border-none">
+           text-sm sm:text-[14px] text-black/80 dark:text-[#00BEEC] border dark:border-none">
             {{ selected.action }}
             <img src="../../images/client-portal/arrow-close.svg"
-              :class="['transition-transform', open.action ? 'rotate-180' : '']" alt="" />
+              :class="['transition-transform w-3 h-3 sm:w-4 sm:h-4', open.action ? 'rotate-180' : '']" alt="" />
           </button>
 
           <div v-if="open.action" class="absolute z-50 mt-2 rounded-[8px] border border-[#00beec26]
@@ -55,46 +55,47 @@
 
         <!-- Date range dropdown -->
         <div class="relative">
-          <button @click="toggle('date')" class="h-[37px] md:w-[165px] px-5 rounded-[6px] flex items-center justify-between gap-2
+          <button @click="toggle('date')" class="h-[37px] w-full sm:w-auto md:w-[165px] px-3 sm:px-4 md:px-5 rounded-[6px] flex items-center justify-between gap-2
                    bg-white/80 dark:bg-[#0A2327]
-                   text-[14px] text-black/80 dark:text-[#00BEEC] border dark:border-none">
-            Date Range
-            <img src="../../images/client-portal/calender-11.svg" class="w-4 h-4" alt="">
+                   text-sm sm:text-[14px] text-black/80 dark:text-[#00BEEC] border dark:border-none">
+            <span class="hidden sm:inline">Date Range</span>
+            <span class="sm:hidden">Date</span>
+            <img src="../../images/client-portal/calender-11.svg" class="w-3 h-3 sm:w-4 sm:h-4" alt="">
           </button>
 
           <!-- Calendar panel (UI only) -->
-          <div v-if="open.date" class="absolute z-50 mt-2 w-[360px] rounded-[12px] p-4 overflow-hidden
+          <div v-if="open.date" class="absolute z-50 mt-2 right-0 sm:right-auto w-[280px] sm:w-[320px] md:w-[360px] rounded-[12px] p-3 sm:p-4 overflow-hidden
                       border border-[#00BEEC66]
                       bg-white text-[#0C3E45] shadow-[0_16px_40px_rgba(0,0,0,0.18)]
                       dark:bg-[radial-gradient(130%_120%_at_50%_-10%,#0f171b_0%,#0b1418_55%,#0a1619_100%)]
                       dark:text-white/90">
-            <div class="flex items-center justify-between mb-3">
-              <div class="text-[22px] font-semibold">
+            <div class="flex items-center justify-between mb-2 sm:mb-3">
+              <div class="text-[16px] sm:text-[18px] md:text-[22px] font-semibold">
                 {{ monthNames[viewMonth] }} <span class="opacity-90">{{ viewYear }}</span>
               </div>
-              <div class="flex gap-2">
+              <div class="flex gap-1 sm:gap-2">
                 <button @click="shiftMonth(-1)"
-                  class="w-8 h-8 grid place-items-center rounded-full border border-black/10 dark:border-white/20 hover:bg-black/5 dark:hover:bg-white/5">
-                  <svg viewBox="0 0 24 24" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.8">
+                  class="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 grid place-items-center rounded-full border border-black/10 dark:border-white/20 hover:bg-black/5 dark:hover:bg-white/5">
+                  <svg viewBox="0 0 24 24" class="w-3 h-3 sm:w-3.5 sm:h-3.5 md:w-4 md:h-4" fill="none" stroke="currentColor" stroke-width="1.8">
                     <path d="M15 6l-6 6 6 6" stroke-linecap="round" stroke-linejoin="round" />
                   </svg>
                 </button>
                 <button @click="shiftMonth(1)"
-                  class="w-8 h-8 grid place-items-center rounded-full border border-black/10 dark:border-white/20 hover:bg-black/5 dark:hover:bg-white/5">
-                  <svg viewBox="0 0 24 24" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.8">
+                  class="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 grid place-items-center rounded-full border border-black/10 dark:border-white/20 hover:bg-black/5 dark:hover:bg-white/5">
+                  <svg viewBox="0 0 24 24" class="w-3 h-3 sm:w-3.5 sm:h-3.5 md:w-4 md:h-4" fill="none" stroke="currentColor" stroke-width="1.8">
                     <path d="M9 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round" />
                   </svg>
                 </button>
               </div>
             </div>
 
-            <div class="grid grid-cols-7 text-center text-[12px] opacity-70 mb-2">
+            <div class="grid grid-cols-7 text-center text-[10px] sm:text-[11px] md:text-[12px] opacity-70 mb-1 sm:mb-2">
               <span v-for="w in weekNames" :key="w">{{ w }}</span>
             </div>
 
-            <div class="grid grid-cols-7 gap-1">
+            <div class="grid grid-cols-7 gap-0.5 sm:gap-1">
               <div v-for="(cell, i) in calendarCells" :key="i"
-                class="h-9 w-9 mx-auto grid place-items-center rounded-full text-[14px]" :class="[
+                class="h-7 w-7 sm:h-8 sm:w-8 md:h-9 md:w-9 mx-auto grid place-items-center rounded-full text-[11px] sm:text-[12px] md:text-[14px]" :class="[
                   !cell.inMonth ? 'opacity-40' : 'opacity-100',
                   cell.isToday ? 'ring-1 ring-[#00BEEC66]' : ''
                 ]">
@@ -105,7 +106,7 @@
         </div>
 
         <!-- Clear filters -->
-        <button @click="clearAll" class="relative h-[37px] px-[1px] text-[14px] font-medium flex items-center gap-[5px]
+        <button @click="clearAll" class="relative h-[37px] px-[1px] text-sm sm:text-[14px] font-medium flex items-center gap-[5px]
                  hover:bg-black/90 transition-colors rounded-md">
           <span class="absolute inset-0 rounded-md bg-gradient-to-r from-[#00A3BE] to-[#33EFB7]"></span>
           <span class="relative flex items-center gap-[5px] dark:bg-black rounded-md px-[12px] py-[7px]">
@@ -117,9 +118,9 @@
 
         <!-- Export Logs -->
         <button @click="showPopup = true"
-          class="h-[37px] px-[14px] rounded-[8px] text-[14px] font-medium text-white flex items-center gap-[6px]"
+          class="h-[37px] px-[12px] sm:px-[14px] rounded-[8px] text-sm sm:text-[14px] font-medium text-white flex items-center gap-[6px]"
           style="background:linear-gradient(90deg,#00A3BE 0%,#33EFB7 100%);">
-          <img src="../../images/client-portal/download.svg" class="w-4 h-4" alt="">
+          <img src="../../images/client-portal/download.svg" class="w-3 h-3 sm:w-4 sm:h-4" alt="">
           Export Logs
         </button>
       </div>
@@ -128,16 +129,16 @@
     <CreateNewTokenPopupModel v-if="showPopup" @close="showPopup = false" />
 
     <!-- Active filters chips -->
-    <div class="mt-6 flex items-center gap-3">
-      <span class="text-[#00BEEC] text-sm font-medium">{{ chips.length }} Active Filters</span>
+    <div class="mt-4 sm:mt-6 flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3">
+      <span class="text-[#00BEEC] text-xs sm:text-sm font-medium">{{ chips.length }} Active Filters</span>
       <div class="flex flex-wrap gap-1">
         <span v-for="(c, i) in chips" :key="i"
-          class="inline-flex items-center rounded-full text-[13px] text-[#00BEEC] bg-[#00BEEC1A]">
-          <span class="flex items-center p-2 ml-2">
+          class="inline-flex items-center rounded-full text-xs sm:text-[13px] text-[#00BEEC] bg-[#00BEEC1A]">
+          <span class="flex items-center p-1.5 sm:p-2 ml-1.5 sm:ml-2">
             {{ c.label }}: {{ c.text }}
           </span>
           <button @click="removeChip(i)"
-            class="mr-2 w-5 h-5 flex items-center justify-center rounded-full hover:bg-[#0D2C31] text-[#00BEEC]">
+            class="mr-1.5 sm:mr-2 w-4 h-4 sm:w-5 sm:h-5 flex items-center justify-center rounded-full hover:bg-[#0D2C31] text-[#00BEEC]">
             ×
           </button>
         </span>
@@ -147,30 +148,30 @@
   </div>
 
   <!-- LOGS TABLE CARD -->
-  <section class="mt-5 rounded-2xl border z-10
+  <section class="rounded-2xl border z-10
                   border-[#00beec3d] bg-white/90 text-black
-                  dark:border-[#00BEEC66] dark:bg-[#FFFFFF0D] dark:text-white backdrop-blur">
+                  dark:border-[#00BEEC66] dark:bg-[#FFFFFF0D] dark:text-white backdrop-blur overflow-x-auto">
 
     <!-- Head -->
-    <div class="px-5 sm:px-6 py-2 m-5 border border-[#00beec3d] dark:border-[#00BEEC66]
-                rounded-xl dark:bg-[#00BEEC0D]">
-      <div class="grid grid-cols-[1.5fr,1fr,1.2fr,2fr] gap-4
-                  text-[15px] md:text-[18px] font-medium text-[#007D95] dark:text-[#00BEEC]">
-        <span>Timestamps</span>
-        <span>Action Type</span>
-        <span>IP Address</span>
-        <span>Description</span>
+    <div class="px-3 sm:px-4 md:px-5 lg:px-6 py-2 m-3 sm:m-4 md:m-5 border border-[#00beec3d] dark:border-[#00BEEC66]
+                rounded-xl dark:bg-[#00BEEC0D] min-w-[800px]">
+      <div class="grid grid-cols-[1.5fr,1fr,1.2fr,2fr] gap-2 sm:gap-3 md:gap-4
+                  text-[13px] sm:text-[14px] md:text-[15px] lg:text-[18px] font-medium text-[#007D95] dark:text-[#00BEEC]">
+        <span class="min-w-[140px]">Timestamps</span>
+        <span class="min-w-[100px]">Action Type</span>
+        <span class="min-w-[120px]">IP Address</span>
+        <span class="min-w-[200px]">Description</span>
       </div>
     </div>
 
     <!-- Rows -->
-    <div class="px-5 sm:px-3 mx-5">
+    <div class="px-1 sm:px-3 md:px-5 mx-3 sm:mx-4 md:mx-5 min-w-[800px]">
       <div v-for="(row, idx) in pagedLogs" :key="idx"
-        class="grid grid-cols-[1.5fr,1fr,1.2fr,2fr] gap-2 items-center py-4">
-        <div>{{ row.time }}</div>
-        <div><span :class="actionChip(row.action)">{{ row.action }}</span></div>
-        <div>{{ row.ip }}</div>
-        <div class="truncate">{{ row.desc }}</div>
+        class="grid grid-cols-[1.5fr,1fr,1.2fr,2fr] gap-2 items-center py-3 sm:py-4 min-w-[800px]">
+        <div class="min-w-[140px] text-sm sm:text-base">{{ row.time }}</div>
+        <div class="min-w-[100px]"><span :class="actionChip(row.action)">{{ row.action }}</span></div>
+        <div class="min-w-[120px] text-sm sm:text-base">{{ row.ip }}</div>
+        <div class="min-w-[200px] text-sm sm:text-base truncate">{{ row.desc }}</div>
 
         <!-- divider -->
         <div class="col-span-4 h-[1px] bg-[#00beec33] dark:bg-[#00BEEC33]"></div>
@@ -178,14 +179,14 @@
     </div>
 
     <!-- Footer / pagination -->
-    <div class="flex items-center justify-between px-5 py-4">
+    <div class="flex flex-col sm:flex-row items-center justify-between px-3 sm:px-4 md:px-5 py-3 sm:py-4 gap-3 sm:gap-0">
       <span class="text-sm opacity-70 cursor-pointer select-none"
         :class="{ 'opacity-40 pointer-events-none': currentPage === 1 }" @click="prevPage">Prev</span>
 
-      <div class="flex items-center gap-2">
+      <div class="flex items-center gap-1 sm:gap-2">
         <button v-for="p in visiblePages" :key="p.key" :disabled="p.type === 'dots'"
           @click="p.type === 'page' && goToPage(p.num)" :class="[
-            'min-w-[36px] h-[36px] rounded-md text-sm flex items-center justify-center',
+            'min-w-[32px] sm:min-w-[36px] h-[32px] sm:h-[36px] rounded-md text-xs sm:text-sm flex items-center justify-center',
             p.type === 'dots' && 'opacity-60 cursor-default',
             p.type === 'page' && currentPage === p.num
               ? 'text-white bg-[#00BBD6]'
@@ -276,21 +277,23 @@ function prevPage() { if (currentPage.value > 1) goToPage(currentPage.value - 1)
 function nextPage() { if (currentPage.value < totalPages.value) goToPage(currentPage.value + 1) }
 
 const visiblePages = computed(() => {
-  const pages = []; const total = totalPages.value; const cur = currentPage.value
-  const addPage = n => pages.push({ type: 'page', num: n, key: `p${n}` }); const addDots = k => pages.push({ type: 'dots', key: k })
-  if (total <= 7) { for (let i = 1; i <= total; i++) addPage(i) }
-  else {
-    addPage(1); if (cur > 4) addDots('d1')
-    const s = Math.max(2, cur - 1), e = Math.min(total - 1, cur + 1)
-    for (let i = s; i <= e; i++) addPage(i)
-    if (cur < total - 3) addDots('d2'); addPage(total)
-  }
+  const pages = []
+  const addPage = n => pages.push({ type: 'page', num: n, key: `p${n}` })
+  const addDots = k => pages.push({ type: 'dots', key: k })
+  
+  // Always show 1, 2, 3, ..., 10 format
+  addPage(1)
+  addPage(2)
+  addPage(3)
+  addDots('d1')
+  addPage(10)
+  
   return pages
 })
 
 /* ---------- helpers ---------- */
 function actionChip(a) {
-  const base = 'inline-block px-3 py-1 rounded-full text-[13px] font-medium'
+  const base = 'inline-block px-2 sm:px-3 py-1 rounded-full text-xs sm:text-[13px] font-medium'
   if (a === 'Login') return `${base} bg-emerald-100 text-emerald-700 dark:bg-[#00FF621A] dark:text-[#00FF62]`
   if (a === 'Edit') return `${base} bg-emerald-100 text-emerald-700 dark:bg-[#00FF621A] dark:text-[#00FF62]`
   return `${base} bg-emerald-100 text-emerald-700 dark:bg-[#00FF621A] dark:text-[#00FF62]`

@@ -4,7 +4,7 @@
     <img src="../images/client-portal/ellipse-1924.svg" alt=""
          class="pointer-events-none select-none absolute -left-[14px] top-[24px] w-[807px] h-[894px] max-w-none blur-2xl" />
     <img src="../images/client-portal/ellipse-1926.svg" alt=""
-         class="pointer-events-none select-none absolute left-[1264px] -top-[39px] w-[239px] h-[255px] max-w-none blur-xl" />
+         class="hidden dark:block pointer-events-none select-none absolute right-0 -top-[19px] w-[239px] h-[255px] max-w-none blur-xl " />
     <img src="../images/client-portal/ellipse-1925.svg" alt=""
          class="pointer-events-none select-none absolute left-[793px] bottom-[10px] w-[630px] h-[702px] max-w-none blur-2xl" />
 

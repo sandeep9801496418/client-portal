@@ -4,39 +4,36 @@
         <img src="../../images/client-portal/ellipse-1924.svg" alt=""
             class="hidden dark:block pointer-events-none select-none absolute right-[450px] top-[24px] w-[807px] h-[894px] max-w-none blur-2xl" />
         <img src="../../images/client-portal/ellipse-1926.svg" alt=""
-            class="hidden dark:block pointer-events-none select-none absolute left-[1264px] -top-[19px] w-[239px] h-[255px] max-w-none blur-xl" />
+            class="hidden dark:block pointer-events-none select-none absolute right-0 -top-[19px] w-[239px] h-[255px] max-w-none blur-xl mt-[90px]" />
         <img src="../../images/client-portal/ellipse-1925.svg" alt=""
             class="hidden dark:block pointer-events-none select-none absolute right-[100px] top-[230px] w-[630px] h-[702px] max-w-none blur-2xl" />
 
         <!-- Header -->
-        <header class="px-6 py-5 border-b  border-[rgba(0,190,236,0.30)]">
+        <header class="px-3 sm:px-4 md:px-6 py-3 sm:py-4 md:py-5 border-b border-[rgba(0,190,236,0.30)]">
             <div class="flex items-center justify-between">
-                <div class="flex items-end gap-4">
-                    <h1 class="font-inter text-[28px] md:text-[30px] font-medium leading-none">Clients Management</h1>
-                    <p class="text-[14px] sm:text-[15px] text-[#00BEEC99]">May 17, 2025 | Saturday</p>
+                <div class="flex flex-col sm:flex-row sm:items-end gap-1 sm:gap-4">
+                    <h1 class="font-inter text-[16px] sm:text-[18px] md:text-[22px] lg:text-[30px] font-medium leading-none">Clients Management</h1>
+                    <p class="text-[10px] sm:text-[11px] md:text-[13px] lg:text-[15px] text-[#00BEEC99]">May 17, 2025 | Saturday</p>
                 </div>
 
                 <div
-                    class="flex justify-center items-center w-10 sm:w-12 h-10 sm:h-12 border border-[#0000004D] dark:border-[rgba(0,190,236,0.30)] rounded-full relative">
-                    <img src="../../images/client-portal/bell-light1.svg" alt="Bell Icon" class="w-6 h-6" />
-                    <div
-                        class="absolute top-1 sm:top-2 right-2 sm:right-3 w-3 h-3 bg-black rounded-full grid place-items-center">
-                        <span class="w-2 h-2 bg-[#FF0000] rounded-full"></span>
-                    </div>
+                    class="flex justify-center items-center w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 border border-[#0000004D] dark:border-[rgba(0,190,236,0.30)] rounded-full relative">
+                    <img src="../../images/client-portal/bell-light1.svg" alt="Bell Icon" class="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
+                    <div class="absolute -top-1 -right-1 w-2.5 h-2.5 sm:w-3 sm:h-3 bg-[#FF0000] rounded-full"></div>
                 </div>
             </div>
         </header>
 
-        <div class="w-full justify-between item-center flex px-6 pt-6">
-            <div class="md:text-[30px] dark:text-white font-medium text-[24px]">
+        <div class="w-full flex flex-col sm:flex-row sm:justify-between sm:items-center px-3 sm:px-4 md:px-6 pt-4 sm:pt-6 gap-3 sm:gap-4">
+            <div class="text-[20px] sm:text-[24px] md:text-[28px] lg:text-[30px] dark:text-white font-medium">
                 New Client Creation
             </div>
-            <button @click.prevent="router.back"
-                class="h-[35px] w-[90px] dark:bg-transparent rounded-2xl border dark:border-[#00BEEC] text-[#00BEEC] flex items-center justify-center gap-1">
+            <button
+                @click.prevent="router.back"  
+                class="h-[35px] w-[90px] dark:bg-transparent rounded-2xl border dark:border-[#00BEEC] text-[#00BEEC] flex items-center justify-center gap-1 flex-shrink-0">
                 <img src="../../images/client-portal/mynaui_arrow-up.svg" alt="" class="w-4 h-4" />
                 Back
             </button>
-
         </div>
 
         <div class="bg-white dark:bg-transparent p-4 sm:p-6 w-[calc(100%-0px)] md:w-full">
@@ -77,7 +74,7 @@
                                     <button id="delete" type="button"
                                         class="py-2 px-3 flex items-center gap-2 text-[#00BEEC] text-[12px] rounded-full bg-[rgba(0,190,236,0.10)] border-1 border-[#071b20] text-center justify-center cursor-pointer">
                                         <span><img src="../../images/client-portal/media.svg" alt="Update" /></span>
-                                        Update
+                                        Upload
                                     </button>
                                 </div>
                             </div>

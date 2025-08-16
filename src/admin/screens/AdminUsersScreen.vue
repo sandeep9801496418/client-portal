@@ -3,56 +3,52 @@
         <!-- BG Ellipses - dark only -->
         <img src="../../images/client-portal/ellipse-1924.svg" alt="" class="hidden dark:block pointer-events-none select-none absolute 
              right-[25vw] top-[2vw] w-[40vw] h-auto max-w-none blur-2xl" />
-        <img src="../../images/client-portal/ellipse-1926.svg" alt="" class="hidden dark:block pointer-events-none select-none absolute 
-             left-[65vw] top-[-1vw] w-[12vw] h-auto max-w-none blur-xl" />
+        <img src="../../images/client-portal/ellipse-1926.svg" alt="" class="hidden dark:block pointer-events-none select-none absolute right-0 -top-[19px] w-[239px] h-[255px] max-w-none blur-xl mt-[90px]" />
         <img src="../../images/client-portal/ellipse-1925.svg" alt="" class="hidden dark:block pointer-events-none select-none absolute 
              right-[5vw] top-[15vw] w-[32vw] h-auto max-w-none blur-2xl" />
         <!-- Header -->
-        <header class="px-6 py-5 border-b  border-[rgba(0,190,236,0.30)]">
+        <header class="px-3 sm:px-4 md:px-6 py-3 sm:py-4 md:py-5 border-b border-[rgba(0,190,236,0.30)]">
             <div class="flex items-center justify-between">
-                <div class="flex items-end gap-4">
-                    <h1 class="font-inter text-[28px] md:text-[30px] font-medium leading-none">User Management</h1>
-                    <p class="text-[14px] sm:text-[15px] text-[#00BEEC99]">May 17, 2025 | Saturday</p>
+                <div class="flex flex-col sm:flex-row sm:items-end gap-1 sm:gap-4">
+                    <h1 class="font-inter text-[16px] sm:text-[18px] md:text-[22px] lg:text-[30px] font-medium leading-none">User Management</h1>
+                    <p class="text-[10px] sm:text-[11px] md:text-[13px] lg:text-[15px] text-[#00BEEC99]">May 17, 2025 | Saturday</p>
                 </div>
 
                 <div
-                    class="flex justify-center items-center w-10 sm:w-12 h-10 sm:h-12 border border-[#0000004D] dark:border-[rgba(0,190,236,0.30)] rounded-full relative">
-                    <img src="../../images/client-portal/bell-light1.svg" alt="Bell Icon" class="w-6 h-6" />
-                    <div
-                        class="absolute top-1 sm:top-2 right-2 sm:right-3 w-3 h-3 bg-black rounded-full grid place-items-center">
-                        <span class="w-2 h-2 bg-[#FF0000] rounded-full"></span>
-                    </div>
+                    class="flex justify-center items-center w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 border border-[#0000004D] dark:border-[rgba(0,190,236,0.30)] rounded-full relative">
+                    <img src="../../images/client-portal/bell-light1.svg" alt="Bell Icon" class="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
+                    <div class="absolute -top-1 -right-1 w-2.5 h-2.5 sm:w-3 sm:h-3 bg-[#FF0000] rounded-full"></div>
                 </div>
             </div>
         </header>
 
         <!-- Filters row (raised z-index so menus float above the table) -->
-        <div ref="filtersRef" class="relative z-40 w-full mx-auto px-4 sm:px-6 lg:px-8 py-6">
-            <div class="mt-2 flex flex-wrap items-center gap-4 justify-between">
+        <div ref="filtersRef" class="relative z-40 w-full mx-auto px-3 sm:px-4 md:px-6 lg:px-8 py-4 sm:py-6">
+            <div class="mt-2 flex flex-col sm:flex-row sm:flex-wrap items-start sm:items-center gap-3 sm:gap-4 justify-between">
                 <!-- LEFT: search -->
-                <div class="flex-1 min-w-[220px] max-w-[324px]">
+                <div class="flex-1 min-w-[200px] max-w-[324px] w-full">
                     <div class="flex items-center gap-2 rounded-[10px] h-[37px] pl-3 pr-3 border border-[#00beec4d]
            bg-white dark:bg-transparent text-black dark:text-white/90">
                         <img src="../../images/client-portal/search-icon.svg" alt=""
-                            class="w-5 h-5 invert dark:invert-0 opacity-80" />
+                            class="w-4 h-4 sm:w-5 sm:h-5 invert dark:invert-0 opacity-80" />
                         <input v-model="query" type="text" placeholder="Search name or email..."
-                            class="w-full bg-transparent outline-none placeholder-black/45 dark:placeholder-[#8ED7E4]/60 text-[14px]" />
+                            class="w-full bg-transparent outline-none placeholder-black/45 dark:placeholder-[#8ED7E4]/60 text-sm sm:text-[14px]" />
                     </div>
                 </div>
 
 
                 <!-- RIGHT: filters + buttons -->
-                <div class="flex flex-wrap items-center gap-3">
+                <div class="flex flex-wrap items-center gap-2 sm:gap-3 w-full sm:w-auto">
                     <!-- DROPDOWNS -->
                     <div class="relative" v-for="dd in dropdowns" :key="dd.key">
                         <!-- Trigger -->
-                        <button @click="toggle(dd.key)" class="h-[37px] md:w-[165px] px-5 rounded-[6px] flex items-center justify-between gap-2
+                        <button @click="toggle(dd.key)" class="h-[37px] w-full sm:w-auto md:w-[165px] px-3 sm:px-5 rounded-[6px] flex items-center justify-between gap-2
                      bg-white/80 dark:bg-[#0A2327]
-                     text-[14px] text-black/80 dark:text-[#00BEEC] border dark:border-none
+                     text-sm sm:text-[14px] text-black/80 dark:text-[#00BEEC] border dark:border-none
                      ">
                             {{ selected[dd.key] }}
                             <img src="../../images/client-portal/arrow-close.svg"
-                                :class="['transition-transform', open[dd.key] ? 'rotate-180' : '']" alt="" />
+                                :class="['transition-transform w-3 h-3 sm:w-4 sm:h-4', open[dd.key] ? 'rotate-180' : '']" alt="" />
                         </button>
 
                         <!-- Menu (Light + Dark) -->
@@ -91,7 +87,7 @@
 
                     <!-- Clear -->
                     <button @click="clearAll"
-                        class="relative h-[37px] px-[1px] text-[14px] font-medium flex items-center gap-[5px] hover:bg-black/90 transition-colors rounded-md ">
+                        class="relative h-[37px] px-[1px] text-sm sm:text-[14px] font-medium flex items-center gap-[5px] hover:bg-black/90 transition-colors rounded-md ">
 
                         <!-- Gradient border -->
                         <span
@@ -107,7 +103,7 @@
                     </button>
                     <!-- Invite -->
                     <button @click.prevent="router.push('/admin-create-user')"
-                        class="h-[37px] px-[14px] rounded-[8px] text-[14px] font-medium text-white flex items-center gap-[5px] custom-border-gradient"
+                        class="h-[37px] px-[12px] sm:px-[14px] rounded-[8px] text-sm sm:text-[14px] font-medium text-white flex items-center gap-[5px] custom-border-gradient"
                         style="background: linear-gradient(90deg,#00A3BE 0%, #33EFB7 100%);">
                         <span class="text-lg leading-none">+</span> Invite New User
                     </button>
@@ -115,94 +111,95 @@
             </div>
 
             <!-- USERS TABLE CARD (kept lower z so menus overlay it) -->
-            <section class="mt-5 rounded-2xl border z-10
+            <section class="mt-3 sm:mt-5 rounded-2xl border z-10
                border-[#00beec3d] bg-white/90 text-black
                dark:border-[#00BEEC66] dark:bg-[#FFFFFF0D] dark:text-white
-               backdrop-blur">
-                <!-- Table header -->
-                <div class="px-5 sm:px-6 py-2 m-5 border
-                 border-[#00beec3d] dark:border-[#00BEEC66] rounded-xl dark:bg-[#00BEEC0D]">
-                    <div class="grid grid-cols-[1.5fr,1.5fr,1fr,1fr,1.2fr,152px] gap-4 text-[15px] font-[400px]
-            text-[#007D95] dark:text-[#00BEEC] md:text-[18px]">
-                        <span>User</span>
-                        <span>Email</span>
-                        <span>Role</span>
-                        <span>Status</span>
-                        <span>Client</span>
-                        <span class="text-right pr-2">Actions</span>
+               backdrop-blur overflow-hidden">
+                <!-- Table container with horizontal scroll -->
+                <div class="overflow-x-auto">
+                    <!-- Table header -->
+                    <div class="px-3 sm:px-5 md:px-6 py-2 m-3 sm:m-5 border min-w-[800px]
+                     border-[#00beec3d] dark:border-[#00BEEC66] rounded-xl dark:bg-[#00BEEC0D]">
+                        <div class="grid grid-cols-[1.5fr,1.5fr,1fr,1fr,1.2fr,152px] gap-2 sm:gap-4 text-[13px] sm:text-[15px] font-[400px]
+            text-[#007D95] dark:text-[#00BEEC] md:text-[18px] min-w-[800px]">
+                            <span class="min-w-[120px]">User</span>
+                            <span class="min-w-[150px]">Email</span>
+                            <span class="min-w-[80px]">Role</span>
+                            <span class="min-w-[80px]">Status</span>
+                            <span class="min-w-[100px]">Client</span>
+                            <span class="text-center min-w-[152px]">Actions</span>
+                        </div>
                     </div>
-                </div>
 
-                <!-- Rows -->
-                <div class="px-5 sm:px-3 mx-5">
-                    <div v-for="(u, idx) in pagedUsers" :key="u.id"
-                        class="grid grid-cols-[1.5fr,1.5fr,1fr,1fr,1.2fr,152px] gap-2 items-center py-1">
+                    <!-- Rows -->
+                    <div class="px-2 sm:px-5 md:px-3 mx-3 sm:mx-5 min-w-[800px]">
+                        <div v-for="(u, idx) in pagedUsers" :key="u.id"
+                            class="grid grid-cols-[1.5fr,1.5fr,1fr,1fr,1.2fr,152px] gap-2 items-center py-2 sm:py-1 min-w-[800px]">
 
-                        <!-- user -->
-                        <div class="flex items-center gap-3">
-                            <img src="../../images/client-portal/person-1.svg" alt=""
-                                class="w-9 h-9 rounded-full object-cover ring-1 ring-black/5 dark:ring-white/10" />
-                            <div class="font-medium">{{ u.name }}</div>
+                            <!-- user -->
+                            <div class="flex items-center gap-2 sm:gap-3 min-w-[120px]">
+                                <img src="../../images/client-portal/person-1.svg" alt=""
+                                    class="w-7 h-7 sm:w-9 sm:h-9 rounded-full object-cover ring-1 ring-black/5 dark:ring-white/10" />
+                                <div class="font-medium text-sm sm:text-base">{{ u.name }}</div>
+                            </div>
+
+                            <!-- email -->
+                            <div class="text-[13px] sm:text-[15px] opacity-90 truncate min-w-[150px]">{{ u.email }}</div>
+
+                            <!-- role badge -->
+                            <div class="min-w-[80px]">
+                                <span :class="roleChip(u.role)">{{ u.role }}</span>
+                            </div>
+
+                            <!-- status badge -->
+                            <div class="min-w-[80px]">
+                                <span :class="statusChip(u.status)">{{ u.status }}</span>
+                            </div>
+
+                            <!-- client -->
+                            <div class="truncate min-w-[100px]">{{ u.client }}</div>
+
+                            <!-- actions -->
+                            <div class="flex justify-end gap-1 sm:gap-2 min-w-[152px]">
+                                <!-- View -->
+                                <button
+                                    class="flex items-center justify-center w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-[#007D95] dark:bg-[#00BEEC33] transition"
+                                    @click.prevent="router.push('/admin-user-view')">
+                                    <img src="../../images/client-portal/eye-11.svg" alt="View" class="w-3 h-3 sm:w-4 sm:h-4" />
+                                </button>
+
+                                <!-- Edit -->
+                                <button
+                                    class="flex items-center justify-center w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-[#007D95] dark:bg-[#00BEEC33] transition"
+                                    @click.prevent="router.push('/admin-user-edit')">
+                                    <img src="../../images/client-portal/edit-11.svg" alt="Edit" class="w-3 h-3 sm:w-4 sm:h-4" />
+                                </button>
+
+                                <!-- Delete -->
+                                <button
+                                    class="flex items-center justify-center w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-[#007D95] dark:bg-[#00BEEC33] transition"
+                                    @click="showPopup = true">
+                                    <img src="../../images/client-portal/delete-11.svg" alt="Delete" class="w-3 h-3 sm:w-4 sm:h-4" />
+                                </button>
+
+                            </div>
+
+                            <!-- divider line -->
+                            <div class="col-span-6 h-[1px] bg-[#00beec33] dark:bg-[#00BEEC66]"></div>
                         </div>
-
-                        <!-- email -->
-                        <div class="text-[15px] opacity-90 truncate">{{ u.email }}</div>
-
-                        <!-- role badge -->
-                        <div>
-                            <span :class="roleChip(u.role)">{{ u.role }}</span>
-                        </div>
-
-                        <!-- status badge -->
-                        <div>
-                            <span :class="statusChip(u.status)">{{ u.status }}</span>
-                        </div>
-
-                        <!-- client -->
-                        <div class="truncate">{{ u.client }}</div>
-
-                        <!-- actions -->
-                        <div class="flex justify-end gap-2">
-                            <!-- View -->
-                            <button
-                                class="flex items-center justify-center w-8 h-8 rounded-full bg-[#007D95] dark:bg-[#00BEEC33] transition"
-                                @click.prevent="router.push('/admin-user-view')">
-                                <img src="../../images/client-portal/eye-11.svg" alt="View" class="w-4 h-4" />
-                            </button>
-
-                            <!-- Edit -->
-                            <button
-                                class="flex items-center justify-center w-8 h-8 rounded-full bg-[#007D95] dark:bg-[#00BEEC33] transition"
-                                @click.prevent="router.push('/admin-user-edit')">
-                                <img src="../../images/client-portal/edit-11.svg" alt="Edit" class="w-4 h-4" />
-                            </button>
-
-                            <!-- Delete -->
-                            <button
-                                class="flex items-center justify-center w-8 h-8 rounded-full bg-[#007D95] dark:bg-[#00BEEC33] transition"
-                                @click="showPopup = true">
-                                <img src="../../images/client-portal/delete-11.svg" alt="Delete" class="w-4 h-4" />
-                            </button>
-
-                        </div>
-
-
-
-                        <!-- divider line -->
-                        <div class="col-span-6 h-[1px] bg-[#00beec33] dark:bg-[#00BEEC66]"></div>
                     </div>
                 </div>
 
                 <!-- Footer / pagination -->
                 <div
-                    class="flex items-center justify-between px-5 py-4 border-[#00beec3d] dark:border-[#00beec26] rounded-b-2xl">
+                    class="flex flex-col sm:flex-row items-center justify-between px-3 sm:px-5 py-3 sm:py-4 border-[#00beec3d] dark:border-[#00beec26] rounded-b-2xl gap-3 sm:gap-0">
                     <span class="text-sm opacity-70 cursor-pointer select-none"
                         :class="{ 'opacity-40 pointer-events-none': currentPage === 1 }" @click="prevPage">Prev</span>
 
-                    <div class="flex items-center gap-2">
+                    <div class="flex items-center gap-1 sm:gap-2">
                         <button v-for="p in visiblePages" :key="p.key" :disabled="p.type === 'dots'"
                             @click="p.type === 'page' && goToPage(p.num)" :class="[
-                                'min-w-[36px] h-[36px] rounded-md text-sm flex items-center justify-center',
+                                'min-w-[28px] sm:min-w-[32px] md:min-w-[36px] h-[28px] sm:h-[32px] md:h-[36px] rounded-md text-xs sm:text-sm flex items-center justify-center',
                                 p.type === 'dots' && 'opacity-60 cursor-default',
                                 p.type === 'page' && currentPage === p.num
                                     ? 'text-white bg-[#00BBD6]'
@@ -332,8 +329,10 @@ const visiblePages = computed(() => {
         for (let i = 1; i <= total; i++) addPage(i)
     } else {
         addPage(1)
-        if (cur > 4) addDots('d1')
-        const start = Math.max(2, cur - 1)
+        addPage(2)
+        addPage(3)
+        if (cur > 6) addDots('d1')
+        const start = Math.max(4, cur - 1)
         const end = Math.min(total - 1, cur + 1)
         for (let i = start; i <= end; i++) addPage(i)
         if (cur < total - 3) addDots('d2')

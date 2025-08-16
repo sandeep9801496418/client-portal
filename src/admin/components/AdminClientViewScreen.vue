@@ -3,56 +3,52 @@
         <!-- BG Ellipses - dark only -->
         <img src="../../images/client-portal/ellipse-1924.svg" alt="" class="hidden dark:block pointer-events-none select-none absolute 
              right-[25vw] top-[2vw] w-[40vw] h-auto max-w-none blur-2xl" />
-        <img src="../../images/client-portal/ellipse-1926.svg" alt="" class="hidden dark:block pointer-events-none select-none absolute 
-             left-[65vw] top-[-1vw] w-[12vw] h-auto max-w-none blur-xl" />
+        <img src="../../images/client-portal/ellipse-1926.svg" alt="" class="hidden dark:block pointer-events-none select-none absolute right-0 -top-[19px] w-[239px] h-[255px] max-w-none blur-xl mt-[90px]" />
         <img src="../../images/client-portal/ellipse-1925.svg" alt="" class="hidden dark:block pointer-events-none select-none absolute 
              right-[5vw] top-[15vw] w-[32vw] h-auto max-w-none blur-2xl" />
 
         <!-- Header -->
-        <header class="px-6 py-5 border-b border-[rgba(0,190,236,0.30)]">
+        <header class="px-3 sm:px-4 md:px-6 py-3 sm:py-4 md:py-5 border-b border-[rgba(0,190,236,0.30)]">
             <div class="flex items-center justify-between">
-                <div class="flex items-end gap-4">
-                    <h1 class="font-inter text-[28px] md:text-[30px] font-medium leading-none">Clients Management</h1>
-                    <p class="text-[14px] sm:text-[15px] text-[#00BEEC99]">May 17, 2025 | Saturday</p>
+                <div class="flex flex-col sm:flex-row sm:items-end gap-1 sm:gap-4">
+                    <h1 class="font-inter text-[18px] sm:text-[20px] md:text-[24px] lg:text-[28px] xl:text-[30px] font-medium leading-none">Clients Management</h1>
+                    <p class="text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] text-[#00BEEC99]">May 17, 2025 | Saturday</p>
                 </div>
 
                 <div
-                    class="flex justify-center items-center w-10 sm:w-12 h-10 sm:h-12 border border-[#0000004D] dark:border-[rgba(0,190,236,0.30)] rounded-full relative">
-                    <img src="../../images/client-portal/bell-light1.svg" alt="Bell Icon" class="w-6 h-6" />
-                    <div
-                        class="absolute top-1 sm:top-2 right-2 sm:right-3 w-3 h-3 bg-black rounded-full grid place-items-center">
-                        <span class="w-2 h-2 bg-[#FF0000] rounded-full"></span>
-                    </div>
+                    class="flex justify-center items-center w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 lg:w-11 lg:h-11 xl:w-12 xl:h-12 border border-[#0000004D] dark:border-[rgba(0,190,236,0.30)] rounded-full relative">
+                    <img src="../../images/client-portal/bell-light1.svg" alt="Bell Icon" class="w-4 h-4 sm:w-4.5 sm:h-4.5 md:w-5 md:h-5 lg:w-5.5 lg:h-5.5 xl:w-6 xl:h-6" />
+                    <div class="absolute -top-1 -right-1 w-2.5 h-2.5 sm:w-2.5 sm:h-2.5 md:w-3 md:h-3 bg-[#FF0000] rounded-full"></div>
                 </div>
             </div>
         </header>
 
         <!-- CONTENT -->
-        <div class="p-4 sm:p-6 w-full">
+        <div class="p-3 sm:p-4 md:p-6 w-full">
             <!-- Tabs -->
             <!-- TOOLBAR: Back + Tabs in one compact bar -->
-            <div class="px-6 pt-4">
+            <div class="px-3 sm:px-6 pt-4">
                 <div
-                    class="rounded-xl px-4 sm:px-5 py-3 flex items-center gap-0 md:gap-[200px] md:-ml-[40px] lg:-ml-[40px]">
+                    class="flex flex-col md:my-2   sm:w-full   md:flex-row  justify-between overflow-x-auto md:items-center gap-3 sm:gap-4 md:gap-6 rounded-xl">
 
-                    <div class="flex items-center gap-6">
-                        <button @click.prevent="router.back()" class=" h-[36px] px-4 rounded-2xl border border-[#00BEEC] text-[#00BEEC]
-                            flex items-center gap-2 hover:bg-[#00BEEC1A] transition">
-                            <img src="../../images/client-portal/mynaui_arrow-up.svg" class="w-4 h-4" alt="" />
+                    <div class="flex items-center gap-4 sm:gap-6">
+                        <button @click.prevent="router.back()" class="h-[36px] px-3 sm:px-4 rounded-2xl border border-[#00BEEC] text-[#00BEEC]
+                            flex items-center gap-2 hover:bg-[#00BEEC1A] transition text-sm sm:text-base">
+                            <img src="../../images/client-portal/mynaui_arrow-up.svg" class="w-3 h-3 sm:w-4 sm:h-4" alt="" />
                             Back
                         </button>
                     </div>
                     <!-- Back -->
 
                     <!-- Tabs -->
-                    <ul class="flex items-center gap-10 text-md font-medium">
+                    <ul class="flex items-center gap-4 sm:gap-6 md:gap-10 text-sm sm:text-md font-medium overflow-x-auto overflow-y-hidden whitespace-nowrap">
                         <!-- Details -->
                         <li>
                             <button @click="activeTab = 'details'"
-                                class="relative flex items-center gap-2 px-4 py-2 transition-colors"
-                                :class="activeTab === 'details' ? 'text-[#00cfff] dark:bg-gradient-to-b from-[#0A1E22] to-[#0C3E45]' : 'text-[#0C3E45] dark:text-white'">
+                                class="relative flex items-center gap-1 sm:gap-2 px-2 sm:px-4 py-2 transition-colors whitespace-nowrap"
+                                :class="activeTab === 'details' ? 'text-[#00cfff] dark:bg-gradient-to-b from-[#0A1E22] to-[#0C3E45]  border-b-2' : 'text-[#0C3E45] dark:text-white'">
 
-                                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none"
+                                <svg class="w-4 h-4 sm:w-5 sm:h-5" viewBox="0 0 24 24" fill="none"
                                     :stroke="activeTab === 'details' ? '#00cfff' : 'currentColor'" stroke-width="1.6">
                                     <path d="M12 12a5 5 0 1 0-5-5 5 5 0 0 0 5 5Z" />
                                     <path d="M4 21a8 8 0 0 1 16 0" />
@@ -68,11 +64,11 @@
                         <!-- Tokens -->
                         <li>
                             <button @click="activeTab = 'tokens'"
-                                class="relative flex items-center gap-2 px-4 py-2 transition-colors"
+                                class="relative flex items-center gap-1 sm:gap-2 px-2 sm:px-4 py-2 transition-colors whitespace-nowrap"
                                 :class="activeTab === 'tokens'
-                                    ? 'text-[#00cfff] dark:bg-gradient-to-b from-[#0A1E22] to-[#0C3E45]' : 'text-[#0C3E45] dark:text-white'">
+                                    ? 'text-[#00cfff] dark:bg-gradient-to-b from-[#0A1E22] to-[#0C3E45] border-b-2' : 'text-[#0C3E45] dark:text-white'">
 
-                                <svg class="w-6 h-6" viewBox="0 0 18 19" fill="none"
+                                <svg class="w-4 h-4 sm:w-6 sm:h-6" viewBox="0 0 18 19" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M11.625 8C12.2463 8 12.75 7.49632 12.75 6.875C12.75 6.25368 12.2463 5.75 11.625 5.75C11.0037 5.75 10.5 6.25368 10.5 6.875C10.5 7.49632 11.0037 8 11.625 8Z"
@@ -92,10 +88,10 @@
                         <!-- Config -->
                         <li>
                             <button @click="activeTab = 'config'"
-                                class="relative flex items-center gap-2 px-4 py-2 transition-colors"
+                                class="relative flex items-center gap-1 sm:gap-2 px-2 sm:px-4 py-2 transition-colors whitespace-nowrap"
                                 :class="activeTab === 'config'
-                                    ? 'text-[#00cfff] dark:bg-gradient-to-b from-[#0A1E22] to-[#0C3E45]' : 'text-[#0C3E45] dark:text-white'">
-                                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none"
+                                    ? 'text-[#00cfff] dark:bg-gradient-to-b from-[#0A1E22] to-[#0C3E45]  border-b-2' : 'text-[#0C3E45] dark:text-white'">
+                                <svg class="w-3 h-3 sm:w-4 sm:h-4" viewBox="0 0 24 24" fill="none"
                                     :stroke="activeTab === 'config' ? '#00BEEC' : 'currentColor'" stroke-width="1.6">
                                     <path d="M12 15a3 3 0 1 0-3-3 3 3 0 0 0 3 3Z" />
                                     <path
@@ -110,10 +106,10 @@
                         <!-- Logs -->
                         <li>
                             <button @click="activeTab = 'logs'"
-                                class="relative flex items-center gap-2 px-4 py-2 transition-colors"
+                                class="relative flex items-center gap-1 sm:gap-2 px-2 sm:px-4 py-2 transition-colors whitespace-nowrap"
                                 :class="activeTab === 'logs'
-                                    ? 'text-[#00cfff] dark:bg-gradient-to-b from-[#0A1E22] to-[#0C3E45]' : 'text-[#0C3E45] dark:text-white'">
-                                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none"
+                                    ? 'text-[#00cfff] dark:bg-gradient-to-b from-[#0A1E22] to-[#0C3E45]  border-b-2' : 'text-[#0C3E45] dark:text-white'">
+                                <svg class="w-3 h-3 sm:w-4 sm:h-4" viewBox="0 0 24 24" fill="none"
                                     :stroke="activeTab === 'logs' ? '#00BEEC' : 'currentColor'" stroke-width="1.6">
                                     <path d="M3 12a9 9 0 1 1 9 9" />
                                     <path d="M12 7v5l3 3" />
@@ -125,49 +121,51 @@
                         </li>
                     </ul>
 
+                    <div></div>
+
                 </div>
             </div>
 
 
             <!-- Details tab -->
-            <section v-if="activeTab === 'details'" class="mt-6">
+            <section v-if="activeTab === 'details'" class="mt-4 sm:mt-6">
                 <!-- Card -->
                 <div class="rounded-xl border border-black/10 dark:border-[#00BEEC66] overflow-hidden">
-                    <div class="p-6 sm:p-7 rounded-xl
+                    <div class="p-4 sm:p-5 md:p-6 lg:p-7 rounded-xl
                    bg-white/90 text-[#0C3E45]
                    dark:bg-[#FFFFFF0D] dark:text-white/90
                    ">
-                        <div class="font-inter text-[24px] font-[500px]">Personal Information</div>
+                        <div class="font-inter text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] font-[500px]">Personal Information</div>
 
-                        <div class="flex items-center justify-between mt-6">
+                        <div class="flex items-center justify-between mt-4 sm:mt-6">
 
                             <!-- User row -->
-                            <div class="flex items-center gap-4 mb-6">
+                            <div class="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-6">
                                 <img src="../../images/client-portal/person-3.svg" alt=""
-                                    class="w-12 h-12 rounded-full object-cover" />
+                                    class="w-10 h-10 sm:w-11 sm:h-11 md:w-12 md:h-12 rounded-full object-cover" />
                                 <div>
-                                    <p class="font-inter text-[16px] font-[500px]">{{ user.name }}</p>
-                                    <p class="font-inter text-sm text-black/60 dark:text-white/60">{{ user.email }}</p>
+                                    <p class="font-inter text-[14px] sm:text-[15px] md:text-[16px] font-[500px]">{{ user.name }}</p>
+                                    <p class="font-inter text-xs sm:text-sm text-black/60 dark:text-white/60">{{ user.email }}</p>
                                 </div>
                             </div>
                         </div>
 
 
                         <!-- Inputs -->
-                        <div class="space-y-4">
+                        <div class="space-y-3 sm:space-y-4">
                             <div>
-                                <label class="block text-xs mb-2 text-black/60 dark:text-white/60">Phone Number</label>
+                                <label class="block text-xs mb-1.5 sm:mb-2 text-black/60 dark:text-white/60">Phone Number</label>
                                 <input v-model="user.phone" type="text"
-                                    class="w-full h-11 px-4 rounded-md
+                                    class="w-full h-10 sm:h-11 px-3 sm:px-4 rounded-md text-sm sm:text-base
                          bg-white text-[#0C3E45] placeholder:text-black/40
                          border border-black/20
                          dark:bg-transparent dark:text-white/90 dark:placeholder:text-white/40 dark:border-[#FFFFFF80] focus:outline-none"
                                     placeholder="+1 (222) 123-3456" />
                             </div>
                             <div>
-                                <label class="block text-xs mb-2 text-black/60 dark:text-white/60">Website</label>
+                                <label class="block text-xs mb-1.5 sm:mb-2 text-black/60 dark:text-white/60">Website</label>
                                 <input v-model="user.website" type="text"
-                                    class="w-full h-11 px-4 rounded-md
+                                    class="w-full h-10 sm:h-11 px-3 sm:px-4 rounded-md text-sm sm:text-base
                          bg-white text-[#0C3E45] placeholder:text-black/40
                          border border-black/20
                          dark:bg-transparent dark:text-white/90 dark:placeholder:text-white/40 dark:border-[#FFFFFF80] focus:outline-none"
@@ -178,32 +176,32 @@
                 </div>
 
                 <!-- KPIs -->
-                <div class="mt-8 flex justify-center gap-12 flex-wrap">
-                    <div class="rounded-2xl px-6 py-8 text-center w-[260px]
+                <div class="mt-6 sm:mt-8 flex justify-center gap-4 sm:gap-6 md:gap-8 lg:gap-12 flex-wrap">
+                    <div class="rounded-2xl px-4 sm:px-5 md:px-6 py-6 sm:py-7 md:py-8 text-center w-full sm:w-[200px] md:w-[220px] lg:w-[240px] xl:w-[260px]
                       bg-[#0D3A43]/5 text-[#0C3E45]
                       dark:bg-[#00BEEC30] dark:text-white">
-                        <div class="text-4xl font-semibold leading-none mb-2">{{ stats.tokens }}</div>
-                        <div class="opacity-80 text-lg">Active Tokens</div>
+                        <div class="text-2xl sm:text-3xl md:text-4xl font-semibold leading-none mb-1 sm:mb-2">{{ stats.tokens }}</div>
+                        <div class="opacity-80 text-sm sm:text-base md:text-lg">Active Tokens</div>
                     </div>
 
-                    <div class="rounded-2xl px-6 py-8 text-center w-[260px]
+                    <div class="rounded-2xl px-4 sm:px-5 md:px-6 py-6 sm:py-7 md:py-8 text-center w-full sm:w-[200px] md:w-[220px] lg:w-[240px] xl:w-[260px]
                       bg-[#0D3A43]/5 text-[#0C3E45]
                       dark:bg-[#00BEEC30] dark:text-white">
-                        <div class="text-4xl font-semibold leading-none mb-2">{{ stats.quota }}%</div>
-                        <div class="opacity-80 text-lg">Quota Used</div>
+                        <div class="text-2xl sm:text-3xl md:text-4xl font-semibold leading-none mb-1 sm:mb-2">{{ stats.quota }}%</div>
+                        <div class="opacity-80 text-sm sm:text-base md:text-lg">Quota Used</div>
                     </div>
 
-                    <div class="rounded-2xl px-6 py-8 text-center w-[260px]
+                    <div class="rounded-2xl px-4 sm:px-5 md:px-6 py-6 sm:py-7 md:py-8 text-center w-full sm:w-[200px] md:w-[220px] lg:w-[240px] xl:w-[260px]
                       bg-[#0D3A43]/5 text-[#0C3E45]
                       dark:bg-[#00BEEC30] dark:text-white">
-                        <div class="text-4xl font-semibold leading-none mb-2">{{ stats.days }}</div>
-                        <div class="opacity-80 text-lg">Active Days</div>
+                        <div class="text-2xl sm:text-3xl md:text-4xl font-semibold leading-none mb-1 sm:mb-2">{{ stats.days }}</div>
+                        <div class="opacity-80 text-sm sm:text-base md:text-lg">Active Days</div>
                     </div>
                 </div>
             </section>
 
             <!-- Tokens tab -->
-            <section v-if="activeTab === 'tokens'" class="mt-6">
+            <section v-if="activeTab === 'tokens'" class="">
                 <ClientTokenComponent />
             </section>
 
@@ -213,7 +211,7 @@
             </section>
 
             <!-- Logs tab -->
-            <section v-if="activeTab === 'logs'" class="mt-6">
+            <section v-if="activeTab === 'logs'" class="">
                 <ClientLogComponent />
             </section>
 
@@ -221,14 +219,14 @@
 
 
             <!-- Bottom actions -->
-            <div class="flex justify-end gap-4 mt-10">
-                <button class="h-11 px-6 rounded-full border border-[#00BEEC] text-[#00BEEC]
-                 hover:bg-[#00BEEC1A] transition">
+            <div class="flex flex-col sm:flex-row justify-end gap-3 sm:gap-4 mt-8 sm:mt-10">
+                <button class="h-10 sm:h-11 px-4 sm:px-6 rounded-full border border-[#00BEEC] text-[#00BEEC]
+                 hover:bg-[#00BEEC1A] transition text-sm sm:text-base">
                     Cancel
                 </button>
-                <button class="h-11 px-6 rounded-full bg-[#00BEEC] text-white border border-white/15
+                <button class="h-10 sm:h-11 px-4 sm:px-6 rounded-full bg-[#00BEEC] text-white border border-white/15
                  dark:bg-[#00BEEC1A] dark:text-[#00BEEC]
-                 hover:brightness-110 transition">
+                 hover:brightness-110 transition text-sm sm:text-base">
                     Save
                 </button>
             </div>
