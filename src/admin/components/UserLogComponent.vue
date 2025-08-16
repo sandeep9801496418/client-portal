@@ -177,7 +177,7 @@
       <div v-for="(row, idx) in pagedLogs" :key="idx"
         class="grid grid-cols-[1.5fr,1fr,1.2fr,2fr] gap-2 items-center py-3 sm:py-4 min-w-[800px]">
         <div class="min-w-[120px] text-sm sm:text-base">{{ row.time }}</div>
-        <div class="min-w-[80px]"><span :class="actionChip(row.action)">{{ row.action }}</span></div>
+        <div class="min-w-[80px] cursor-pointer"><span :class="actionChip(row.action)">{{ row.action }}</span></div>
         <div class="min-w-[100px] text-sm sm:text-base">{{ row.ip }}</div>
         <div class="min-w-[150px] truncate text-sm sm:text-base">{{ row.desc }}</div>
 

@@ -264,7 +264,7 @@
                     </div>
 
                     <!-- Action Type Chip -->
-                    <div class="min-w-[100px]">
+                    <div class="min-w-[100px] cursor-pointer">
                         <span :class="actionChip(row.action)">{{ row.action }}</span>
                     </div>
 
