@@ -9,8 +9,8 @@
          class="pointer-events-none select-none absolute left-[793px] bottom-[10px] w-[630px] h-[702px] max-w-none blur-2xl" />
 
     <!-- Center card -->
-    <div class="relative z-10 flex items-center justify-center px-4 py-14 sm:px-6">
-      <div class="w-full max-w-md mt-10">
+    <div class="relative z-10 flex items-center justify-center min-h-screen px-4 py-14 sm:px-6">
+      <div class="w-full max-w-md">
         <h1 class="text-center font-inter text-[40px] leading-[100%] text-white font-medium">
           Create your Account
         </h1>
