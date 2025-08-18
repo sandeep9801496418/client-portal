@@ -17,9 +17,12 @@
       <div class="flex justify-between items-center border-b py-3 px-6
                 border-black/10 dark:border-[#00BEEC33] mb-6">
         <h2 class="text-[24px] font-medium">Edit Token</h2>
-        <button @click="closePopup" class="w-8 h-8 grid place-items-center rounded-full
-                       hover:bg-black/5 dark:hover:bg-white/5">
-          <img src="../images/client-portal/close-icon.svg" alt="close icon" />
+        <button @click="closePopup" class="top-3.5 right-3.5 w-8 h-8 grid place-items-center
+                 rounded-full border border-black/20 dark:border-white/30
+                 hover:bg-black/5 dark:hover:border-red-400/60 dark:hover:bg-white/5 transition" aria-label="Close">
+          <svg viewBox="0 0 24 24" class="w-4 h-4 text-black/70 dark:text-white/80">
+            <path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+          </svg>
         </button>
       </div>
 

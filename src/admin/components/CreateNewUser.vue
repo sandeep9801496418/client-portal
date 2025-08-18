@@ -17,9 +17,12 @@
                 </div>
 
                 <div
-                    class="flex justify-center items-center w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 border border-[#0000004D] dark:border-[rgba(0,190,236,0.30)] rounded-full relative">
-                    <img src="../../images/client-portal/bell-light1.svg" alt="Bell Icon" class="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
-                    <div class="absolute -top-1 -right-1 w-2.5 h-2.5 sm:w-3 sm:h-3 bg-[#FF0000] rounded-full"></div>
+                    class="flex justify-center items-center w-10 h-10 sm:w-12 sm:h-12 border border-[#0000004D] dark:border-[rgba(0,190,236,0.30)] rounded-full relative">
+                    <img src="../../images/client-portal/bell-light1.svg" alt="Bell Icon" class="w-5 h-5 sm:w-6 sm:h-6" />
+                    <div
+                        class="absolute top-1 right-1 sm:top-2 sm:right-3 w-2.5 h-2.5 sm:w-3 sm:h-3 bg-black rounded-full grid place-items-center">
+                        <span class="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-[#FF0000] rounded-full"></span>
+                    </div>
                 </div>
             </div>
         </header>

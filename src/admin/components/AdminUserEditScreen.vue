@@ -12,24 +12,31 @@
         <header class="px-3 sm:px-4 md:px-6 py-3 sm:py-4 md:py-5 border-b border-[rgba(0,190,236,0.30)]">
             <div class="flex items-center justify-between">
                 <div class="flex flex-col sm:flex-row sm:items-end gap-1 sm:gap-4">
-                    <h1 class="font-inter text-[16px] sm:text-[18px] md:text-[22px] lg:text-[30px] font-medium leading-none">User Management</h1>
-                    <p class="text-[10px] sm:text-[11px] md:text-[13px] lg:text-[15px] text-[#00BEEC99]">May 17, 2025 | Saturday</p>
+                    <h1
+                        class="font-inter text-[16px] sm:text-[18px] md:text-[22px] lg:text-[30px] font-medium leading-none">
+                        User Management</h1>
+                    <p class="text-[10px] sm:text-[11px] md:text-[13px] lg:text-[15px] text-[#00BEEC99]">May 17, 2025 |
+                        Saturday</p>
                 </div>
 
                 <div
-                    class="flex justify-center items-center w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 border border-[#0000004D] dark:border-[rgba(0,190,236,0.30)] rounded-full relative">
-                    <img src="../../images/client-portal/bell-light1.svg" alt="Bell Icon" class="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
-                    <div class="absolute -top-1 -right-1 w-2.5 h-2.5 sm:w-3 sm:h-3 bg-[#FF0000] rounded-full"></div>
+                    class="flex justify-center items-center w-10 h-10 sm:w-12 sm:h-12 border border-[#0000004D] dark:border-[rgba(0,190,236,0.30)] rounded-full relative">
+                    <img src="../../images/client-portal/bell-light1.svg" alt="Bell Icon"
+                        class="w-5 h-5 sm:w-6 sm:h-6" />
+                    <div
+                        class="absolute top-1 right-1 sm:top-2 sm:right-3 w-2.5 h-2.5 sm:w-3 sm:h-3 bg-black rounded-full grid place-items-center">
+                        <span class="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-[#FF0000] rounded-full"></span>
+                    </div>
                 </div>
             </div>
         </header>
 
-        <div class="w-full flex flex-col sm:flex-row sm:justify-between sm:items-center px-3 sm:px-4 md:px-6 pt-4 sm:pt-6 gap-3 sm:gap-4">
+        <div
+            class="w-full flex flex-col sm:flex-row sm:justify-between sm:items-center px-3 sm:px-4 md:px-6 pt-4 sm:pt-6 gap-3 sm:gap-4">
             <div class="text-[20px] sm:text-[24px] md:text-[28px] lg:text-[30px] dark:text-white font-medium">
                 Edit User Details
             </div>
-            <button
-                @click.prevent="router.back"  
+            <button @click.prevent="router.back"
                 class="h-[35px] w-[90px] dark:bg-transparent rounded-2xl border dark:border-[#00BEEC] text-[#00BEEC] flex items-center justify-center gap-1 flex-shrink-0">
                 <img src="../../images/client-portal/mynaui_arrow-up.svg" alt="" class="w-4 h-4" />
                 Back
@@ -161,7 +168,7 @@
 
                 </section>
                 <section
-                    class="bg-white dark:bg-transparent  card-bg-type-2 dark:border dark:border-[#18414E] p-5 rounded-[17px] shadow-md relative">
+                    class="bg-white dark:bg-transparent dark:border dark:border-[#18414E] p-5 rounded-[17px] shadow-md relative">
                     <div class="text-black dark:text-white text-[18px] sm:text-[24px] font-medium">
                         Change Password
                     </div>
@@ -186,7 +193,8 @@
                                 <div class="relative">
                                     <input type="password" id="newPass" name="newPass" placeholder="Enter New Password"
                                         class="bg-transparent w-full px-3 py-2 text-[16px] font-medium border dark:border-white/50 rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-500 pr-7" />
-                                    <img class="absolute right-2 top-2" src="../../images/client-portal/eye.svg" alt="eye">
+                                    <img class="absolute right-2 top-2" src="../../images/client-portal/eye.svg"
+                                        alt="eye">
                                 </div>
                                 <ul class="flex gap-2 mt-3">
                                     <li class="w-full flex-auto h-1 bg-[#00FF62] rounded-2xl"></li>
@@ -223,7 +231,7 @@
 
                 <!--  Login History  -->
                 <section
-                    class="bg-white dark:bg-transparent  card-bg-type-2 dark:border dark:border-[#18414E] p-5 rounded-[17px] shadow-md relative">
+                    class="bg-white dark:bg-transparent dark:border dark:border-[#18414E] p-5 rounded-[17px] shadow-md relative">
                     <div class="text-black dark:text-white text-[18px] sm:text-[24px] font-medium">
                         Login History
                     </div>
@@ -231,33 +239,34 @@
                     <div class="overflow-auto pb-5 lg:pb-0 mb-8 lg:mb-0">
                         <table class="w-full mt-5">
                             <thead>
-                                <tr class="">
+                                <tr>
                                     <th class="p-0">
-                                        <div
-                                            class="text-[#00BEEC] px-2 sm:px-4 text-[14px] sm:text-[16px] md:text-[18px] leading-normal font-normal text-center p-2 text-nowrap bg-[rgba(0,190,236,0.10)] border border-r-0 border-[rgba(0,190,236,0.40)] rounded-l-[10px]">
-                                            Date & Time
+                                        <div class="text-[#00BEEC] px-2 sm:px-4 text-[14px] sm:text-[16px] md:text-[18px] leading-normal font-normal text-center p-2 text-nowrap 
+               bg-[rgba(0,190,236,0.10)] border border-e-0 border-[rgba(0,190,236,0.40)] rounded-s-[10px]">
+                                            Location
                                         </div>
                                     </th>
                                     <th class="p-0">
-                                        <div
-                                            class="text-[#00BEEC] px-2 sm:px-4 text-[14px] sm:text-[16px] md:text-[18px] leading-normal font-normal text-center p-2 text-nowrap bg-[rgba(0,190,236,0.10)] border-y border-r-0 border-[rgba(0,190,236,0.40)]">
-                                            IP Address
-                                        </div>
-                                    </th>
-                                    <th class="p-0">
-                                        <div
-                                            class="text-[#00BEEC] px-2 sm:px-4 text-[14px] sm:text-[16px] md:text-[18px] leading-normal font-normal text-center p-2 text-nowrap bg-[rgba(0,190,236,0.10)] border-y border-r-0 border-[rgba(0,190,236,0.40)]">
+                                        <div class="text-[#00BEEC] px-2 sm:px-4 text-[14px] sm:text-[16px] md:text-[18px] leading-normal font-normal text-center p-2 text-nowrap 
+               bg-[rgba(0,190,236,0.10)] border-y border-e-0 border-[rgba(0,190,236,0.40)]">
                                             Device/Browser
                                         </div>
                                     </th>
                                     <th class="p-0">
-                                        <div
-                                            class="text-[#00BEEC] px-2 sm:px-4 text-[14px] sm:text-[16px] md:text-[18px] leading-normal font-normal text-center p-2 text-nowrap bg-[rgba(0,190,236,0.10)] border border-l-0 border-[rgba(0,190,236,0.40)] rounded-r-[10px]">
-                                            Location
+                                        <div class="text-[#00BEEC] px-2 sm:px-4 text-[14px] sm:text-[16px] md:text-[18px] leading-normal font-normal text-center p-2 text-nowrap 
+               bg-[rgba(0,190,236,0.10)] border-y border-e-0 border-[rgba(0,190,236,0.40)]">
+                                            IP Address
+                                        </div>
+                                    </th>
+                                    <th class="p-0">
+                                        <div class="text-[#00BEEC] px-2 sm:px-4 text-[14px] sm:text-[16px] md:text-[18px] leading-normal font-normal text-center p-2 text-nowrap 
+               bg-[rgba(0,190,236,0.10)] border border-s-0 border-[rgba(0,190,236,0.40)] rounded-e-[10px]">
+                                            Date & Time
                                         </div>
                                     </th>
                                 </tr>
                             </thead>
+
 
 
                             <tbody>

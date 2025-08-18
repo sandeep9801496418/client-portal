@@ -3,21 +3,29 @@
         <!-- BG Ellipses - dark only -->
         <img src="../../images/client-portal/ellipse-1924.svg" alt="" class="hidden dark:block pointer-events-none select-none absolute 
              right-[25vw] top-[2vw] w-[40vw] h-auto max-w-none blur-2xl" />
-        <img src="../../images/client-portal/ellipse-1926.svg" alt="" class="hidden dark:block pointer-events-none select-none absolute right-0 -top-[19px] w-[239px] h-[255px] max-w-none blur-xl mt-[90px]" />
+        <img src="../../images/client-portal/ellipse-1926.svg" alt=""
+            class="hidden dark:block pointer-events-none select-none absolute right-0 -top-[19px] w-[239px] h-[255px] max-w-none blur-xl mt-[90px]" />
         <img src="../../images/client-portal/ellipse-1925.svg" alt="" class="hidden dark:block pointer-events-none select-none absolute 
              right-[5vw] top-[15vw] w-[32vw] h-auto max-w-none blur-2xl" />
         <!-- Header -->
         <header class="px-3 sm:px-4 md:px-6 py-3 sm:py-4 md:py-5 border-b border-[rgba(0,190,236,0.30)]">
             <div class="flex items-center justify-between">
                 <div class="flex flex-col sm:flex-row sm:items-end gap-1 sm:gap-4">
-                    <h1 class="font-inter text-[16px] sm:text-[18px] md:text-[22px] lg:text-[30px] font-medium leading-none">Activity Logs</h1>
-                    <p class="text-[10px] sm:text-[11px] md:text-[13px] lg:text-[15px] text-[#00BEEC99]">May 17, 2025 | Saturday</p>
+                    <h1
+                        class="font-inter text-[16px] sm:text-[18px] md:text-[22px] lg:text-[30px] font-medium leading-none">
+                        Activity Logs</h1>
+                    <p class="text-[10px] sm:text-[11px] md:text-[13px] lg:text-[15px] text-[#00BEEC99]">May 17, 2025 |
+                        Saturday</p>
                 </div>
 
                 <div
-                    class="flex justify-center items-center w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 border border-[#0000004D] dark:border-[rgba(0,190,236,0.30)] rounded-full relative">
-                    <img src="../../images/client-portal/bell-light1.svg" alt="Bell Icon" class="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
-                    <div class="absolute -top-1 -right-1 w-2.5 h-2.5 sm:w-3 sm:h-3 bg-[#FF0000] rounded-full"></div>
+                    class="flex justify-center items-center w-10 h-10 sm:w-12 sm:h-12 border border-[#0000004D] dark:border-[rgba(0,190,236,0.30)] rounded-full relative">
+                    <img src ="../../images/client-portal/bell-light1.svg" alt="Bell Icon"
+                        class="w-5 h-5 sm:w-6 sm:h-6" />
+                    <div
+                        class="absolute top-1 right-1 sm:top-2 sm:right-3 w-2.5 h-2.5 sm:w-3 sm:h-3 bg-black rounded-full grid place-items-center">
+                        <span class="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-[#FF0000] rounded-full"></span>
+                    </div>
                 </div>
             </div>
         </header>
@@ -45,7 +53,8 @@
            text-sm sm:text-[14px] text-black/80 dark:text-[#00BEEC] border dark:border-none">
                             {{ selected.users }}
                             <img src="../../images/client-portal/arrow-close.svg"
-                                :class="['transition-transform w-3 h-3 sm:w-4 sm:h-4', open.users ? 'rotate-180' : '']" alt="" />
+                                :class="['transition-transform w-3 h-3 sm:w-4 sm:h-4', open.users ? 'rotate-180' : '']"
+                                alt="" />
                         </button>
 
                         <div v-if="open.users" class="absolute z-50 mt-2 rounded-[8px] border border-[#00beec26]
@@ -84,7 +93,8 @@
            text-sm sm:text-[14px] text-black/80 dark:text-[#00BEEC] border dark:border-none">
                             {{ selected.action }}
                             <img src="../../images/client-portal/arrow-close.svg"
-                                :class="['transition-transform w-3 h-3 sm:w-4 sm:h-4', open.action ? 'rotate-180' : '']" alt="" />
+                                :class="['transition-transform w-3 h-3 sm:w-4 sm:h-4', open.action ? 'rotate-180' : '']"
+                                alt="" />
                         </button>
 
                         <div v-if="open.action" class="absolute z-50 mt-2 rounded-[8px] border border-[#00beec26]
@@ -196,30 +206,25 @@
 
             <!-- Active filters chips -->
             <div class="mt-4 sm:mt-6 flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3 flex-wrap">
-  <!-- Active Filter Count -->
-            <span class="text-[#00BEEC] text-sm font-medium shrink-0">
-                {{ chips.length }} Active Filters
-            </span>
+                <!-- Active Filter Count -->
+                <span class="text-[#00BEEC] text-sm font-medium shrink-0">
+                    {{ chips.length }} Active Filters
+                </span>
 
-            <!-- Chips -->
-            <div class="flex flex-wrap items-center gap-2">
-                <span 
-                v-for="(c, i) in chips" 
-                :key="i"
-                class="inline-flex items-center rounded-full text-xs sm:text-[13px] text-[#00BEEC] bg-[#00BEEC1A]"
-                >
-                <span class="flex items-center px-2 py-1 sm:px-3 sm:py-1.5">
-                    {{ c.label }}: {{ c.text }}
-                </span>
-                <button 
-                    @click="removeChip(i)"
-                    class="mr-1.5 sm:mr-2 w-4 h-4 sm:w-5 sm:h-5 flex items-center justify-center rounded-full hover:bg-[#0D2C31] text-[#00BEEC]"
-                >
-                    ×
-                </button>
-                </span>
-        </div>
-        </div>
+                <!-- Chips -->
+                <div class="flex flex-wrap items-center gap-2">
+                    <span v-for="(c, i) in chips" :key="i"
+                        class="inline-flex items-center rounded-full text-xs sm:text-[13px] text-[#00BEEC] bg-[#00BEEC1A]">
+                        <span class="flex items-center px-2 py-1 sm:px-3 sm:py-1.5">
+                            {{ c.label }}: {{ c.text }}
+                        </span>
+                        <button @click="removeChip(i)"
+                            class="mr-1.5 sm:mr-2 w-4 h-4 sm:w-5 sm:h-5 flex items-center justify-center rounded-full hover:bg-[#0D2C31] text-[#00BEEC]">
+                            ×
+                        </button>
+                    </span>
+                </div>
+            </div>
         </div>
 
         <!-- LOGS TABLE CARD -->
@@ -248,40 +253,41 @@
                     <div v-for="(row, idx) in pagedLogs" :key="idx"
                         class="grid grid-cols-[1.5fr,1.8fr,1fr,1.5fr,2fr,2.5fr] gap-2 sm:gap-4 items-center py-3 sm:py-4 border-b border-[#00beec33] dark:border-[#00BEEC33]">
 
-                    <!-- Timestamp -->
-                    <div class="min-w-[120px] text-sm sm:text-base">{{ row.time }}</div>
+                        <!-- Timestamp -->
+                        <div class="min-w-[120px] text-sm sm:text-base">{{ row.time }}</div>
 
-                    <!-- Username with avatar & role -->
-                    <div class="flex items-center gap-2 sm:gap-3 min-w-[150px]">
-                        <img :src="row.avatar" alt="" class="w-6 h-6 sm:w-8 sm:h-8 rounded-full object-cover" />
-                        <div class="flex flex-col">
-                            <span class="font-medium text-sm sm:text-base">{{ row.name }}</span>
-                            <span :class="roleBadge(row.role)"
-                                class="text-xs font-medium rounded-full px-1 sm:px-2 py-0.5 w-fit mt-0.5">
-                                {{ row.role }}
-                            </span>
+                        <!-- Username with avatar & role -->
+                        <div class="flex items-center gap-2 sm:gap-3 min-w-[150px]">
+                            <img :src="row.avatar" alt="" class="w-6 h-6 sm:w-8 sm:h-8 rounded-full object-cover" />
+                            <div class="flex flex-col">
+                                <span class="font-medium text-sm sm:text-base">{{ row.name }}</span>
+                                <span :class="roleBadge(row.role)"
+                                    class="text-xs font-medium rounded-full px-1 sm:px-2 py-0.5 w-fit mt-0.5">
+                                    {{ row.role }}
+                                </span>
+                            </div>
                         </div>
+
+                        <!-- Action Type Chip -->
+                        <div class="min-w-[100px] cursor-pointer">
+                            <span :class="actionChip(row.action)">{{ row.action }}</span>
+                        </div>
+
+                        <!-- IP Address -->
+                        <div class="min-w-[120px] text-sm sm:text-base">{{ row.ip }}</div>
+
+                        <!-- Client -->
+                        <div class="min-w-[140px] text-sm sm:text-base">{{ row.client }}</div>
+
+                        <!-- Description with tooltip -->
+                        <div class="truncate min-w-[200px]" :title="row.desc">{{ row.desc }}</div>
                     </div>
-
-                    <!-- Action Type Chip -->
-                    <div class="min-w-[100px] cursor-pointer">
-                        <span :class="actionChip(row.action)">{{ row.action }}</span>
-                    </div>
-
-                    <!-- IP Address -->
-                    <div class="min-w-[120px] text-sm sm:text-base">{{ row.ip }}</div>
-
-                    <!-- Client -->
-                    <div class="min-w-[140px] text-sm sm:text-base">{{ row.client }}</div>
-
-                    <!-- Description with tooltip -->
-                    <div class="truncate min-w-[200px]" :title="row.desc">{{ row.desc }}</div>
                 </div>
             </div>
-        </div>
 
             <!-- Footer / pagination -->
-            <div class="flex flex-col sm:flex-row items-center justify-between px-3 sm:px-5 py-3 sm:py-4 gap-3 sm:gap-0">
+            <div
+                class="flex flex-col sm:flex-row items-center justify-between px-3 sm:px-5 py-3 sm:py-4 gap-3 sm:gap-0">
                 <span class="text-sm opacity-70 cursor-pointer select-none"
                     :class="{ 'opacity-40 pointer-events-none': currentPage === 1 }" @click="prevPage">Prev</span>
 
@@ -394,14 +400,14 @@ function nextPage() { if (currentPage.value < totalPages.value) goToPage(current
 const visiblePages = computed(() => {
     const pages = []; const total = totalPages.value; const cur = currentPage.value
     const addPage = n => pages.push({ type: 'page', num: n, key: `p${n}` }); const addDots = k => pages.push({ type: 'dots', key: k })
-    
+
     // Always show 1 2 3 .. 10 format regardless of actual total pages
-    addPage(1); 
-    addPage(2); 
-    addPage(3); 
-    addDots('d1'); 
+    addPage(1);
+    addPage(2);
+    addPage(3);
+    addDots('d1');
     addPage(10);
-    
+
     return pages
 })
 

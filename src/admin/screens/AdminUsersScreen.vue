@@ -3,28 +3,37 @@
         <!-- BG Ellipses - dark only -->
         <img src="../../images/client-portal/ellipse-1924.svg" alt="" class="hidden dark:block pointer-events-none select-none absolute 
              right-[25vw] top-[2vw] w-[40vw] h-auto max-w-none blur-2xl" />
-        <img src="../../images/client-portal/ellipse-1926.svg" alt="" class="hidden dark:block pointer-events-none select-none absolute right-0 -top-[19px] w-[239px] h-[255px] max-w-none blur-xl mt-[90px]" />
+        <img src="../../images/client-portal/ellipse-1926.svg" alt=""
+            class="hidden dark:block pointer-events-none select-none absolute right-0 -top-[19px] w-[239px] h-[255px] max-w-none blur-xl mt-[90px]" />
         <img src="../../images/client-portal/ellipse-1925.svg" alt="" class="hidden dark:block pointer-events-none select-none absolute 
              right-[5vw] top-[15vw] w-[32vw] h-auto max-w-none blur-2xl" />
         <!-- Header -->
         <header class="px-3 sm:px-4 md:px-6 py-3 sm:py-4 md:py-5 border-b border-[rgba(0,190,236,0.30)]">
             <div class="flex items-center justify-between">
                 <div class="flex flex-col sm:flex-row sm:items-end gap-1 sm:gap-4">
-                    <h1 class="font-inter text-[16px] sm:text-[18px] md:text-[22px] lg:text-[30px] font-medium leading-none">User Management</h1>
-                    <p class="text-[10px] sm:text-[11px] md:text-[13px] lg:text-[15px] text-[#00BEEC99]">May 17, 2025 | Saturday</p>
+                    <h1
+                        class="font-inter text-[16px] sm:text-[18px] md:text-[22px] lg:text-[30px] font-medium leading-none">
+                        User Management</h1>
+                    <p class="text-[10px] sm:text-[11px] md:text-[13px] lg:text-[15px] text-[#00BEEC99]">May 17, 2025 |
+                        Saturday</p>
                 </div>
 
                 <div
-                    class="flex justify-center items-center w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 border border-[#0000004D] dark:border-[rgba(0,190,236,0.30)] rounded-full relative">
-                    <img src="../../images/client-portal/bell-light1.svg" alt="Bell Icon" class="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
-                    <div class="absolute -top-1 -right-1 w-2.5 h-2.5 sm:w-3 sm:h-3 bg-[#FF0000] rounded-full"></div>
+                    class="flex justify-center items-center w-10 h-10 sm:w-12 sm:h-12 border border-[#0000004D] dark:border-[rgba(0,190,236,0.30)] rounded-full relative">
+                    <img src="../../images/client-portal/bell-light1.svg" alt="Bell Icon"
+                        class="w-5 h-5 sm:w-6 sm:h-6" />
+                    <div
+                        class="absolute top-1 right-1 sm:top-2 sm:right-3 w-2.5 h-2.5 sm:w-3 sm:h-3 bg-black rounded-full grid place-items-center">
+                        <span class="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-[#FF0000] rounded-full"></span>
+                    </div>
                 </div>
             </div>
         </header>
 
         <!-- Filters row (raised z-index so menus float above the table) -->
         <div ref="filtersRef" class="relative z-40 w-full mx-auto px-3 sm:px-4 md:px-6 lg:px-8 py-4 sm:py-6">
-            <div class="mt-2 flex flex-col sm:flex-row sm:flex-wrap items-start sm:items-center gap-3 sm:gap-4 justify-between">
+            <div
+                class="mt-2 flex flex-col sm:flex-row sm:flex-wrap items-start sm:items-center gap-3 sm:gap-4 justify-between">
                 <!-- LEFT: search -->
                 <div class="flex-1 min-w-[200px] max-w-[324px] w-full">
                     <div class="flex items-center gap-2 rounded-[10px] h-[37px] pl-3 pr-3 border border-[#00beec4d]
@@ -48,7 +57,8 @@
                      ">
                             {{ selected[dd.key] }}
                             <img src="../../images/client-portal/arrow-close.svg"
-                                :class="['transition-transform w-3 h-3 sm:w-4 sm:h-4', open[dd.key] ? 'rotate-180' : '']" alt="" />
+                                :class="['transition-transform w-3 h-3 sm:w-4 sm:h-4', open[dd.key] ? 'rotate-180' : '']"
+                                alt="" />
                         </button>
 
                         <!-- Menu (Light + Dark) -->
@@ -144,7 +154,8 @@
                             </div>
 
                             <!-- email -->
-                            <div class="text-[13px] sm:text-[15px] opacity-90 truncate min-w-[150px]">{{ u.email }}</div>
+                            <div class="text-[13px] sm:text-[15px] opacity-90 truncate min-w-[150px]">{{ u.email }}
+                            </div>
 
                             <!-- role badge -->
                             <div class="min-w-[80px]">
@@ -165,21 +176,24 @@
                                 <button
                                     class="flex items-center justify-center w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-[#007D95] dark:bg-[#00BEEC33] transition"
                                     @click.prevent="router.push('/admin-user-view')">
-                                    <img src="../../images/client-portal/eye-11.svg" alt="View" class="w-3 h-3 sm:w-4 sm:h-4" />
+                                    <img src="../../images/client-portal/eye-11.svg" alt="View"
+                                        class="w-3 h-3 sm:w-4 sm:h-4" />
                                 </button>
 
                                 <!-- Edit -->
                                 <button
                                     class="flex items-center justify-center w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-[#007D95] dark:bg-[#00BEEC33] transition"
                                     @click.prevent="router.push('/admin-user-edit')">
-                                    <img src="../../images/client-portal/edit-11.svg" alt="Edit" class="w-3 h-3 sm:w-4 sm:h-4" />
+                                    <img src="../../images/client-portal/edit-11.svg" alt="Edit"
+                                        class="w-3 h-3 sm:w-4 sm:h-4" />
                                 </button>
 
                                 <!-- Delete -->
                                 <button
                                     class="flex items-center justify-center w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-[#007D95] dark:bg-[#00BEEC33] transition"
                                     @click="showPopup = true">
-                                    <img src="../../images/client-portal/delete-11.svg" alt="Delete" class="w-3 h-3 sm:w-4 sm:h-4" />
+                                    <img src="../../images/client-portal/delete-11.svg" alt="Delete"
+                                        class="w-3 h-3 sm:w-4 sm:h-4" />
                                 </button>
 
                             </div>

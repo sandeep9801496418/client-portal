@@ -126,9 +126,9 @@
                             <span class="min-w-[120px]">Client Name</span>
                             <span class="min-w-[150px]">Email</span>
                             <span class="min-w-[80px]">Status</span>
-                            <span class="min-w-[180px] text-right">Assigned Users</span>
+                            <span class="min-w-[180px] text-center">Assigned Users</span>
                             <span class="min-w-[80px]">Tokens</span>
-                            <span class="text-right pr-2 min-w-[152px]">Actions</span>
+                            <span class="text-center pr-2 min-w-[152px]">Actions</span>
                         </div>
                     </div>
 
@@ -139,7 +139,7 @@
                             <div class="font-medium text-sm sm:text-base min-w-[120px]">{{ u.name }}</div>
                             <div class="text-[13px] sm:text-[15px] opacity-90 truncate min-w-[150px]">{{ u.email }}</div>
                             <div class="min-w-[80px]"><span :class="statusChip(u.status)">{{ u.status }}</span></div>
-                            <div class="flex -space-x-1 sm:-space-x-2 min-w-[120px] justify-end">
+                            <div class="flex -space-x-1 sm:-space-x-2 min-w-[120px] justify-start">
                                 <img v-for="(a, i) in u.assignedUsers" :key="i" :src="a"
                                     class="w-6 h-6 sm:w-8 sm:h-8 rounded-full border-2 border-white dark:border-[#0A2327]" />
                                 <span v-if="u.extraUsers"
@@ -147,7 +147,7 @@
                                         u.extraUsers }}</span>
                             </div>
                             <div class="text-[13px] sm:text-[15px] font-medium min-w-[80px]">{{ u.tokens }}</div>
-                            <div class="flex justify-end gap-1 sm:gap-2 min-w-[152px]">
+                            <div class="flex justify-start gap-1 sm:gap-2 min-w-[152px]">
                                 <button @click.prevent="router.push('/admin-client-view')"
                                     class="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-[#007D95] dark:bg-[#00BEEC33] flex items-center justify-center">
                                     <img src="../../images/client-portal/eye-11.svg" class="w-3 h-3 sm:w-4 sm:h-4" />
