@@ -1,5 +1,5 @@
 <template>
-    <main class="bg-white dark:bg-[#080808] min-h-screen text-black dark:text-white overflow-y-hidden">
+    <main class="bg-light-bg dark:bg-dark-bg min-h-screen text-black dark:text-white overflow-y-hidden">
         <!-- BG Ellipses - dark only -->
         <img src="../../images/client-portal/ellipse-1924.svg" alt=""
             class="hidden dark:block pointer-events-none select-none absolute right-[450px] top-[24px] w-[807px] h-[894px] max-w-none blur-2xl" />
@@ -42,18 +42,18 @@
                 Back
             </button>
         </div>
-        <div class="bg-white dark:bg-transparent p-4 sm:p-6 w-[calc(100%-0px)] md:w-full">
+        <div class="bg-light-bg dark:bg-transparent p-4 sm:p-6 w-[calc(100%-0px)] md:w-full">
             <div class="min-h-screen text-black dark:text-white space-y-6">
                 <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
                     <div
-                        class="bg-white dark:bg-[#FFFFFF0D] dark:border dark:border-[#00BEEC66] p-5 rounded-[17px] shadow-md relative">
+                        class="bg-light-bg dark:bg-[#FFFFFF0D] dark:border dark:border-[#00BEEC66] p-5 rounded-[17px] shadow-md relative">
                         <div class="text-black dark:text-white text-[18px] sm:text-[24px] font-medium">
                             Personal Information
                         </div>
                         <div class="flex justify-between flex-wrap gap-6">
                             <div class="text-center flex items-center gap-3 p-3 pl-0 pb-0 rounded-t-xl">
                                 <div
-                                    class="w-10 h-10 flex justify-center items-center border border-white/10 rounded-full bg-white/10">
+                                    class="w-10 h-10 flex justify-center items-center border border-white/10 rounded-full bg-light-bg/10">
                                     <img src="../../images/client-portal/avtar-1.png" alt="Avatar" />
                                 </div>
                                 <div class="text-left">
@@ -109,7 +109,7 @@
                         </form>
                     </div>
                     <div
-                        class="bg-white dark:bg-[#FFFFFF0D] dark:border dark:border-[#00BEEC66] p-5 rounded-[17px] shadow-md relative">
+                        class="bg-light-bg dark:bg-[#FFFFFF0D] dark:border dark:border-[#00BEEC66] p-5 rounded-[17px] shadow-md relative">
                         <div class="text-black dark:text-white text-[18px] sm:text-[24px] font-medium">
                             Select User Role
                         </div>
@@ -118,7 +118,7 @@
                                 <!-- Trigger -->
                                 <button type="button" @click="openRole = !openRole" @keydown.escape="openRole = false"
                                     class="h-[42px] w-full px-4 rounded-md flex items-center justify-between gap-2
-             bg-white dark:bg-[#0B1D21]
+             bg-light-bg dark:bg-[#0B1D21]
              text-sm text-black/80 dark:text-white/90
              border border-black/10 dark:border-white/20
              focus:outline-none focus:ring-2 focus:ring-sky-400/50" aria-haspopup="listbox" :aria-expanded="openRole">
@@ -132,7 +132,7 @@
                                     <div v-if="openRole" class="absolute z-50 top-full left-0 right-0 mt-2
                rounded-lg overflow-hidden
                border border-black/10 dark:border-white/15
-               bg-white dark:bg-[#0B1D21]
+               bg-light-bg dark:bg-[#0B1D21]
                shadow-lg" role="listbox">
                                         <button type="button" @click="selectRole('Manager'); openRole = false" class="w-full text-left px-4 py-2 text-sm
                  text-[#0C3E45] dark:text-white/90
@@ -168,7 +168,7 @@
 
                 </section>
                 <section
-                    class="bg-white dark:bg-transparent dark:border dark:border-[#18414E] p-5 rounded-[17px] shadow-md relative">
+                    class="bg-light-bg dark:bg-[#FFFFFF0D] dark:border dark:border-[#18414E] p-5 rounded-[17px] shadow-md relative">
                     <div class="text-black dark:text-white text-[18px] sm:text-[24px] font-medium">
                         Change Password
                     </div>
@@ -199,8 +199,8 @@
                                 <ul class="flex gap-2 mt-3">
                                     <li class="w-full flex-auto h-1 bg-[#00FF62] rounded-2xl"></li>
                                     <li class="w-full flex-auto h-1 bg-[#00FF62] rounded-2xl"></li>
-                                    <li class="w-full flex-auto h-1 bg-white/40 rounded-2xl"></li>
-                                    <li class="w-full flex-auto h-1 bg-white/40 rounded-2xl"></li>
+                                    <li class="w-full flex-auto h-1 bg-light-bg/40 rounded-2xl"></li>
+                                    <li class="w-full flex-auto h-1 bg-light-bg/40 rounded-2xl"></li>
                                 </ul>
                                 <p class="block text-[12px] text-black dark:text-white/50 mb-1 mt-2" for="newPass">
                                     Weak-Add more Characters</p>
@@ -231,7 +231,7 @@
 
                 <!--  Login History  -->
                 <section
-                    class="bg-white dark:bg-transparent dark:border dark:border-[#18414E] p-5 rounded-[17px] shadow-md relative">
+                    class="bg-light-bg dark:bg-[#FFFFFF0D] dark:border dark:border-[#18414E] p-5 rounded-[17px] shadow-md relative">
                     <div class="text-black dark:text-white text-[18px] sm:text-[24px] font-medium">
                         Login History
                     </div>

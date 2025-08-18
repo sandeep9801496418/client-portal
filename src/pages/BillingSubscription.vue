@@ -1,5 +1,5 @@
 <template>
-  <main class="bg-white dark:bg-[#080808] billing-subscription">
+  <main class="bg-light-bg dark:bg-dark-bg billing-subscription">
     <div>
 
       <!-- Header -->
@@ -28,7 +28,7 @@
           <section class="grid grid-cols-1 lg:grid-cols-2 gap-4">
             <!-- Card 1 -->
             <div
-              class="bg-white dark:bg-transparent card-bg-type-2 dark:border dark:border-[#18414E] p-5 rounded-[17px] shadow-md relative">
+              class="bg-light-bg dark:bg-transparent card-bg-type-2 dark:border dark:border-[#18414E] p-5 rounded-[17px] shadow-md relative">
 
               <div class="flex justify-between gap-4 flex-wrap items-center">
                 <div class="flex items-center gap-3">
@@ -42,11 +42,11 @@
                   </div>
                 </div>
 
-                <h4 class="text-[18px] sm:text-[24px]  text-[#00BEEC] font-bold">$10/<span class="font-normal">mon</span></h4>
+                <h4 class="text-[18px] sm:text-[24px]  text-primary font-bold">$10/<span class="font-normal">mon</span></h4>
 
               </div>
 
-              <p class="text-[14px] sm:text-[16px] font-normal text-[#00BEEC] mt-6 mb-7">Lorem ipsum dolor sit amet consectetur.
+              <p class="text-[14px] sm:text-[16px] font-normal text-primary mt-6 mb-7">Lorem ipsum dolor sit amet consectetur.
                 Elementum ullam corper porttitor ullam corper porttitor </p>
 
               <h2 class="text-[18px]  text-black dark:text-white/80 font-medium">Its Includes:</h2>
@@ -80,7 +80,7 @@
 
               <div class=" flex justify-center gap-4 mt-3 md:mt-6 items-center flex-wrap">
                 <button type="submit"
-                  class="py-2 px-4 flex items-center gap-2 text-[#00BEEC] font-medium text-[14px] sm:text-[16px] rounded-full bg-[rgba(0,190,236,0.10)]  text-center justify-center cursor-pointer">
+                  class="py-2 px-4 flex items-center gap-2 text-primary font-medium text-[14px] sm:text-[16px] rounded-full bg-[rgba(0,190,236,0.10)]  text-center justify-center cursor-pointer">
                   Update Plan
                 </button>
               </div>
@@ -91,13 +91,13 @@
 
             <!-- Card 2 -->
             <div
-              class="bg-white dark:bg-transparent card-bg-type-2 dark:border dark:border-[#18414E] p-5 rounded-[17px] shadow-md relative">
+              class="bg-light-bg dark:bg-transparent card-bg-type-2 dark:border dark:border-[#18414E] p-5 rounded-[17px] shadow-md relative">
               <div class="flex justify-between gap-6">
                 <div class=" text-black dark:text-white text-[18px] sm:text-[24px] font-medium">
                   Payment Information
                 </div>
               </div>
-              <p class="text-[14px] sm:text-[16px] font-normal text-[#00BEEC] mt-6 mb-7">Manage and update your preferred payment
+              <p class="text-[14px] sm:text-[16px] font-normal text-primary mt-6 mb-7">Manage and update your preferred payment
                 options seamlessly. </p>
 
 
@@ -107,7 +107,7 @@
 
                 <!-- Card 1 - Visa -->
                 <div
-                  class="flex items-center justify-between bg-white/5 border border-[#00BEEC] p-2 sm:p-4 rounded-xl shadow-md">
+                  class="flex items-center justify-between bg-light-bg/5 border border-[#00BEEC] p-2 sm:p-4 rounded-xl shadow-md">
                   <div class="flex items-center gap-2 sm:gap-4">
 
                     <div
@@ -116,7 +116,7 @@
                     </div>
 
                     <div>
-                      <p class="text-[14px] sm text-[14px]:sm:text-[16px] font-medium tracking-wider text-[#00BEEC] leading-normal">
+                      <p class="text-[14px] sm text-[14px]:sm:text-[16px] font-medium tracking-wider text-primary leading-normal">
                         **** **** **** 6391</p>
                       <p class="text-[12px] sm:text-[14px] font-normal  text-black dark:text-white/80">Expires on
                         02/2025</p>
@@ -138,14 +138,14 @@
 
                 <!-- Card 2 - Mastercard -->
                 <div
-                  class="flex items-center justify-between bg-white/5 border border-[#00BEEC] p-2 sm:p-4 rounded-xl shadow-md">
+                  class="flex items-center justify-between bg-light-bg/5 border border-[#00BEEC] p-2 sm:p-4 rounded-xl shadow-md">
                   <div class="flex items-center gap-2 sm:gap-4">
                     <div
                       class="border border-white rounded-full w-15 sm:w-18 h-8 p-2 sm:h-11 flex justify-center items-center master-card">
                       <img src="../images/client-portal/master-card.svg" alt="MasterCard" class="h-auto" />
                     </div>
                     <div>
-                      <p class="text-[14px] sm text-[14px]:sm:text-[16px] font-medium tracking-wider text-[#00BEEC] leading-normal">
+                      <p class="text-[14px] sm text-[14px]:sm:text-[16px] font-medium tracking-wider text-primary leading-normal">
                         **** **** **** 7867</p>
                       <p class="text-[12px] sm:text-[14px] font-normal  text-black dark:text-white/80">Expires on
                         02/2025</p>
@@ -165,8 +165,8 @@
 
                 <!-- Add Payment Method -->
                 <button @click="showPopup = true" type="button"
-                  class="flex w-full sm:flex-row items-center justify-between bg-white/5 border border-[#00BEEC] py-4 px-4 rounded-xl shadow-md cursor-pointer">
-                  <span class="font-medium text-[#00BEEC] text-[14px] sm:text-[16px] sm:text-[18px]">Add Payment Method</span>
+                  class="flex w-full sm:flex-row items-center justify-between bg-light-bg/5 border border-[#00BEEC] py-4 px-4 rounded-xl shadow-md cursor-pointer">
+                  <span class="font-medium text-primary text-[14px] sm:text-[16px] sm:text-[18px]">Add Payment Method</span>
                   <span class="text-xl"><img src="../images/client-portal/add-payment.svg" alt="add payment"></span>
                 </button>
                 <AddPaymentMethodPopupModel v-if="showPopup" @close="showPopup = false" />
@@ -179,7 +179,7 @@
 
 
           <section
-            class="bg-white dark:bg-transparent card-bg-type-2 p-4 sm:p-6 rounded-[17px] dark:border dark:border-[#18414E]">
+            class="bg-light-bg dark:bg-transparent card-bg-type-2 p-4 sm:p-6 rounded-[17px] dark:border dark:border-[#18414E]">
 
             <div>
               <h2 class="text-[18px] sm:text-[24px] font-medium  text-black dark:text-white mb-7">Usage This Month</h2>
@@ -241,7 +241,7 @@
 
           <!--  Billing History  -->
           <section
-            class="bg-white dark:bg-transparent card-bg-type-2 dark:border dark:border-[#18414E] p-5 rounded-[17px] shadow-md relative">
+            class="bg-light-bg dark:bg-transparent card-bg-type-2 dark:border dark:border-[#18414E] p-5 rounded-[17px] shadow-md relative">
             <div class=" text-black dark:text-white text-[18px] sm:text-[24px] font-medium">
               Billing History
             </div>
@@ -252,23 +252,23 @@
                   <tr>
                     <th class="p-0">
                       <div
-                        class="font-[500] text-[#00BEEC] px-2 sm:px-4 text-[14px] text-nowrap sm text-[14px]:sm:text-[16px] md:text-[18px] leading-normal text-center p-2 bg-[rgba(0,190,236,0.10)] border border-r-0 border-[rgba(0,190,236,0.40)] rounded-l-[10px]">
+                        class="font-[500] text-primary px-2 sm:px-4 text-[14px] text-nowrap sm text-[14px]:sm:text-[16px] md:text-[18px] leading-normal text-center p-2 bg-[rgba(0,190,236,0.10)] border border-r-0 border-[rgba(0,190,236,0.40)] rounded-l-[10px]">
                         Invoice</div>
                     </th>
                     <th class="p-0">
-                      <div class="font-[500] text-[#00BEEC] px-2 sm:px-4 text-[14px] text-nowrap sm text-[14px]:sm:text-[16px] md:text-[18px]  leading-normal text-center p-2 bg-[rgba(0,190,236,0.10)]  border-t border-b border-[rgba(0,190,236,0.40)]">
+                      <div class="font-[500] text-primary px-2 sm:px-4 text-[14px] text-nowrap sm text-[14px]:sm:text-[16px] md:text-[18px]  leading-normal text-center p-2 bg-[rgba(0,190,236,0.10)]  border-t border-b border-[rgba(0,190,236,0.40)]">
                         Date
                       </div>
                     </th>
 
 
                     <th class="p-0">
-                       <div class="font-[500] text-[#00BEEC] px-2 sm:px-4 text-[14px] text-nowrap sm text-[14px]:sm:text-[16px] md:text-[18px]  leading-normal text-center p-2 bg-[rgba(0,190,236,0.10)]  border-t border-b border-[rgba(0,190,236,0.40)]">
+                       <div class="font-[500] text-primary px-2 sm:px-4 text-[14px] text-nowrap sm text-[14px]:sm:text-[16px] md:text-[18px]  leading-normal text-center p-2 bg-[rgba(0,190,236,0.10)]  border-t border-b border-[rgba(0,190,236,0.40)]">
                        Amount
                       </div>
                     </th>
                     <th class="p-0">
-                      <div class="font-[500] text-[#00BEEC] px-2 sm:px-4 text-[14px] text-nowrap sm text-[14px]:sm:text-[16px] md:text-[18px]  leading-normal text-center p-2 bg-[rgba(0,190,236,0.10)]  border-t border-b border-[rgba(0,190,236,0.40)]">
+                      <div class="font-[500] text-primary px-2 sm:px-4 text-[14px] text-nowrap sm text-[14px]:sm:text-[16px] md:text-[18px]  leading-normal text-center p-2 bg-[rgba(0,190,236,0.10)]  border-t border-b border-[rgba(0,190,236,0.40)]">
                         Status
                       </div>
                     </th>
@@ -276,7 +276,7 @@
 
                     <th class="p-0">
                       <div
-                        class="font-[500] text-[#00BEEC] px-2 sm:px-4 text-[14px] text-nowrap sm text-[14px]:sm:text-[16px] md:text-[18px] leading-normal text-center p-2 bg-[rgba(0,190,236,0.10)] border border-l-0 border-[rgba(0,190,236,0.40)] rounded-r-[10px]">
+                        class="font-[500] text-primary px-2 sm:px-4 text-[14px] text-nowrap sm text-[14px]:sm:text-[16px] md:text-[18px] leading-normal text-center p-2 bg-[rgba(0,190,236,0.10)] border border-l-0 border-[rgba(0,190,236,0.40)] rounded-r-[10px]">
                         Export</div>
                     </th>
 
@@ -407,7 +407,7 @@
             <div class="flex justify-center gap-4 mt-3 md:mt-6 items-center flex-wrap">
 
               <button type="submit"
-                class="py-2 px-4 flex items-center gap-2 text-[#00BEEC] text-[14px] sm:text-[16px] rounded-full bg-[rgba(0,190,236,0.10)] text-center justify-center cursor-pointer">
+                class="py-2 px-4 flex items-center gap-2 text-primary text-[14px] sm:text-[16px] rounded-full bg-[rgba(0,190,236,0.10)] text-center justify-center cursor-pointer">
                 Load More
               </button>
             </div>

@@ -1,5 +1,5 @@
 <template>
- <main class="bg-white dark:bg-[#080808] overflow-hidden min-h-screen text-black dark:text-white client-dashboard">
+ <main class="bg-light-bg dark:bg-dark-bg overflow-hidden min-h-screen text-black dark:text-white client-dashboard">
     <div>
       <header class="pl-6 pr-7 py-6  border-b  border-[rgba(0,190,236,0.30)]">
         <div class="flex justify-between flex-wrap">
@@ -33,7 +33,7 @@
           <button type="button" @click="showPopup = true"
             class="flex gap-3 items-center bg-[rgba(0,190,236,0.10)] dark:bg-gradient-to-l dark:from-[#33EFB7] dark:to-[#00A3BE] py-2 px-4 rounded-[8px] cursor-pointer button-light">
             <span><img src="../images/client-portal/plus.svg" alt="plus"></span> <span
-              class="text-[14px] capitalize text-[#00BEEC] dark:text-white font-medium">Create New Token</span>
+              class="text-[14px] capitalize text-primary dark:text-white font-medium">Create New Token</span>
           </button>
           <CreateNewTokenPopupModal v-if="showPopup" @close="showPopup = false" />
         </div>
@@ -42,7 +42,7 @@
           <!-- Stats Grid -->
           <div class="grid grid-cols-1  lg:grid-cols-2 xl:grid-cols-4 gap-4">
             <!-- Card 1 -->
-            <div class="bg-white dark:bg-transparent card-bg-type-1 dark:border dark:border-[#18414E] p-5 rounded-[17px] shadow-md relative">
+            <div class="bg-light-bg dark:bg-transparent card-bg-type-1 dark:border dark:border-[#18414E] p-5 rounded-[17px] shadow-md relative">
              <div class="flex justify-between flex-wrap">
              <div class="text-black dark:text-white/60 text-[16px] font-medium">API Requests Today</div>
               <div
@@ -58,7 +58,7 @@
 
             </div>
             <!-- Card 2 -->
-            <div class="bg-white dark:bg-transparent card-bg-type-1 dark:border dark:border-[#18414E] p-5 rounded-[17px] shadow-md relative">
+            <div class="bg-light-bg dark:bg-transparent card-bg-type-1 dark:border dark:border-[#18414E] p-5 rounded-[17px] shadow-md relative">
               <div class="flex justify-between flex-wrap">
               <div class="text-black dark:text-white/60 text-[16px] font-medium">API Requests This Month</div>
               <div class="bg-[rgba(0,190,236,0.10)] w-8.5 h-8.5 flex justify-center items-center rounded-[5px]">
@@ -72,7 +72,7 @@
                   </div>
             </div>
             <!-- Card 3 -->
-            <div class="bg-white dark:bg-transparent card-bg-type-1 dark:border dark:border-[#18414E] p-5 rounded-[17px] shadow-md relative">
+            <div class="bg-light-bg dark:bg-transparent card-bg-type-1 dark:border dark:border-[#18414E] p-5 rounded-[17px] shadow-md relative">
                <div class="flex justify-between flex-wrap">
               <div class="text-black dark:text-white/60 text-[16px] font-medium">Active Tokens</div>
               <div class="bg-[rgba(0,190,236,0.10)] w-8.5 h-8.5 flex justify-center items-center rounded-[5px]">
@@ -84,7 +84,7 @@
               </div>
             </div>
             <!-- Card 4 -->
-            <div class="bg-white dark:bg-transparent card-bg-type-1 dark:border dark:border-[#18414E] p-5 rounded-[17px] shadow-md relative">
+            <div class="bg-light-bg dark:bg-transparent card-bg-type-1 dark:border dark:border-[#18414E] p-5 rounded-[17px] shadow-md relative">
 
               <div class="flex justify-between flex-wrap">
               <div class="text-black dark:text-white/60 text-[16px] font-medium flex justify-between">
@@ -107,31 +107,31 @@
           </div>
 
           <!-- API Usage Trends -->
-          <div class="bg-white dark:bg-transparent card-bg-type-2 p-4 sm:p-6 rounded-[17px] dark:border dark:border-[#18414E]">
+          <div class="bg-light-bg dark:bg-transparent card-bg-type-2 p-4 sm:p-6 rounded-[17px] dark:border dark:border-[#18414E]">
             <div class="flex justify-between items-center mb-4 flex-wrap gap-2 sm:gap-0">
               <h2 class="text-[18px] sm:text-[24px] font-medium text-black dark:text-white">API Usage Trends</h2>
               <div class="sm:min-w-[330px] flex gap-1 flex-wrap justify-center">
                 <button @click="selected = 'day'" :class="[
                   'text-[14px] px-3 py-1 rounded-md transition',
-                  selected === 'day' ? 'bg-primary text-black dark:text-white' : 'bg-[rgba(0,190,236,0.10)] text-[#00BEEC]'
+                  selected === 'day' ? 'bg-primary text-black dark:text-white' : 'bg-[rgba(0,190,236,0.10)] text-primary'
                 ]">
                   Day
                 </button>
 
                 <button @click="selected = 'week'" :class="[
                   'text-[14px] px-3 py-1 rounded-md transition',
-                  selected === 'week' ? 'bg-primary text-black dark:text-white' : 'bg-[rgba(0,190,236,0.10)] text-[#00BEEC]'
+                  selected === 'week' ? 'bg-primary text-black dark:text-white' : 'bg-[rgba(0,190,236,0.10)] text-primary'
                 ]">
                   Week
                 </button>
 
                 <button @click="selected = 'month'" :class="[
                   'text-[14px] px-3 py-1 rounded-md transition',
-                  selected === 'month' ? 'bg-primary text-black dark:text-white' : 'bg-[rgba(0,190,236,0.10)] text-[#00BEEC]'
+                  selected === 'month' ? 'bg-primary text-black dark:text-white' : 'bg-[rgba(0,190,236,0.10)] text-primary'
                 ]">
                   Month
                 </button>
-                <button class="bg-[rgba(0,190,236,0.10)] text-[14px] text-black dark:text-[#00BEEC] px-3 py-1 rounded-md flex gap-2">All
+                <button class="bg-[rgba(0,190,236,0.10)] text-[14px] text-black dark:text-primary px-3 py-1 rounded-md flex gap-2">All
                   Tokens <img src="../images/client-portal/arrow-close.svg" alt="arrow-close"></button>
               </div>
             </div>
@@ -150,7 +150,7 @@
           <!-- Lower Grid (Error + Performance) -->
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <!-- Error Distribution -->
-            <div class="bg-white dark:bg-transparent card-bg-type-2 p-4 sm:p-6 rounded-[17px] dark:border dark:border-[#18414E]">
+            <div class="bg-light-bg dark:bg-transparent card-bg-type-2 p-4 sm:p-6 rounded-[17px] dark:border dark:border-[#18414E]">
               <h2 class="text-[18px] sm:text-[24px] font-medium text-black dark:text-white mb-4">Error Distribution</h2>
 
               <div class="flex justify-center items-cent h-37 sm:h-75 text-white/70">
@@ -164,7 +164,7 @@
 
             </div>
             <!-- Performance Metrics -->
-            <div class="bg-white dark:bg-transparent card-bg-type-2 p-4 sm:p-6 rounded-[17px] dark:border  dark:border-[#18414E]">
+            <div class="bg-light-bg dark:bg-transparent card-bg-type-2 p-4 sm:p-6 rounded-[17px] dark:border  dark:border-[#18414E]">
               <h2 class="text-[18px] sm:text-[24px] font-medium text-black dark:text-white mb-4">Performance Metrics</h2>
 
               <div class="flex justify-center items-center h-37 sm:h-75 text-white/70">
@@ -184,10 +184,10 @@
 
           <div class="flex flex-col lg:flex-row gap-4">
             <!-- Column 1 (70%) -->
-            <div class="bg-white dark:bg-transparent card-bg-type-2 p-4 sm:p-6 rounded-[17px] dark:border dark:border-[#18414E] w-full lg:w-[65%]">
+            <div class="bg-light-bg dark:bg-transparent card-bg-type-2 p-4 sm:p-6 rounded-[17px] dark:border dark:border-[#18414E] w-full lg:w-[65%]">
               <div class="flex justify-between items-center mb-2">
                 <h2 class="text-[18px] sm:text-[24px] font-medium text-black dark:text-white mb-4">Latest Activity</h2>
-                <a href="#" class="text-black dark:text-[#00BEEC] text-[14px] font-medium hover:underline">Views All</a>
+                <a href="#" class="text-black dark:text-primary text-[14px] font-medium hover:underline">Views All</a>
               </div>
 
               <div class="text-sm text-black dark:text-white/80 md:pl-4">
@@ -248,13 +248,13 @@
             <!-- Column 2 (30%) -->
             <div class="bg-[rgba(0,190,236,0.10)] dark:bg-gradient-to-l dark:from-[#33EFB7] dark:to-[#00A3BE] p-4 sm:p-6 rounded-[17px] dark:border dark:border-[#18414E] w-full lg:w-[35%] relative">
               <div>
-                <h2 class="text-[22px] sm:text-[24px] text-[#00BEEC] dark:text-white leading-normal mb-2">Need another API token?</h2>
-                <p class="text-[16px] sm:text-[18px] text-[#00BEEC] dark:text-white leading-normal">Create a new token for your projects
+                <h2 class="text-[22px] sm:text-[24px] text-primary dark:text-white leading-normal mb-2">Need another API token?</h2>
+                <p class="text-[16px] sm:text-[18px] text-primary dark:text-white leading-normal">Create a new token for your projects
                   with custom permissions and expiration settings.</p>
               </div>
               <div class="sm:p-6 lg:absolute bottom-5 left-0 right-0">
                 <button @click="showPopup = true"
-                  class="mt-6 w-full py-2 text-center bg-white text-[#00BEEC] dark:text-[#00BEEC] font-medium text-[18px] rounded-md hover:bg-white/90 flex items-center justify-center gap-2 cursor-pointer">
+                  class="mt-6 w-full py-2 text-center bg-light-bg text-primary dark:text-primary font-medium text-[18px] rounded-md hover:bg-light-bg/90 flex items-center justify-center gap-2 cursor-pointer">
                   <!-- Plus icon -->
                   <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M19 13H13V19H11V13H5V11H11V5H13V11H19V13Z" />

@@ -1,5 +1,5 @@
 <template>
-    <main class="bg-white dark:bg-[#080808] min-h-screen text-black dark:text-white overflow-y-hidden">
+    <main class="bg-light-bg dark:bg-dark-bg min-h-screen text-black dark:text-white overflow-y-hidden">
         <!-- BG Ellipses -->
         <!-- BG Ellipses - only visible in dark mode -->
         <img src="../../images/client-portal/ellipse-1924.svg" alt=""
@@ -46,7 +46,7 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-3 sm:gap-4">
                 <!-- Total Users -->
                 <div
-                    class="bg-white dark:bg-[#FFFFFF0D] dark:border dark:border-[#00BEEC66] p-3 sm:p-4 rounded-[12px] shadow-md">
+                    class="bg-light-bg dark:bg-[#FFFFFF0D] dark:border dark:border-[#00BEEC66] p-3 sm:p-4 rounded-[12px] shadow-md">
                     <div class="flex items-center justify-between">
                         <div class="text-[12px] sm:text-[14px] font-medium text-black dark:text-white/70">Total Users</div>
                         <div class="w-8 h-8 sm:w-9 sm:h-9 grid place-items-center rounded-md bg-[#00BEEC] dark:bg-[#00BEEC1A]">
@@ -61,7 +61,7 @@
 
                 <!-- Total Clients -->
                 <div
-                    class="bg-white dark:bg-[#FFFFFF0D] dark:border dark:border-[#00BEEC66] p-3 sm:p-4 rounded-[12px] shadow-md">
+                    class="bg-light-bg dark:bg-[#FFFFFF0D] dark:border dark:border-[#00BEEC66] p-3 sm:p-4 rounded-[12px] shadow-md">
                     <div class="flex items-center justify-between">
                         <div class="text-[12px] sm:text-[14px] font-medium text-black dark:text-white/70">Total Clients</div>
                         <div class="w-8 h-8 sm:w-9 sm:h-9 grid place-items-center rounded-md bg-[#00BEEC] dark:bg-[#00BEEC1A]">
@@ -76,7 +76,7 @@
 
                 <!-- API Requests Today -->
                 <div
-                    class="bg-white dark:bg-[#FFFFFF0D] dark:border dark:border-[#00BEEC66] rounded-[12px] p-3 sm:p-4 shadow-md">
+                    class="bg-light-bg dark:bg-[#FFFFFF0D] dark:border dark:border-[#00BEEC66] rounded-[12px] p-3 sm:p-4 shadow-md">
                     <div class="flex items-center justify-between">
                         <h3 class="text-[12px] sm:text-[14px] font-medium text-black dark:text-white/70">API Requests Today</h3>
                         <button class="w-8 h-8 sm:w-9 sm:h-9 grid place-items-center rounded-md bg-[#00BEEC] dark:bg-[#00BEEC1A]">
@@ -86,17 +86,17 @@
                     <div class="mt-1 text-[20px] sm:text-[24px] md:text-[26px] font-meduim leading-tight text-black dark:text-white">3.2M</div>
                     <div class="mt-2 flex flex-wrap gap-1">
                         <span
-                            class="inline-flex items-center px-1.5 sm:px-2 py-0.5 text-[9px] sm:text-[11px] rounded-full bg-[#00BEEC26] text-[#00BEEC]">Month:
+                            class="inline-flex items-center px-1.5 sm:px-2 py-0.5 text-[9px] sm:text-[11px] rounded-full bg-[#00BEEC26] text-primary">Month:
                             53k</span>
                         <span
-                            class="inline-flex items-center px-1.5 sm:px-2 py-0.5 text-[9px] sm:text-[11px] rounded-full bg-[#00BEEC26] text-[#00BEEC]">Week
+                            class="inline-flex items-center px-1.5 sm:px-2 py-0.5 text-[9px] sm:text-[11px] rounded-full bg-[#00BEEC26] text-primary">Week
                             13k</span>
                     </div>
                 </div>
 
                 <!-- Active Tokens -->
                 <div
-                    class="bg-white dark:bg-[#FFFFFF0D] dark:border dark:border-[#00BEEC66] rounded-[12px] p-3 sm:p-4 shadow-md">
+                    class="bg-light-bg dark:bg-[#FFFFFF0D] dark:border dark:border-[#00BEEC66] rounded-[12px] p-3 sm:p-4 shadow-md">
                     <div class="flex items-center justify-between">
                         <h3 class="text-[12px] sm:text-[14px] font-medium text-black dark:text-white/70">Active Tokens</h3>
                         <button class="w-8 h-8 sm:w-9 sm:h-9 grid place-items-center rounded-md bg-[#00BEEC] dark:bg-[#00BEEC1A]">
@@ -109,10 +109,10 @@
                     </div>
                     <div class="mt-2 flex flex-wrap gap-1">
                         <span
-                            class="inline-flex items-center px-1.5 sm:px-2 py-0.5 text-[9px] sm:text-[11px] rounded-full bg-[#00BEEC26] text-[#00BEEC]">Expiry:
+                            class="inline-flex items-center px-1.5 sm:px-2 py-0.5 text-[9px] sm:text-[11px] rounded-full bg-[#00BEEC26] text-primary">Expiry:
                             23</span>
                         <span
-                            class="inline-flex items-center px-1.5 sm:px-2 py-0.5 text-[9px] sm:text-[11px] rounded-full bg-[#00BEEC26] text-[#00BEEC]">Inactive
+                            class="inline-flex items-center px-1.5 sm:px-2 py-0.5 text-[9px] sm:text-[11px] rounded-full bg-[#00BEEC26] text-primary">Inactive
                             24</span>
                     </div>
                 </div>
@@ -125,18 +125,18 @@
             <div class="mt-3 sm:mt-4 grid grid-cols-1 lg:grid-cols-1 xl:grid-cols-2 gap-3 sm:gap-4">
                 <!-- API Request Trends -->
                 <div
-                    class=" bg-white dark:bg-[#FFFFFF0D] dark:border dark:border-[#00BEEC66] p-4 sm:p-5 rounded-[16px] shadow-md">
+                    class=" bg-light-bg dark:bg-[#FFFFFF0D] dark:border dark:border-[#00BEEC66] p-4 sm:p-5 rounded-[16px] shadow-md">
                     <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 sm:gap-0 mb-4">
                         <div class="font-inter text-[16px] sm:text-[18px] md:text-[20px] lg:text-[24px]  font-medium text-black dark:text-white">
                             API Request Trends
                         </div>
                         <div class="flex gap-1 flex-wrap justify-center sm:min-w-[330px]">
                             <button @click="selected = 'day'"
-                                :class="['text-[12px] sm:text-[14px] px-2 sm:px-3 py-1 rounded-md transition', selected === 'day' ? 'bg-primary text-black dark:text-white' : 'bg-[rgba(0,190,236,0.10)] text-[#00BEEC]']">Day</button>
+                                :class="['text-[12px] sm:text-[14px] px-2 sm:px-3 py-1 rounded-md transition', selected === 'day' ? 'bg-primary text-black dark:text-white' : 'bg-[rgba(0,190,236,0.10)] text-primary']">Day</button>
                             <button @click="selected = 'week'"
-                                :class="['text-[12px] sm:text-[14px] px-2 sm:px-3 py-1 rounded-md transition', selected === 'week' ? 'bg-primary text-black dark:text-white' : 'bg-[rgba(0,190,236,0.10)] text-[#00BEEC]']">Week</button>
+                                :class="['text-[12px] sm:text-[14px] px-2 sm:px-3 py-1 rounded-md transition', selected === 'week' ? 'bg-primary text-black dark:text-white' : 'bg-[rgba(0,190,236,0.10)] text-primary']">Week</button>
                             <button @click="selected = 'month'"
-                                :class="['text-[12px] sm:text-[14px] px-2 sm:px-3 py-1 rounded-md transition', selected === 'month' ? 'bg-primary text-black dark:text-white' : 'bg-[rgba(0,190,236,0.10)] text-[#00BEEC]']">Month</button>
+                                :class="['text-[12px] sm:text-[14px] px-2 sm:px-3 py-1 rounded-md transition', selected === 'month' ? 'bg-primary text-black dark:text-white' : 'bg-[rgba(0,190,236,0.10)] text-primary']">Month</button>
                         </div>
                     </div>
 
@@ -227,12 +227,12 @@
 
                 <!-- Top 5 Clients by Volume -->
                 <div
-                    class=" bg-white dark:bg-[#FFFFFF0D] dark:border dark:border-[#00BEEC66] p-4 sm:p-5 rounded-[16px] shadow-md">
+                    class=" bg-light-bg dark:bg-[#FFFFFF0D] dark:border dark:border-[#00BEEC66] p-4 sm:p-5 rounded-[16px] shadow-md">
                     <div class="flex items-center justify-between mb-4">
                         <div
                             class="font-inter text-[16px] sm:text-[18px] md:text-[24px] font-medium text-black dark:text-white">
                             Top 5 Clients by Volume</div>
-                        <a href="#" class="text-[14px] sm:text-[16px] font-medium text-[#00BEEC]">Views All</a>
+                        <a href="#" class="text-[14px] sm:text-[16px] font-medium text-primary">Views All</a>
                     </div>
 
                     <ul class="divide-y divide-white/0">
@@ -288,12 +288,12 @@
             <div class="mt-3 sm:mt-4 grid grid-cols-1 lg:grid-cols-2 gap-3 sm:gap-4">
                 <!-- Latest Activity -->
                 <div
-                    class=" bg-white dark:bg-[#FFFFFF0D] dark:border dark:border-[#00BEEC66] p-4 sm:p-5 rounded-[16px] shadow-md">
+                    class=" bg-light-bg dark:bg-[#FFFFFF0D] dark:border dark:border-[#00BEEC66] p-4 sm:p-5 rounded-[16px] shadow-md">
                     <div class="flex items-center justify-between mb-2">
                         <div class="font-inter text-[16px] sm:text-[18px] md:text-[24px] font-medium text-black dark:text-white">Latest
                             Activity
                         </div>
-                        <a href="#" class="text-[12px] sm:text-[14px] font-medium text-[#00BEEC]">Views All</a>
+                        <a href="#" class="text-[12px] sm:text-[14px] font-medium text-primary">Views All</a>
                     </div>
 
                     <div class="space-y-3 sm:space-y-4 mt-4">
@@ -352,7 +352,7 @@
 
                 <!-- Highlighted Errors -->
                 <div
-                    class=" bg-white dark:bg-[#FFFFFF0D] dark:border dark:border-[#00BEEC66] p-4 sm:p-5 rounded-[16px] shadow-md">
+                    class=" bg-light-bg dark:bg-[#FFFFFF0D] dark:border dark:border-[#00BEEC66] p-4 sm:p-5 rounded-[16px] shadow-md">
                     <div class="font-inter text-[16px] sm:text-[18px] md:text-[24px] font-medium text-black dark:text-white mb-4">
                         Highlighted
                         Errors</div>
@@ -360,7 +360,7 @@
                     <ul class="space-y-2 sm:space-y-3">
                         <!-- Row -->
                         <li
-                            class="relative flex items-center justify-between p-3 sm:p-4 rounded-xl bg-black/5 dark:bg-white/5 px-8 sm:px-10">
+                            class="relative flex items-center justify-between p-3 sm:p-4 rounded-xl bg-black/5 dark:bg-light-bg/5 px-8 sm:px-10">
                             <span class="absolute left-0 top-0 h-full w-[3px] sm:w-[4px] rounded-sm bg-[#FF000099]"></span>
                             <div class="pr-2 sm:pr-3 flex-1 min-w-0">
                                 <p class="text-[14px] sm:text-[16px] font-medium text-black dark:text-white leading-tight">Limit
@@ -373,7 +373,7 @@
                         </li>
 
                         <li
-                            class="relative flex items-center justify-between p-3 sm:p-4 rounded-xl bg-black/5 dark:bg-white/5 px-8 sm:px-10">
+                            class="relative flex items-center justify-between p-3 sm:p-4 rounded-xl bg-black/5 dark:bg-light-bg/5 px-8 sm:px-10">
                             <span class="absolute left-0 top-0 h-full w-[3px] sm:w-[4px] rounded-sm bg-[#FF000099]"></span>
                             <div class="pr-2 sm:pr-3 flex-1 min-w-0">
                                 <p class="text-[14px] sm:text-[16px] font-medium text-black dark:text-white leading-tight">Limit
@@ -386,7 +386,7 @@
                         </li>
 
                         <li
-                            class="relative flex items-center justify-between p-3 sm:p-4 rounded-xl bg-black/5 dark:bg-white/5 px-8 sm:px-10">
+                            class="relative flex items-center justify-between p-3 sm:p-4 rounded-xl bg-black/5 dark:bg-light-bg/5 px-8 sm:px-10">
                             <span class="absolute left-0 top-0 h-full w-[3px] sm:w-[4px] rounded-sm bg-[#FF000099]"></span>
                             <div class="pr-2 sm:pr-3 flex-1 min-w-0">
                                 <p class="text-[14px] sm:text-[16px] font-medium text-black dark:text-white leading-tight">Limit

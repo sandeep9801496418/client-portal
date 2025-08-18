@@ -2,7 +2,7 @@
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 sm:gap-6">
 
     <!-- Active Days -->
-    <div class="rounded-2xl border border-black/10 p-3 sm:p-4 md:p-5 bg-white text-[#0C3E45]
+    <div class="rounded-2xl border border-black/10 p-3 sm:p-4 md:p-5 bg-light-bg text-[#0C3E45]
                 dark:border-[#00BEEC26] dark:bg-[#FFFFFF0F] dark:text-white/90">
       <div class="flex items-start justify-between">
         <div class="flex items-center gap-2 sm:gap-3">
@@ -14,13 +14,13 @@
             class="w-8 h-8 sm:w-10 sm:h-10 md:w-11 md:h-11 grid place-items-center rounded-lg border
                    border-black/15 text-[#0C3E45] hover:bg-black/5
                    dark:bg-[#FFFFFF1A]
-                   dark:border-white dark:text-white dark:hover:bg-white/5
+                   dark:border-white dark:text-white dark:hover:bg-light-bg/5
                    text-[16px] sm:text-[20px] md:text-[24px] leading-none">−</button>
           <button
             class="w-8 h-8 sm:w-10 sm:h-10 md:w-11 md:h-11 grid place-items-center rounded-lg border
                    border-black/15 text-[#0C3E45] hover:bg-black/5
                    dark:bg-[#FFFFFF1A]
-                   dark:border-white dark:text-white dark:hover:bg-white/5
+                   dark:border-white dark:text-white dark:hover:bg-light-bg/5
                    text-[16px] sm:text-[20px] md:text-[24px] leading-none">＋</button>
         </div>
       </div>
@@ -29,7 +29,7 @@
     </div>
 
     <!-- API Scopes (vertically centered) -->
-    <div class="rounded-2xl border border-black/10 p-3 sm:p-4 md:p-5 bg-white text-[#0C3E45]
+    <div class="rounded-2xl border border-black/10 p-3 sm:p-4 md:p-5 bg-light-bg text-[#0C3E45]
                 dark:border-[#00BEEC26] dark:bg-[#FFFFFF0F] dark:text-white/90
                 flex flex-col justify-center min-h-[120px] sm:min-h-[152px]">
       <div class="flex items-start justify-between mb-3 sm:mb-4">
@@ -55,7 +55,7 @@
     </div>
 
     <!-- Concurrent Requests -->
-    <div class="rounded-2xl border border-black/10 p-3 sm:p-4 md:p-5 bg-white text-[#0C3E45]
+    <div class="rounded-2xl border border-black/10 p-3 sm:p-4 md:p-5 bg-light-bg text-[#0C3E45]
                 dark:border-[#00BEEC26] dark:bg-[#FFFFFF0F] dark:text-white/90">
       <div class="flex items-start justify-between">
         <div class="flex items-center gap-2 sm:gap-3">
@@ -67,13 +67,13 @@
             class="w-8 h-8 sm:w-10 sm:h-10 md:w-11 md:h-11 grid place-items-center rounded-lg border
                    border-black/15 text-[#0C3E45] hover:bg-black/5
                    dark:bg-[#FFFFFF1A]
-                   dark:border-white dark:text-white dark:hover:bg-white/5
+                   dark:border-white dark:text-white dark:hover:bg-light-bg/5
                    text-[16px] sm:text-[20px] md:text-[24px] leading-none">−</button>
           <button
             class="w-8 h-8 sm:w-10 sm:h-10 md:w-11 md:h-11 grid place-items-center rounded-lg border
                    border-black/15 text-[#0C3E45] hover:bg-black/5
                    dark:bg-[#FFFFFF1A]
-                   dark:border-white dark:text-white dark:hover:bg-white/5
+                   dark:border-white dark:text-white dark:hover:bg-light-bg/5
                    text-[16px] sm:text-[20px] md:text-[24px] leading-none">＋</button>
         </div>
       </div>
@@ -82,7 +82,7 @@
     </div>
 
     <!-- Daily Request Limit -->
-    <div class="rounded-2xl border border-black/10 p-3 sm:p-4 md:p-5 bg-white text-[#0C3E45]
+    <div class="rounded-2xl border border-black/10 p-3 sm:p-4 md:p-5 bg-light-bg text-[#0C3E45]
                 dark:border-[#00BEEC26] dark:bg-[#FFFFFF0F] dark:text-white/90">
       <div class="flex items-start justify-between">
         <div class="flex items-center gap-2 sm:gap-3">
@@ -94,13 +94,13 @@
             class="w-8 h-8 sm:w-10 sm:h-10 md:w-11 md:h-11 grid place-items-center rounded-lg border
                    border-black/15 text-[#0C3E45] hover:bg-black/5
                    dark:bg-[#FFFFFF1A]
-                   dark:border-white dark:text-white dark:hover:bg-white/5
+                   dark:border-white dark:text-white dark:hover:bg-light-bg/5
                    text-[16px] sm:text-[20px] md:text-[24px] leading-none">−</button>
           <button
             class="w-8 h-8 sm:w-10 sm:h-10 md:w-11 md:h-11 grid place-items-center rounded-lg border
                    border-black/15 text-[#0C3E45] hover:bg-black/5
                    dark:bg-[#FFFFFF1A]
-                   dark:border-white dark:text-white dark:hover:bg-white/5
+                   dark:border-white dark:text-white dark:hover:bg-light-bg/5
                    text-[16px] sm:text-[20px] md:text-[24px] leading-none">＋</button>
         </div>
       </div>
@@ -109,7 +109,7 @@
     </div>
 
     <!-- Expiration Date -->
-    <div class="rounded-2xl border border-black/10 p-3 sm:p-4 md:p-5 bg-white text-[#0C3E45]
+    <div class="rounded-2xl border border-black/10 p-3 sm:p-4 md:p-5 bg-light-bg text-[#0C3E45]
                 dark:border-[#00BEEC26] dark:bg-[#FFFFFF0F] dark:text-white/90">
       <div class="flex items-start justify-between">
         <div class="flex items-center gap-2 sm:gap-3">
@@ -121,13 +121,13 @@
             class="w-8 h-8 sm:w-10 sm:h-10 md:w-11 md:h-11 grid place-items-center rounded-lg border
                    border-black/15 text-[#0C3E45] hover:bg-black/5
                    dark:bg-[#FFFFFF1A]
-                   dark:border-white dark:text-white dark:hover:bg-white/5
+                   dark:border-white dark:text-white dark:hover:bg-light-bg/5
                    text-[16px] sm:text-[20px] md:text-[24px] leading-none">−</button>
           <button
             class="w-8 h-8 sm:w-10 sm:h-10 md:w-11 md:h-11 grid place-items-center rounded-lg border
                    border-black/15 text-[#0C3E45] hover:bg-black/5
                    dark:bg-[#FFFFFF1A]
-                   dark:border-white dark:text-white dark:hover:bg-white/5
+                   dark:border-white dark:text-white dark:hover:bg-light-bg/5
                    text-[16px] sm:text-[20px] md:text-[24px] leading-none">＋</button>
         </div>
       </div>
@@ -136,7 +136,7 @@
     </div>
 
     <!-- Allowed Regions (vertically centered) -->
-    <div class="rounded-2xl border border-black/10 p-3 sm:p-4 md:p-5 bg-white text-[#0C3E45]
+    <div class="rounded-2xl border border-black/10 p-3 sm:p-4 md:p-5 bg-light-bg text-[#0C3E45]
                 dark:border-[#00BEEC26] dark:bg-[#FFFFFF0F] dark:text-white/90
                 flex flex-col justify-center min-h-[120px] sm:min-h-[152px]">
       <div class="flex items-start justify-between mb-3 sm:mb-4">

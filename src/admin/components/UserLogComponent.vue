@@ -5,7 +5,7 @@
       <!-- LEFT: search -->
       <div class="flex-1 min-w-[260px] max-w-[360px] w-full">
         <div class="flex items-center gap-2 rounded-[10px] h-[37px] pl-3 pr-3 border border-[#00beec4d]
-                 bg-white dark:bg-transparent text-black dark:text-white/90">
+                 bg-light-bg dark:bg-transparent text-black dark:text-white/90">
           <img src="../../images/client-portal/search-icon.svg" alt=""
             class="w-4 h-4 sm:w-5 sm:h-5 invert dark:invert-0 opacity-80" />
           <input v-model="query" type="text" placeholder="Search name or IP Address..."
@@ -18,15 +18,15 @@
         <!-- Actions dropdown -->
         <div class="relative">
           <button @click="toggle('action')" class="h-[37px] w-full sm:w-auto md:w-[165px] px-3 sm:px-5 rounded-[6px] flex items-center justify-between gap-2
-           bg-white/80 dark:bg-[#0A2327]
-           text-sm sm:text-[14px] text-black/80 dark:text-[#00BEEC] border dark:border-none">
+           bg-light-bg/80 dark:bg-[#0A2327]
+           text-sm sm:text-[14px] text-black/80 dark:text-primary border dark:border-none">
             {{ selected.action }}
             <img src="../../images/client-portal/arrow-close.svg"
               :class="['transition-transform w-3 h-3 sm:w-4 sm:h-4', open.action ? 'rotate-180' : '']" alt="" />
           </button>
 
           <div v-if="open.action" class="absolute z-50 mt-2 rounded-[8px] border border-[#00beec26]
-           bg-white text-[#0C3E45] dark:bg-[#072126] dark:text-[#A9F3FF]
+           bg-light-bg text-[#0C3E45] dark:bg-[#072126] dark:text-[#A9F3FF]
            shadow-[0_16px_40px_rgba(0,0,0,0.18)] dark:shadow-[0_20px_40px_rgba(0,0,0,0.55)]
            overflow-hidden w-[200px]">
             <div class="flex flex-col">
@@ -56,8 +56,8 @@
         <!-- Date range dropdown -->
         <div class="relative">
           <button @click="toggle('date')" class="h-[37px] w-full sm:w-auto md:w-[165px] px-3 sm:px-5 rounded-[6px] flex items-center justify-between gap-2
-                   bg-white/80 dark:bg-[#0A2327]
-                   text-sm sm:text-[14px] text-black/80 dark:text-[#00BEEC] border dark:border-none">
+                   bg-light-bg/80 dark:bg-[#0A2327]
+                   text-sm sm:text-[14px] text-black/80 dark:text-primary border dark:border-none">
             Date Range
             <img src="../../images/client-portal/calender-11.svg" class="w-3 h-3 sm:w-4 sm:h-4" alt="">
           </button>
@@ -65,7 +65,7 @@
           <!-- Calendar panel (UI only) -->
           <div v-if="open.date" class="absolute z-50 mt-2 w-[360px] rounded-[12px] p-4 overflow-hidden
                       border border-[#00BEEC66]
-                      bg-white text-[#0C3E45] shadow-[0_16px_40px_rgba(0,0,0,0.18)]
+                      bg-light-bg text-[#0C3E45] shadow-[0_16px_40px_rgba(0,0,0,0.18)]
                       dark:bg-[radial-gradient(130%_120%_at_50%_-10%,#0f171b_0%,#0b1418_55%,#0a1619_100%)]
                       dark:text-white/90">
             <div class="flex items-center justify-between mb-3">
@@ -74,13 +74,13 @@
               </div>
               <div class="flex gap-2">
                 <button @click="shiftMonth(-1)"
-                  class="w-8 h-8 grid place-items-center rounded-full border border-black/10 dark:border-white/20 hover:bg-black/5 dark:hover:bg-white/5">
+                  class="w-8 h-8 grid place-items-center rounded-full border border-black/10 dark:border-white/20 hover:bg-black/5 dark:hover:bg-light-bg/5">
                   <svg viewBox="0 0 24 24" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.8">
                     <path d="M15 6l-6 6 6 6" stroke-linecap="round" stroke-linejoin="round" />
                   </svg>
                 </button>
                 <button @click="shiftMonth(1)"
-                  class="w-8 h-8 grid place-items-center rounded-full border border-black/10 dark:border-white/20 hover:bg-black/5 dark:hover:bg-white/5">
+                  class="w-8 h-8 grid place-items-center rounded-full border border-black/10 dark:border-white/20 hover:bg-black/5 dark:hover:bg-light-bg/5">
                   <svg viewBox="0 0 24 24" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.8">
                     <path d="M9 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round" />
                   </svg>
@@ -130,7 +130,7 @@
     <!-- Active filters chips -->
     <div class="mt-4 sm:mt-6 flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3 flex-wrap">
   <!-- Active Filter Count -->
-  <span class="text-[#00BEEC] text-sm font-medium shrink-0">
+  <span class="text-primary text-sm font-medium shrink-0">
     {{ chips.length }} Active Filters
   </span>
 
@@ -139,14 +139,14 @@
     <span 
       v-for="(c, i) in chips" 
       :key="i"
-      class="inline-flex items-center rounded-full text-xs sm:text-[13px] text-[#00BEEC] bg-[#00BEEC1A]"
+      class="inline-flex items-center rounded-full text-xs sm:text-[13px] text-primary bg-[#00BEEC1A]"
     >
       <span class="flex items-center px-2 py-1 sm:px-3 sm:py-1.5">
         {{ c.label }}: {{ c.text }}
       </span>
       <button 
         @click="removeChip(i)"
-        class="mr-1.5 sm:mr-2 w-4 h-4 sm:w-5 sm:h-5 flex items-center justify-center rounded-full hover:bg-[#0D2C31] text-[#00BEEC]"
+        class="mr-1.5 sm:mr-2 w-4 h-4 sm:w-5 sm:h-5 flex items-center justify-center rounded-full hover:bg-[#0D2C31] text-primary"
       >
         ×
       </button>
@@ -157,14 +157,14 @@
 
   <!-- LOGS TABLE CARD -->
   <section class="rounded-2xl border z-10
-                  border-[#00beec3d] bg-white/90 text-black
+                  border-[#00beec3d] bg-light-bg/90 text-black
                   dark:border-[#00BEEC66] dark:bg-[#FFFFFF0D] dark:text-white backdrop-blur overflow-x-auto">
 
     <!-- Head -->
     <div class="px-3 sm:px-5 md:px-6 py-2 m-3 sm:m-5 border border-[#00beec3d] dark:border-[#00BEEC66]
                 rounded-xl dark:bg-[#00BEEC0D] min-w-[800px]">
       <div class="grid grid-cols-[1.5fr,1fr,1.2fr,2fr] gap-2 sm:gap-4
-                  text-[13px] sm:text-[15px] md:text-[18px] font-medium text-[#007D95] dark:text-[#00BEEC]">
+                  text-[13px] sm:text-[15px] md:text-[18px] font-medium text-[#007D95] dark:text-primary">
         <span class="min-w-[120px]">Timestamps</span>
         <span class="min-w-[80px]">Action Type</span>
         <span class="min-w-[100px]">IP Address</span>

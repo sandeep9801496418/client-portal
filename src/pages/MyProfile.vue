@@ -1,5 +1,5 @@
 <template>
-  <main class="bg-white dark:bg-[#080808]">
+  <main class="bg-light-bg dark:bg-dark-bg">
     <div>
       <header class="pl-6 pr-7 py-6 border-b border  border-[rgba(0,190,236,0.30)]">
         <div class="flex justify-between flex-wrap items-center">
@@ -25,14 +25,14 @@
       <div class="bg-gray-100 dark:bg-transparent p-4 sm:p-6 w-[calc(100%-0px)] md:w-full">
         <div class="min-h-screen text-black dark:text-white space-y-6">
           <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
-            <div class="bg-white dark:bg-transparent card-bg-type-2 dark:border dark:border-[#18414E] p-5 rounded-[17px] shadow-md relative">
+            <div class="bg-light-bg dark:bg-transparent card-bg-type-2 dark:border dark:border-[#18414E] p-5 rounded-[17px] shadow-md relative">
               <div class="text-black dark:text-white text-[18px] sm:text-[24px] font-medium">
                 Production API Key
               </div>
               <div class="flex justify-between flex-wrap gap-6">
                 <div class="text-center flex items-center gap-3 p-3 pl-0 pb-0 rounded-t-xl">
                   <div
-                    class="w-10 h-10 flex justify-center items-center border border-white/10 rounded-full bg-white/10">
+                    class="w-10 h-10 flex justify-center items-center border border-white/10 rounded-full bg-light-bg/10">
                     <img src="../images/client-portal/avtar-1.png" alt="Avatar" />
                   </div>
                   <div class="text-left">
@@ -57,7 +57,7 @@
 
                   <div class="flex items-center">
                     <button id="delete" type="button"
-                      class="py-2 px-3 flex items-center gap-2 text-[#00BEEC] text-[12px] rounded-full bg-[rgba(0,190,236,0.10)] border-1 border-[#071b20] text-center justify-center cursor-pointer">
+                      class="py-2 px-3 flex items-center gap-2 text-primary text-[12px] rounded-full bg-[rgba(0,190,236,0.10)] border-1 border-[#071b20] text-center justify-center cursor-pointer">
                       <span><img src="../images/client-portal/media.svg" alt="Update" /></span>
                       Update
                     </button>
@@ -79,13 +79,13 @@
 
                 <div class="flex justify-end">
                   <button type="submit"
-                    class="py-2 px-4 flex items-center gap-2 text-[#00BEEC] text-[16px] rounded-full bg-[rgba(0,190,236,0.10)] border-1 border-[#071b20] text-center justify-center cursor-pointer">
+                    class="py-2 px-4 flex items-center gap-2 text-primary text-[16px] rounded-full bg-[rgba(0,190,236,0.10)] border-1 border-[#071b20] text-center justify-center cursor-pointer">
                     Save
                   </button>
                 </div>
               </form>
             </div>
-            <div class="bg-white dark:bg-transparent  card-bg-type-2 dark:border dark:border-[#18414E] p-5 rounded-[17px] shadow-md relative">
+            <div class="bg-light-bg dark:bg-transparent  card-bg-type-2 dark:border dark:border-[#18414E] p-5 rounded-[17px] shadow-md relative">
               <div class="text-black dark:text-white text-[18px] sm:text-[24px] font-medium">
                 Company Information
               </div>
@@ -99,14 +99,14 @@
                 <p class="block text-[12px] text-black dark:text-white/50 mb-6">Optional - used for billing and invoices</p>
                 <div class="flex justify-end sm:absolute sm:bottom-5 sm:right-5">
                   <button type="submit"
-                    class="py-2 px-4 flex items-center gap-2 text-[#00BEEC] text-[16px] rounded-full bg-[rgba(0,190,236,0.10)] border-1 border-[#071b20] text-center justify-center cursor-pointer">
+                    class="py-2 px-4 flex items-center gap-2 text-primary text-[16px] rounded-full bg-[rgba(0,190,236,0.10)] border-1 border-[#071b20] text-center justify-center cursor-pointer">
                     Save
                   </button>
                 </div>
               </form>
             </div>
           </section>
-          <section class="bg-white dark:bg-transparent  card-bg-type-2 dark:border dark:border-[#18414E] p-5 rounded-[17px] shadow-md relative">
+          <section class="bg-light-bg dark:bg-transparent  card-bg-type-2 dark:border dark:border-[#18414E] p-5 rounded-[17px] shadow-md relative">
             <div class="text-black dark:text-white text-[18px] sm:text-[24px] font-medium">
               Change Password
             </div>
@@ -133,8 +133,8 @@
                   <ul class="flex gap-2 mt-3">
                     <li class="w-full flex-auto h-1 bg-[#00FF62] rounded-2xl"></li>
                     <li class="w-full flex-auto h-1 bg-[#00FF62] rounded-2xl"></li>
-                    <li class="w-full flex-auto h-1 bg-white/40 rounded-2xl"></li>
-                    <li class="w-full flex-auto h-1 bg-white/40 rounded-2xl"></li>
+                    <li class="w-full flex-auto h-1 bg-light-bg/40 rounded-2xl"></li>
+                    <li class="w-full flex-auto h-1 bg-light-bg/40 rounded-2xl"></li>
                   </ul>
                   <p class="block text-[12px] text-black dark:text-white/50 mb-1 mt-2" for="newPass">Weak-Add more Characters</p>
                 </div>
@@ -151,7 +151,7 @@
                 <a href="#" class="text-[1] font-medium">Forgot Password ?</a>
 
                 <button type="submit"
-                  class="py-2 px-4 flex items-center gap-2 text-[#00BEEC] text-[16px] rounded-full bg-[rgba(0,190,236,0.10)] border-1 border-[#071b20] text-center justify-center cursor-pointer">
+                  class="py-2 px-4 flex items-center gap-2 text-primary text-[16px] rounded-full bg-[rgba(0,190,236,0.10)] border-1 border-[#071b20] text-center justify-center cursor-pointer">
                   Update password
                 </button>
               </div>
@@ -160,7 +160,7 @@
 
 
           <!--  Login History  -->
-          <section class="bg-white dark:bg-transparent  card-bg-type-2 dark:border dark:border-[#18414E] p-5 rounded-[17px] shadow-md relative">
+          <section class="bg-light-bg dark:bg-transparent  card-bg-type-2 dark:border dark:border-[#18414E] p-5 rounded-[17px] shadow-md relative">
             <div class="text-black dark:text-white text-[18px] sm:text-[24px] font-medium">
               Login History
             </div>
@@ -171,25 +171,25 @@
                   <tr class="">
                     <th class="p-0">
                       <div
-                        class="text-[#00BEEC] px-2 sm:px-4 text-[14px] sm:text-[16px] md:text-[18px] leading-normal font-normal text-center p-2 text-nowrap bg-[rgba(0,190,236,0.10)] border border-r-0 border-[rgba(0,190,236,0.40)] rounded-l-[10px]">
+                        class="text-primary px-2 sm:px-4 text-[14px] sm:text-[16px] md:text-[18px] leading-normal font-normal text-center p-2 text-nowrap bg-[rgba(0,190,236,0.10)] border border-r-0 border-[rgba(0,190,236,0.40)] rounded-l-[10px]">
                         Date & Time
                       </div>
                     </th>
                     <th class="p-0">
                       <div
-                        class="text-[#00BEEC] px-2 sm:px-4 text-[14px] sm:text-[16px] md:text-[18px] leading-normal font-normal text-center p-2 text-nowrap bg-[rgba(0,190,236,0.10)] border-y border-r-0 border-[rgba(0,190,236,0.40)]">
+                        class="text-primary px-2 sm:px-4 text-[14px] sm:text-[16px] md:text-[18px] leading-normal font-normal text-center p-2 text-nowrap bg-[rgba(0,190,236,0.10)] border-y border-r-0 border-[rgba(0,190,236,0.40)]">
                        IP Address
                       </div>
                     </th>
                     <th class="p-0">
                       <div
-                        class="text-[#00BEEC] px-2 sm:px-4 text-[14px] sm:text-[16px] md:text-[18px] leading-normal font-normal text-center p-2 text-nowrap bg-[rgba(0,190,236,0.10)] border-y border-r-0 border-[rgba(0,190,236,0.40)]">
+                        class="text-primary px-2 sm:px-4 text-[14px] sm:text-[16px] md:text-[18px] leading-normal font-normal text-center p-2 text-nowrap bg-[rgba(0,190,236,0.10)] border-y border-r-0 border-[rgba(0,190,236,0.40)]">
                         Device/Browser
                       </div>
                     </th>
                     <th class="p-0">
                       <div
-                        class="text-[#00BEEC] px-2 sm:px-4 text-[14px] sm:text-[16px] md:text-[18px] leading-normal font-normal text-center p-2 text-nowrap bg-[rgba(0,190,236,0.10)] border border-l-0 border-[rgba(0,190,236,0.40)] rounded-r-[10px]">
+                        class="text-primary px-2 sm:px-4 text-[14px] sm:text-[16px] md:text-[18px] leading-normal font-normal text-center p-2 text-nowrap bg-[rgba(0,190,236,0.10)] border border-l-0 border-[rgba(0,190,236,0.40)] rounded-r-[10px]">
                         Location
                       </div>
                     </th>
@@ -266,7 +266,7 @@
             <div class="flex justify-center gap-4 mt-3 md:mt-6 items-center flex-wrap">
 
               <button type="submit"
-                class="py-2 px-4 flex items-center gap-2 text-[#00BEEC] text-[16px] rounded-full bg-[rgba(0,190,236,0.10)] text-center justify-center cursor-pointer">
+                class="py-2 px-4 flex items-center gap-2 text-primary text-[16px] rounded-full bg-[rgba(0,190,236,0.10)] text-center justify-center cursor-pointer">
                 Load More
               </button>
             </div>

@@ -4,7 +4,7 @@
     <!-- Modal box -->
     <div
       class="relative overflow-hidden w-full max-w-[525px]
-         rounded-[10px] border bg-white text-black
+         rounded-[10px] border bg-light-bg text-black
          dark:text-white dark:border-[#00BEEC66]
          shadow-lg backdrop-blur-xl
          dark:bg-[radial-gradient(120%_140%_at_100%_-30%,rgba(34,215,255,0.30)_0%,transparent_55%),radial-gradient(140%_120%_at_0%_120%,rgba(42,144,169,0.18)_0%,transparent_60%),linear-gradient(180deg,#0b1418_0%,#0a1215_100%)]">
@@ -19,7 +19,7 @@
         <h2 class="text-[24px] font-medium">Edit Token</h2>
         <button @click="closePopup" class="top-3.5 right-3.5 w-8 h-8 grid place-items-center
                  rounded-full border border-black/20 dark:border-white/30
-                 hover:bg-black/5 dark:hover:border-red-400/60 dark:hover:bg-white/5 transition" aria-label="Close">
+                 hover:bg-black/5 dark:hover:border-red-400/60 dark:hover:bg-light-bg/5 transition" aria-label="Close">
           <svg viewBox="0 0 24 24" class="w-4 h-4 text-black/70 dark:text-white/80">
             <path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
           </svg>
@@ -90,11 +90,11 @@
         <!-- Buttons -->
         <div class="flex justify-center sm:justify-end gap-4">
           <button @click="closePopup" class="px-4 py-2 rounded-full border border-black/20 text-[12px]
-                       hover:bg-black/5 text-[#00BEEC]
+                       hover:bg-black/5 text-primary
                        dark:border-[#00BEEC] dark:hover:bg-[#00BEEC1A]">
             Cancel
           </button>
-          <button class="px-4 py-2 rounded-full text-[#00BEEC] text-[12px]
+          <button class="px-4 py-2 rounded-full text-primary text-[12px]
                  bg-[#00beec1a] hover:bg-[#00BEEC29]">
             Save
           </button>

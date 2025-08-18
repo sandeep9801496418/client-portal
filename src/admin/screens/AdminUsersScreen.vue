@@ -1,5 +1,5 @@
 <template>
-    <main class="bg-white dark:bg-[#080808] min-h-screen text-black dark:text-white overflow-y-hidden">
+    <main class="bg-light-bg dark:bg-dark-bg min-h-screen text-black dark:text-white overflow-y-hidden">
         <!-- BG Ellipses - dark only -->
         <img src="../../images/client-portal/ellipse-1924.svg" alt="" class="hidden dark:block pointer-events-none select-none absolute 
              right-[25vw] top-[2vw] w-[40vw] h-auto max-w-none blur-2xl" />
@@ -37,7 +37,7 @@
                 <!-- LEFT: search -->
                 <div class="flex-1 min-w-[200px] max-w-[324px] w-full">
                     <div class="flex items-center gap-2 rounded-[10px] h-[37px] pl-3 pr-3 border border-[#00beec4d]
-           bg-white dark:bg-transparent text-black dark:text-white/90">
+           bg-light-bg dark:bg-transparent text-black dark:text-white/90">
                         <img src="../../images/client-portal/search-icon.svg" alt=""
                             class="w-4 h-4 sm:w-5 sm:h-5 invert dark:invert-0 opacity-80" />
                         <input v-model="query" type="text" placeholder="Search name or email..."
@@ -52,8 +52,8 @@
                     <div class="relative" v-for="dd in dropdowns" :key="dd.key">
                         <!-- Trigger -->
                         <button @click="toggle(dd.key)" class="h-[37px] w-full sm:w-auto md:w-[165px] px-3 sm:px-5 rounded-[6px] flex items-center justify-between gap-2
-                     bg-white/80 dark:bg-[#0A2327]
-                     text-sm sm:text-[14px] text-black/80 dark:text-[#00BEEC] border dark:border-none
+                     bg-light-bg/80 dark:bg-[#0A2327]
+                     text-sm sm:text-[14px] text-black/80 dark:text-primary border dark:border-none
                      ">
                             {{ selected[dd.key] }}
                             <img src="../../images/client-portal/arrow-close.svg"
@@ -64,7 +64,7 @@
                         <!-- Menu (Light + Dark) -->
                         <div v-if="open[dd.key]" class="absolute z-50 mt-2 rounded-[8px]
          border-[#00beec26]
-         bg-white text-[#0C3E45] dark:bg-[#072126] dark:text-[#A9F3FF]
+         bg-light-bg text-[#0C3E45] dark:bg-[#072126] dark:text-[#A9F3FF]
          shadow-[0_16px_40px_rgba(0,0,0,0.18)] dark:shadow-[0_20px_40px_rgba(0,0,0,0.55)]
          overflow-hidden" :style="{ width: dd.menuWidth }">
                             <div class="flex flex-col">
@@ -122,7 +122,7 @@
 
             <!-- USERS TABLE CARD (kept lower z so menus overlay it) -->
             <section class="mt-3 sm:mt-5 rounded-2xl border z-10
-               border-[#00beec3d] bg-white/90 text-black
+               border-[#00beec3d] bg-light-bg/90 text-black
                dark:border-[#00BEEC66] dark:bg-[#FFFFFF0D] dark:text-white
                backdrop-blur overflow-hidden">
                 <!-- Table container with horizontal scroll -->
@@ -131,7 +131,7 @@
                     <div class="px-3 sm:px-5 md:px-6 py-2 m-3 sm:m-5 border min-w-[800px]
                      border-[#00beec3d] dark:border-[#00BEEC66] rounded-xl dark:bg-[#00BEEC0D]">
                         <div class="grid grid-cols-[1.5fr,1.5fr,1fr,1fr,1.2fr,152px] gap-2 sm:gap-4 text-[13px] sm:text-[15px] font-[400px]
-            text-[#007D95] dark:text-[#00BEEC] md:text-[18px] min-w-[800px]">
+            text-[#007D95] dark:text-primary md:text-[18px] min-w-[800px]">
                             <span class="min-w-[120px]">User</span>
                             <span class="min-w-[150px]">Email</span>
                             <span class="min-w-[80px]">Role</span>

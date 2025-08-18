@@ -23,8 +23,8 @@
         <div class="mt-10 grid grid-cols-2 gap-3">
           <button
             type="button"
-            class="group inline-flex items-center justify-center gap-3 rounded-lg border border-white/20 bg-white/5 px-4 py-3 text-sm font-medium
-                   transition-all hover:bg-white/10 hover:border-white/30 hover:shadow-[0_10px_28px_-14px_rgba(0,190,236,0.45)]
+            class="group inline-flex items-center justify-center gap-3 rounded-lg border border-white/20 bg-light-bg/5 px-4 py-3 text-sm font-medium
+                   transition-all hover:bg-light-bg/10 hover:border-white/30 hover:shadow-[0_10px_28px_-14px_rgba(0,190,236,0.45)]
                    active:scale-[.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#00BEEC]/40"
             @click="toast.info('Google login coming soon')">
             <img src="../images/client-portal/google.svg" alt="" class="h-5 w-5" />
@@ -33,8 +33,8 @@
 
           <button
             type="button"
-            class="group inline-flex items-center justify-center gap-3 rounded-lg border border-white/20 bg-white/5 px-4 py-3 text-sm font-medium
-                   transition-all hover:bg-white/10 hover:border-white/30 hover:shadow-[0_10px_28px_-14px_rgba(0,190,236,0.45)]
+            class="group inline-flex items-center justify-center gap-3 rounded-lg border border-white/20 bg-light-bg/5 px-4 py-3 text-sm font-medium
+                   transition-all hover:bg-light-bg/10 hover:border-white/30 hover:shadow-[0_10px_28px_-14px_rgba(0,190,236,0.45)]
                    active:scale-[.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#00BEEC]/40"
             @click="toast.info('Slack login coming soon')">
             <img src="../images/client-portal/slack.svg" alt="" class="h-5 w-5" />
@@ -44,9 +44,9 @@
 
         <!-- Divider -->
         <div class="my-6 flex items-center gap-4 text-sm text-white/60">
-          <span class="h-px flex-1 bg-white/15"></span>
+          <span class="h-px flex-1 bg-light-bg/15"></span>
           continue with email
-          <span class="h-px flex-1 bg-white/15"></span>
+          <span class="h-px flex-1 bg-light-bg/15"></span>
         </div>
 
         <!-- Form -->
@@ -54,7 +54,7 @@
           <!-- Email -->
           <label class="mb-3 block">
             <div class="relative flex items-center rounded-lg border h-[55px]"
-                 :class="emailError ? 'border-red-500/70' : 'border-white/10 bg-white/5'">
+                 :class="emailError ? 'border-red-500/70' : 'border-white/10 bg-light-bg/5'">
               <div class="px-3">
                 <img src="../images/client-portal/email.svg" alt="" class="h-[25px] w-[25px] opacity-70" />
               </div>
@@ -73,7 +73,7 @@
           <!-- Password -->
           <label class="mb-3 block">
             <div class="relative flex items-center rounded-lg border h-[55px]"
-                 :class="passwordError ? 'border-red-500/70' : 'border-white/10 bg-white/5'">
+                 :class="passwordError ? 'border-red-500/70' : 'border-white/10 bg-light-bg/5'">
               <div class="px-3">
                 <img src="../images/client-portal/lock.svg" alt="" class="h-[25px] w-[25px] opacity-70" />
               </div>
@@ -103,7 +103,7 @@
               <input v-model="form.remember" type="checkbox" class="h-4 w-4 accent-[#00BEEC]" />
               <span class="text-white/50">Remember me</span>
             </label>
-            <a href="#" class="text-[#00BEEC] hover:underline mr-3 text-[16px]">Forgot Password?</a>
+            <a href="#" class="text-primary hover:underline mr-3 text-[16px]">Forgot Password?</a>
           </div>
 
           <button

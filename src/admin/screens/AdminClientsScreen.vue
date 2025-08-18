@@ -1,5 +1,5 @@
 <template>
-    <main class="bg-white dark:bg-[#080808] min-h-screen text-black dark:text-white overflow-y-hidden">
+    <main class="bg-light-bg dark:bg-dark-bg min-h-screen text-black dark:text-white overflow-y-hidden">
         <!-- BG Ellipses - dark only -->
         <img src="../../images/client-portal/ellipse-1924.svg" alt="" class="hidden dark:block pointer-events-none select-none absolute 
              right-[25vw] top-[2vw] w-[40vw] h-auto max-w-none blur-2xl" />
@@ -31,7 +31,7 @@
                 <!-- LEFT: search -->
                 <div class="flex-1 min-w-[220px] max-w-[324px] w-full">
                     <div class="flex items-center gap-2 rounded-[10px] h-[37px] pl-3 pr-3 border border-[#00beec4d]
-           bg-white dark:bg-transparent text-black dark:text-white/90">
+           bg-light-bg dark:bg-transparent text-black dark:text-white/90">
                         <img src="../../images/client-portal/search-icon.svg" alt=""
                             class="w-4 h-4 sm:w-5 sm:h-5 invert dark:invert-0 opacity-80" />
                         <input v-model="query" type="text" placeholder="Search name or email..."
@@ -46,7 +46,7 @@
                     <div class="relative" v-for="dd in dropdowns" :key="dd.key">
                         <!-- Trigger -->
                         <button @click="toggle(dd.key)" class="h-[37px] w-full sm:w-auto md:w-[165px] px-3 sm:px-5 rounded-[6px] flex items-center justify-between gap-2
-                     bg-white/80 dark:bg-[#0A2327]
+                     bg-light-bg/80 dark:bg-[#0A2327]
                      text-sm sm:text-[14px] text-black/80 dark:text-[#00BEEC] border dark:border-none
                      ">
                             {{ selected[dd.key] }}
@@ -57,7 +57,7 @@
                         <!-- Menu (Light + Dark) -->
                         <div v-if="open[dd.key]" class="absolute z-50 mt-2 rounded-[8px]
          border-[#00beec26]
-         bg-white text-[#0C3E45] dark:bg-[#072126] dark:text-[#A9F3FF]
+         bg-light-bg text-[#0C3E45] dark:bg-[#072126] dark:text-[#A9F3FF]
          shadow-[0_16px_40px_rgba(0,0,0,0.18)] dark:shadow-[0_20px_40px_rgba(0,0,0,0.55)]
          overflow-hidden" :style="{ width: dd.menuWidth }">
                             <div class="flex flex-col">
@@ -117,15 +117,15 @@
             <section class="mt-5 flex flex-col lg:flex-row gap-4 sm:gap-5">
                 <!-- Table -->
                 <div
-                    class="flex-1 rounded-2xl border border-[#00beec3d] bg-white/90 dark:border-[#00BEEC66] dark:bg-[#FFFFFF0D] backdrop-blur overflow-x-auto">
+                    class="flex-1 rounded-2xl border border-[#00beec3d] bg-light-bg/90 dark:border-[#00BEEC66] dark:bg-[#FFFFFF0D] backdrop-blur overflow-x-auto">
                     <!-- Header Row -->
                     <div
                         class="px-3 sm:px-5 md:px-6 py-2 m-3 sm:m-5 border border-[#00beec3d] dark:border-[#00BEEC66] rounded-xl dark:bg-[#00BEEC0D] min-w-[900px]">
                         <div
                             class="grid grid-cols-[1.5fr,1.5fr,1fr,1.2fr,1fr,152px] gap-2 sm:gap-4 text-[13px] sm:text-[15px] md:text-[18px] font-[400px] text-[#007D95] dark:text-[#00BEEC]">
                             <span class="min-w-[120px]">Client Name</span>
-                            <span class="min-w-[150px]">Email</span>
-                            <span class="min-w-[80px]">Status</span>
+                            <span class="text-center min-w-[150px]">Email</span>
+                            <span class="text-center min-w-[80px]">Status</span>
                             <span class="min-w-[180px] text-center">Assigned Users</span>
                             <span class="min-w-[80px]">Tokens</span>
                             <span class="text-center pr-2 min-w-[152px]">Actions</span>
@@ -188,7 +188,7 @@
 
                 <!-- Summary -->
                 <div
-                    class="w-full lg:w-[260px] rounded-2xl border border-[#00beec3d] dark:border-[#00BEEC66] bg-white/90 dark:bg-[#FFFFFF0D] backdrop-blur p-4 sm:p-5">
+                    class="w-full lg:w-[260px] rounded-2xl border border-[#00beec3d] dark:border-[#00BEEC66] bg-light-bg/90 dark:bg-[#FFFFFF0D] backdrop-blur p-4 sm:p-5">
                     <div class="font-inter text-base sm:text-lg font-medium mb-3 sm:mb-4 text-[#007D95] dark:text-[#00BEEC]">Summary</div>
                     <div class="flex justify-between py-2 border-b border-[#00beec33] dark:border-[#00BEEC66] text-sm sm:text-base">
                         <span>Total Clients</span><span>{{ filtered.length }}</span>

@@ -12,13 +12,13 @@
 
       <!-- Surface -->
       <div class="relative h-full rounded-[12px] px-6 pt-14 pb-6
-               bg-white text-[#0C3E45]
+               bg-light-bg text-[#0C3E45]
                dark:bg-[radial-gradient(120%_120%_at_20%_0%,#1e9fc733_0%,transparent_40%),radial-gradient(140%_120%_at_100%_100%,#2a90a91f_0%,transparent_55%),linear-gradient(180deg,#070b0e_0%,#111518_100%)]
                dark:text-white/90">
         <!-- Close -->
         <button @click="closePopup" class="absolute top-3.5 right-3.5 w-8 h-8 grid place-items-center
                  rounded-full border border-black/20 dark:border-white/30
-                 hover:bg-black/5 dark:hover:border-red-400/60 dark:hover:bg-white/5 transition" aria-label="Close">
+                 hover:bg-black/5 dark:hover:border-red-400/60 dark:hover:bg-light-bg/5 transition" aria-label="Close">
           <svg viewBox="0 0 24 24" class="w-4 h-4 text-black/70 dark:text-white/80">
             <path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
           </svg>
@@ -32,7 +32,7 @@
         </div>
 
         <!-- Title & text (unchanged content) -->
-        <h2 class="text-[#00BEEC] text-[18px] font-inter font-medium font-[500px] mb-2">
+        <h2 class="text-primary text-[18px] font-inter font-medium font-[500px] mb-2">
           Delete User Permanently
         </h2>
         <p class="text-[14px] text-black/60 dark:text-[#FFFFFF80] font-inter font-medium mb-8 leading-6">
@@ -43,13 +43,13 @@
         <!-- Actions (unchanged design) -->
         <div class="flex items-center justify-center gap-4">
           <button @click="closePopup" class="h-10 w-35 px-10 rounded-full text-[14px] font-medium
-                   border border-[#00BEEC] text-[#00BEEC]
+                   border border-[#00BEEC] text-primary
                    hover:bg-[#00BEEC1A] transition">
             Cancel
           </button>
 
           <button class="h-10 px-10 rounded-full text-[14px] font-medium
-                   text-[#00BEEC] bg-[#00BEEC1A]
+                   text-primary bg-[#00BEEC1A]
                    hover:bg-[#00BEEC29] transition">
             Continue
           </button>

@@ -1,5 +1,5 @@
 <template>
-    <main class="bg-white dark:bg-[#080808] min-h-screen text-black dark:text-white overflow-y-hidden">
+    <main class="bg-light-bg dark:bg-dark-bg min-h-screen text-black dark:text-white overflow-y-hidden">
         <!-- BG Ellipses - dark only -->
         <img src="../../images/client-portal/ellipse-1924.svg" alt="" class="hidden dark:block pointer-events-none select-none absolute 
              right-[25vw] top-[2vw] w-[40vw] h-auto max-w-none blur-2xl" />
@@ -35,7 +35,7 @@
                     class="flex flex-col md:my-2   sm:w-full   md:flex-row  justify-between overflow-x-auto md:items-center gap-3 sm:gap-4 md:gap-6 rounded-xl">
 
                     <div class="flex items-center gap-4 sm:gap-6">
-                        <button @click.prevent="router.back()" class="h-[36px] px-3 sm:px-4 rounded-2xl border border-[#00BEEC] text-[#00BEEC]
+                        <button @click.prevent="router.back()" class="h-[36px] px-3 sm:px-4 rounded-2xl border border-[#00BEEC] text-primary
                             flex items-center gap-2 hover:bg-[#00BEEC1A] transition text-sm sm:text-base">
                             <img src="../../images/client-portal/mynaui_arrow-up.svg" class="w-3 h-3 sm:w-4 sm:h-4" alt="" />
                             Back
@@ -135,7 +135,7 @@
                 <!-- Card -->
                 <div class="rounded-xl border border-black/10 dark:border-[#00BEEC66] overflow-hidden">
                     <div class="p-4 sm:p-6 md:p-7 rounded-xl
-                   bg-white/90 text-[#0C3E45]
+                   bg-light-bg/90 text-[#0C3E45]
                    dark:bg-[#FFFFFF0D] dark:text-white/90
                    ">
                         <div class="font-inter text-[18px] sm:text-[20px] md:text-[24px] font-[500px]">Personal Information</div>
@@ -162,7 +162,7 @@
                                 <label class="block text-xs mb-2 text-black/60 dark:text-white/60">Phone Number</label>
                                 <input v-model="user.phone" type="text"
                                     class="w-full h-10 sm:h-11 px-3 sm:px-4 rounded-md text-sm sm:text-base
-                         bg-white text-[#0C3E45] placeholder:text-black/40
+                         bg-light-bg text-[#0C3E45] placeholder:text-black/40
                          border border-black/20
                          dark:bg-transparent dark:text-white/90 dark:placeholder:text-white/40 dark:border-[#FFFFFF80] focus:outline-none"
                                     placeholder="+1 (222) 123-3456" />
@@ -171,7 +171,7 @@
                                 <label class="block text-xs mb-2 text-black/60 dark:text-white/60">Website</label>
                                 <input v-model="user.website" type="text"
                                     class="w-full h-10 sm:h-11 px-3 sm:px-4 rounded-md text-sm sm:text-base
-                         bg-white text-[#0C3E45] placeholder:text-black/40
+                         bg-light-bg text-[#0C3E45] placeholder:text-black/40
                          border border-black/20
                          dark:bg-transparent dark:text-white/90 dark:placeholder:text-white/40 dark:border-[#FFFFFF80] focus:outline-none"
                                     placeholder="www.pendulumtech.com" />
@@ -225,12 +225,12 @@
 
             <!-- Bottom actions -->
             <div class="flex flex-col sm:flex-row justify-end gap-3 sm:gap-4 mt-8 sm:mt-10">
-                <button class="h-10 sm:h-11 px-4 sm:px-6 rounded-full border border-[#00BEEC] text-[#00BEEC]
+                <button class="h-10 sm:h-11 px-4 sm:px-6 rounded-full border border-[#00BEEC] text-primary
                  hover:bg-[#00BEEC1A] transition text-sm sm:text-base">
                     Cancel
                 </button>
                 <button class="h-10 sm:h-11 px-4 sm:px-6 rounded-full bg-[#00BEEC] text-white border border-white/15
-                 dark:bg-[#00BEEC1A] dark:text-[#00BEEC]
+                 dark:bg-[#00BEEC1A] dark:text-primary
                  hover:brightness-110 transition text-sm sm:text-base">
                     Save
                 </button>

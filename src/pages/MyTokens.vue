@@ -1,5 +1,5 @@
 <template>
-    <main class="bg-white dark:bg-[#080808] my-token">
+    <main class="bg-light-bg dark:bg-dark-bg my-token">
 
         <div>
             <header class="pl-6 pr-7 py-6  border-b border border-[rgba(0,190,236,0.30)]">
@@ -79,7 +79,7 @@
                     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                         <!-- Card 1 -->
                         <div
-                            class="bg-white dark:bg-transparent card-bg-type-1 dark:border  dark:border-[#18414E] p-5 rounded-[17px] shadow-md relative">
+                            class="bg-light-bg dark:bg-transparent card-bg-type-1 dark:border  dark:border-[#18414E] p-5 rounded-[17px] shadow-md relative">
                             <div class="flex gap-4 justify-between">
                                 <div class="text-black dark:text-white text-[16px] font-medium">Production API Key</div>
                                 <ul class="flex gap-3">
@@ -113,7 +113,7 @@
                         </div>
                         <!-- Card 2 -->
                         <div
-                            class="bg-white dark:bg-transparent card-bg-type-1 dark:border  dark:border-[#18414E] p-5 rounded-[17px] shadow-md relative">
+                            class="bg-light-bg dark:bg-transparent card-bg-type-1 dark:border  dark:border-[#18414E] p-5 rounded-[17px] shadow-md relative">
                             <div class="flex gap-4 justify-between">
                                 <div class="text-black dark:text-white text-[16px] font-medium">Development Token</div>
                                 <ul class="flex gap-3">
@@ -146,7 +146,7 @@
                         </div>
                         <!-- Card 3 -->
                         <div
-                            class="bg-white dark:bg-transparent card-bg-type-1 dark:border  dark:border-[#18414E] p-5 rounded-[17px] shadow-md relative">
+                            class="bg-light-bg dark:bg-transparent card-bg-type-1 dark:border  dark:border-[#18414E] p-5 rounded-[17px] shadow-md relative">
                             <div class="flex gap-4 justify-between">
                                 <div class="text-black dark:text-white text-[16px] font-medium">Legacy API Key</div>
                                 <ul class="flex gap-3">
@@ -175,7 +175,7 @@
                         </div>
                         <!-- Card 4 -->
                         <div
-                            class="bg-white dark:bg-transparent card-bg-type-1 dark:border  dark:border-[#18414E] p-5 rounded-[17px] shadow-md relative">
+                            class="bg-light-bg dark:bg-transparent card-bg-type-1 dark:border  dark:border-[#18414E] p-5 rounded-[17px] shadow-md relative">
                             <div class="flex gap-4 justify-between">
                                 <div class="text-black dark:text-white text-[16px] font-medium">Production API Key</div>
                                 <ul class="flex gap-3">
@@ -209,7 +209,7 @@
 
                         <!-- Card 5 -->
                         <div
-                            class="bg-white dark:bg-transparent card-bg-type-1 dark:border  dark:border-[#18414E] p-5 rounded-[17px] shadow-md relative">
+                            class="bg-light-bg dark:bg-transparent card-bg-type-1 dark:border  dark:border-[#18414E] p-5 rounded-[17px] shadow-md relative">
                             <div class="flex gap-4 justify-between">
                                 <div class="text-black dark:text-white text-[16px] font-medium">Development Token</div>
                                 <ul class="flex gap-3">
@@ -243,7 +243,7 @@
 
                         <!-- Card 6 -->
                         <div
-                            class="bg-white dark:bg-transparent card-bg-type-1 dark:border  dark:border-[#18414E] p-5 rounded-[17px] shadow-md relative">
+                            class="bg-light-bg dark:bg-transparent card-bg-type-1 dark:border  dark:border-[#18414E] p-5 rounded-[17px] shadow-md relative">
                             <div class="flex gap-4 justify-between">
                                 <div class="text-black dark:text-white text-[16px] font-medium">Development Token</div>
                                 <ul class="flex gap-3">
@@ -277,7 +277,7 @@
 
                         <!-- Card 7 -->
                         <div
-                            class="bg-white dark:bg-transparent card-bg-type-1 dark:border  dark:border-[#18414E] p-5 rounded-[17px] shadow-md relative">
+                            class="bg-light-bg dark:bg-transparent card-bg-type-1 dark:border  dark:border-[#18414E] p-5 rounded-[17px] shadow-md relative">
                             <div class="flex gap-4 justify-between">
                                 <div class="text-black dark:text-white text-[16px] font-medium">Legacy API Key</div>
                                 <ul class="flex gap-3">
@@ -307,7 +307,7 @@
 
                         <!-- Card 8 -->
                         <div
-                            class="bg-white dark:bg-transparent card-bg-type-1 dark:border  dark:border-[#18414E] p-5 rounded-[17px] shadow-md relative">
+                            class="bg-light-bg dark:bg-transparent card-bg-type-1 dark:border  dark:border-[#18414E] p-5 rounded-[17px] shadow-md relative">
                             <div class="flex gap-4 justify-between">
                                 <div class="text-black dark:text-white text-[16px] font-medium">Production API Key</div>
                                 <ul class="flex gap-3">
@@ -341,7 +341,7 @@
 
                         <!-- Card 9 -->
                         <div
-                            class="bg-white dark:bg-transparent card-bg-type-1 dark:border  dark:border-[#18414E] p-5 rounded-[17px] shadow-md relative">
+                            class="bg-light-bg dark:bg-transparent card-bg-type-1 dark:border  dark:border-[#18414E] p-5 rounded-[17px] shadow-md relative">
                             <div class="flex gap-4 justify-between">
                                 <div class="text-black dark:text-white text-[16px] font-medium">Legacy API Key</div>
                                 <ul class="flex gap-3">

@@ -8,6 +8,8 @@ module.exports = {
     extend: {
       colors: {
         "dark-bg": "#080808", // custom dark background
+        "light-bg": "#ffffff", // custom light background
+        'primary': '#00BEEC', // primary text color
       },
       // colors: {
       //   'primary': '#00BEEC',

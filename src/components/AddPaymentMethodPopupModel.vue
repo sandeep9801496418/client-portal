@@ -3,7 +3,7 @@
   <div class="fixed inset-0 z-50 bg-black/40 backdrop-blur-[6px] flex justify-center items-center p-4 modal">
     <!-- Modal -->
     <div
-      class="w-full max-w-[525px] bg-white dark:bg-[rgba(8,8,8,0.90)] backdrop-blur-xl mx-auto text-black dark:text-white rounded-xl border border-cyan-500/20 shadow-lg"
+      class="w-full max-w-[525px] bg-light-bg dark:bg-[rgba(8,8,8,0.90)] backdrop-blur-xl mx-auto text-black dark:text-white rounded-xl border border-cyan-500/20 shadow-lg"
     >
       <!-- Modal Header -->
       <div class="flex justify-between items-center mb-0 py-3 px-6 border-b dark:border-cyan-500/20">

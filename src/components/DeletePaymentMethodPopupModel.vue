@@ -3,7 +3,7 @@
   <div class="fixed inset-0 z-50 bg-black/40 backdrop-blur-[6px] flex justify-center items-center p-4 modal">
     <!-- Modal -->
     <div
-      class="w-full  max-w-[430px] mx-auto text-black dark:text-white rounded-xl border dark:border-cyan-500/20 p-6 pt-10 relative bg-white dark:bg-[rgba(8,8,8,0.95)] backdrop-blur-xl shadow-lg"
+      class="w-full  max-w-[430px] mx-auto text-black dark:text-white rounded-xl border dark:border-cyan-500/20 p-6 pt-10 relative bg-light-bg dark:bg-[rgba(8,8,8,0.95)] backdrop-blur-xl shadow-lg"
     >
       <!-- Close Button -->
       <button

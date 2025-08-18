@@ -6,7 +6,7 @@
             <!-- LEFT: search -->
             <div class="flex-1 min-w-[260px] max-w-[360px] w-full">
                 <div class="flex items-center gap-2 rounded-[10px] h-[37px] pl-3 pr-3 border border-[#00beec4d]
-                 bg-white dark:bg-transparent text-black dark:text-white/90">
+                 bg-light-bg dark:bg-transparent text-black dark:text-white/90">
                     <img src="../../images/client-portal/search-icon.svg" alt=""
                         class="w-4 h-4 sm:w-5 sm:h-5 invert dark:invert-0 opacity-80" />
                     <input v-model="query" type="text" placeholder="Search name or Token..."
@@ -19,15 +19,15 @@
                 <!-- Status dropdown -->
                 <div class="relative">
                     <button @click="toggle('status')" class="h-[37px] w-full sm:w-auto md:w-[165px] px-3 sm:px-4 md:px-5 rounded-[6px] flex items-center justify-between gap-2
-                   bg-white/80 dark:bg-[#0A2327]
-                   text-sm sm:text-[14px] text-black/80 dark:text-[#00BEEC] border dark:border-none">
+                   bg-light-bg/80 dark:bg-[#0A2327]
+                   text-sm sm:text-[14px] text-black/80 dark:text-primary border dark:border-none">
                         {{ selected.status }}
                         <img src="../../images/client-portal/arrow-close.svg"
                             :class="['transition-transform w-3 h-3 sm:w-4 sm:h-4', open.status ? 'rotate-180' : '']" alt="" />
                     </button>
 
                     <div v-if="open.status" class="absolute z-50 mt-2 rounded-[8px] border border-[#00beec26]
-         bg-white text-[#0C3E45] dark:bg-[#072126] dark:text-[#A9F3FF]
+         bg-light-bg text-[#0C3E45] dark:bg-[#072126] dark:text-[#A9F3FF]
          shadow-[0_16px_40px_rgba(0,0,0,0.18)] dark:shadow-[0_20px_40px_rgba(0,0,0,0.55)]
          overflow-hidden w-[200px]">
                         <div class="flex flex-col">
@@ -57,8 +57,8 @@
                 <!-- Date range dropdown -->
                 <div class="relative">
                     <button @click="toggle('date')" class="h-[37px] w-full sm:w-auto md:w-[165px] px-3 sm:px-4 md:px-5 rounded-[6px] flex items-center justify-between gap-2
-           bg-white/80 dark:bg-[#0A2327]
-           text-sm sm:text-[14px] text-black/80 dark:text-[#00BEEC] border dark:border-none">
+           bg-light-bg/80 dark:bg-[#0A2327]
+           text-sm sm:text-[14px] text-black/80 dark:text-primary border dark:border-none">
                         <span class="hidden sm:inline">Date Range</span>
                         <span class="sm:hidden">Date</span>
                         <img src="../../images/client-portal/calender-11.svg" class="w-3 h-3 sm:w-4 sm:h-4" alt="">
@@ -67,7 +67,7 @@
                     <!-- Calendar panel -->
                     <div v-if="open.date" class="absolute z-50 mt-2 right-0 sm:right-auto w-[280px] sm:w-[320px] md:w-[360px] rounded-[12px] p-3 sm:p-4 overflow-hidden
            border border-[#00BEEC66]
-           bg-white text-[#0C3E45] shadow-[0_16px_40px_rgba(0,0,0,0.18)]
+           bg-light-bg text-[#0C3E45] shadow-[0_16px_40px_rgba(0,0,0,0.18)]
            dark:bg-[radial-gradient(130%_120%_at_50%_-10%,#0f171b_0%,#0b1418_55%,#0a1619_100%)]
            dark:text-white/90">
                         <!-- Header -->
@@ -77,14 +77,14 @@
                             </div>
                             <div class="flex gap-1 sm:gap-2">
                                 <button @click="shiftMonth(-1)"
-                                    class="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 grid place-items-center rounded-full border border-black/10 dark:border-white/20 hover:bg-black/5 dark:hover:bg-white/5">
+                                    class="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 grid place-items-center rounded-full border border-black/10 dark:border-white/20 hover:bg-black/5 dark:hover:bg-light-bg/5">
                                     <svg viewBox="0 0 24 24" class="w-3 h-3 sm:w-3.5 sm:h-3.5 md:w-4 md:h-4" fill="none" stroke="currentColor"
                                         stroke-width="1.8">
                                         <path d="M15 6l-6 6 6 6" stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
                                 </button>
                                 <button @click="shiftMonth(1)"
-                                    class="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 grid place-items-center rounded-full border border-black/10 dark:border-white/20 hover:bg-black/5 dark:hover:bg-white/5">
+                                    class="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 grid place-items-center rounded-full border border-black/10 dark:border-white/20 hover:bg-black/5 dark:hover:bg-light-bg/5">
                                     <svg viewBox="0 0 24 24" class="w-3 h-3 sm:w-3.5 sm:h-3.5 md:w-4 md:h-4" fill="none" stroke="currentColor"
                                         stroke-width="1.8">
                                         <path d="M9 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round" />
@@ -139,13 +139,13 @@
 
     <!-- TOKENS TABLE CARD -->
     <section class=" rounded-2xl border z-10
-                  border-[#00beec3d] bg-white/90 text-black
+                  border-[#00beec3d] bg-light-bg/90 text-black
                   dark:border-[#00BEEC66] dark:bg-[#FFFFFF0D] dark:text-white backdrop-blur overflow-x-auto">
         <!-- Head -->
         <div class="px-3 sm:px-4 md:px-5 lg:px-6 py-2 m-3 sm:m-4 md:m-5 border border-[#00beec3d] dark:border-[#00BEEC66]
                 rounded-xl dark:bg-[#00BEEC0D] min-w-[800px]">
             <div class="grid grid-cols-[1.6fr,1fr,1.2fr,1fr,1fr,124px] gap-2 sm:gap-3 md:gap-4
-                  text-[13px] sm:text-[14px] md:text-[15px] lg:text-[18px] font-medium text-[#007D95] dark:text-[#00BEEC]">
+                  text-[13px] sm:text-[14px] md:text-[15px] lg:text-[18px] font-medium text-[#007D95] dark:text-primary">
                 <span class="min-w-[180px]">Token Name/ID</span>
                 <span class="min-w-[80px]">Status</span>
                 <span class="min-w-[100px]">Usage</span>
@@ -171,7 +171,7 @@
                 <!-- usage -->
                 <div class="flex items-center gap-2 sm:gap-4 min-w-[100px]">
                     <div class="min-w-[50px] sm:min-w-[60px] text-right text-sm sm:text-base">{{ formatNumber(t.usage) }}</div>
-                    <div class="relative w-[80px] sm:w-[110px] h-[12px] sm:h-[16px] rounded-full bg-black/10 dark:bg-white/10 overflow-hidden">
+                    <div class="relative w-[80px] sm:w-[110px] h-[12px] sm:h-[16px] rounded-full bg-black/10 dark:bg-light-bg/10 overflow-hidden">
                         <div class="absolute inset-y-0 left-0 rounded-full"
                             :style="{ width: t.usagePct + '%', background: 'linear-gradient(90deg,#33EFB7 0%, #00A3BE 100%)' }">
                         </div>

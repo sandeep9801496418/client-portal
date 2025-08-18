@@ -102,7 +102,7 @@
   filter: invert(40%) sepia(110%) saturate(1000%) hue-rotate(-213deg);
 }
 
-.light .new-pass ul .bg-white\/40 {
+.light .new-pass ul .bg-light-bg\/40 {
   background-color: #c4c4c4;
 }
 

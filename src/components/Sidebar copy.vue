@@ -42,9 +42,9 @@ onMounted(() => {
 </script>
 
 <template>
-  <main class="bg-white dark:bg-[#080808] text-black dark:text-black sticky top-0 w-fit h-[100vh]">
+  <main class="bg-light-bg dark:bg-dark-bg text-black dark:text-black sticky top-0 w-fit h-[100vh]">
     <div
-      class="lg:w-[262px] bg-white dark:bg-[#030303] md:fixed overflow-y-auto top-0 h-[100vh] border-r border-[rgba(0,190,236,0.30)]">
+      class="lg:w-[262px] bg-light-bg dark:bg-[#030303] md:fixed overflow-y-auto top-0 h-[100vh] border-r border-[rgba(0,190,236,0.30)]">
       <!-- Logo + Title -->
       <div class="pt-7 lg:pt-10 pb-7 lg:pb-15 lg:px-6 flex gap-2 justify-center lg:justify-start">
         <img src="../images/client-portal/portal-logo.svg" alt="portal-dark-mode-logo" class="darkmode" />
@@ -93,12 +93,12 @@ onMounted(() => {
       <!-- Profile Dropdown -->
       <div class="border-t-2 border-white/10 mt-4">
         <div @click="toggleProfileDropdown"
-          class="mx-2 lg:mx-4 px-2 py-3 mt-4 rounded-lg cursor-pointer bg-white dark:bg-[rgba(0,190,236,0.10)] border dark:border-[#00BEEC] flex items-center justify-between">
+          class="mx-2 lg:mx-4 px-2 py-3 mt-4 rounded-lg cursor-pointer bg-light-bg dark:bg-[rgba(0,190,236,0.10)] border dark:border-[#00BEEC] flex items-center justify-between">
           <div class="flex items-center gap-3">
             <img src="../images/client-portal/avtar-1.png" class="w-8 h-8 rounded-full border border-white/10"
               alt="Avatar" />
             <div class="text-left hidden lg:block">
-              <h4 class="text-black dark:text-[#00BEEC] text-[14px] font-medium">Abdul Moiz</h4>
+              <h4 class="text-black dark:text-primary text-[14px] font-medium">Abdul Moiz</h4>
               <p class="text-black dark:text-white/50 text-[12px]">Starter Plan</p>
             </div>
           </div>
@@ -108,26 +108,26 @@ onMounted(() => {
         <!-- Dropdown Menu -->
         <transition name="fade">
           <ul v-if="showProfileDropdown"
-            class="mt-2 mx-2 lg:mx-4 border dark:border-[#00BEEC] rounded-lg overflow-hidden bg-white dark:bg-transparent dark:profile-background">
+            class="mt-2 mx-2 lg:mx-4 border dark:border-[#00BEEC] rounded-lg overflow-hidden bg-light-bg dark:bg-transparent dark:profile-background">
             <li>
               <a href="#"
                 class="flex justify-center lg:justify-start gap-2 p-2 lg:p-4 hover:bg-[rgba(0,190,236,0.10)]">
                 <img src="../images/client-portal/view-profile.svg" alt="view-profile" />
-                <span class="text-black dark:text-[#00BEEC] text-[12px] font-medium hidden lg:block">View Profile</span>
+                <span class="text-black dark:text-primary text-[12px] font-medium hidden lg:block">View Profile</span>
               </a>
             </li>
             <li>
               <a href="#"
                 class="flex justify-center lg:justify-start gap-2 p-2 lg:p-4 hover:bg-[rgba(0,190,236,0.10)]">
                 <img src="../images/client-portal/subscription.svg" alt="Subscription" />
-                <span class="text-black dark:text-[#00BEEC] text-[12px] font-medium hidden lg:block">Subscription</span>
+                <span class="text-black dark:text-primary text-[12px] font-medium hidden lg:block">Subscription</span>
               </a>
             </li>
             <li>
               <a href="#"
                 class="flex justify-center lg:justify-start gap-2 p-2 lg:p-4 hover:bg-[rgba(0,190,236,0.10)]">
                 <img src="../images/client-portal/language.svg" alt="Language" />
-                <span class="text-black dark:text-[#00BEEC] text-[12px] font-medium hidden lg:block">Language</span>
+                <span class="text-black dark:text-primary text-[12px] font-medium hidden lg:block">Language</span>
               </a>
             </li>
             <li class="px-2 my-2 border-t dark:border-[#00BEEC]"></li>
@@ -136,14 +136,14 @@ onMounted(() => {
                 class="flex justify-center lg:justify-start gap-2 p-2 lg:p-4 hover:bg-[rgba(0,190,236,0.10)]">
                 <img src="../images/client-portal/proicons_dark-theme.svg" alt="Theme Icon" class="w-4 h-4" />
 
-                <span class="text-black dark:text-[#00BEEC] text-[12px] font-medium hidden lg:block">Theme</span>
+                <span class="text-black dark:text-primary text-[12px] font-medium hidden lg:block">Theme</span>
               </a>
             </li>
             <li>
               <a href="#"
                 class="flex justify-center lg:justify-start gap-2 p-2 lg:p-4 hover:bg-[rgba(0,190,236,0.10)]">
                 <img src="../images/client-portal/log-out.svg" alt="Sign Out" />
-                <span class="text-black dark:text-[#00BEEC] text-[12px] font-medium hidden lg:block">Sign Out</span>
+                <span class="text-black dark:text-primary text-[12px] font-medium hidden lg:block">Sign Out</span>
               </a>
             </li>
           </ul>
